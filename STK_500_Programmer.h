@@ -5,8 +5,14 @@
 = Dependencies =
 ===============================================>>>>>*/
 #include "Arduino.h"
-#include "SdFat.h"
-#include "SPI.h"
+#include "SdFat/BlockDriver.h"
+#include "SdFat/FreeStack.h"
+#include "SdFat/MinimumSerial.h"
+#include "SdFat/SdFat.h"
+#include "SdFat/SdFatConfig.h"
+#include "SdFat/sdios.h"
+#include "SdFat/SysCall.h"
+// #include "SPI.h"
 
 
 /*=============================================>>>>>

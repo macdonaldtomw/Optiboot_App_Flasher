@@ -4,12 +4,109 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+ACMD13	.\SdFat\SdCard\SdInfo.h	/^const uint8_t ACMD13 = 0X0D;$/;"	v
+ACMD23	.\SdFat\SdCard\SdInfo.h	/^const uint8_t ACMD23 = 0X17;$/;"	v
+ACMD41	.\SdFat\SdCard\SdInfo.h	/^const uint8_t ACMD41 = 0X29;$/;"	v
+ACMD41_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t ACMD41_XFERTYP = SDHC_XFERTYP_CMDINX(ACMD41) | CMD_RESP_R3;$/;"	v
+ACMD6	.\SdFat\SdCard\SdInfo.h	/^const uint8_t ACMD6 = 0X06;$/;"	v
+ACMD6_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t ACMD6_XFERTYP = SDHC_XFERTYP_CMDINX(ACMD6) | CMD_RESP_R1;$/;"	v
 ADC_CHANNEL_ERROR	.\stk500.h	13;"	d
 ADC_MEASURE_OK	.\stk500.h	14;"	d
 ANSWER_CKSUM_ERROR	.\command.h	113;"	d
 AVR_OP_LOAD_EXT_ADDR	.\stk500.h	49;"	d
-BYTES_PER_FLASH_BLOCK	.\STK_500_Programmer.h	18;"	d
-BYTES_PER_WORD	.\STK_500_Programmer.h	17;"	d
+ArduinoFiles_h	.\SdFat\FatLib\ArduinoFiles.h	30;"	d
+ArduinoInStream	.\SdFat\FatLib\ArduinoStream.h	/^  ArduinoInStream(Stream &hws, char* buf, size_t size) {$/;"	f	class:ArduinoInStream
+ArduinoInStream	.\SdFat\FatLib\ArduinoStream.h	/^class ArduinoInStream : public ibufstream {$/;"	c
+ArduinoOutStream	.\SdFat\FatLib\ArduinoStream.h	/^  ArduinoOutStream() {}$/;"	f	class:ArduinoOutStream
+ArduinoOutStream	.\SdFat\FatLib\ArduinoStream.h	/^  explicit ArduinoOutStream(Print& pr) : m_pr(&pr) {}$/;"	f	class:ArduinoOutStream
+ArduinoOutStream	.\SdFat\FatLib\ArduinoStream.h	/^class ArduinoOutStream : public ostream {$/;"	c
+ArduinoStream_h	.\SdFat\FatLib\ArduinoStream.h	26;"	d
+AvrDevelopersGpioPinMap_h	.\SdFat\SpiDriver\boards\AvrDevelopersGpioPinMap.h	2;"	d
+BOOTSIG0	.\SdFat\FatLib\FatStructs.h	/^const uint8_t BOOTSIG0 = 0X55;$/;"	v
+BOOTSIG1	.\SdFat\FatLib\FatStructs.h	/^const uint8_t BOOTSIG1 = 0XAA;$/;"	v
+BUSY_TIMEOUT_MICROS	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t BUSY_TIMEOUT_MICROS = 500000;$/;"	v
+BYTES_PER_FLASH_BLOCK	.\STK_500_Programmer.h	24;"	d
+BYTES_PER_WORD	.\STK_500_Programmer.h	23;"	d
+BaseBlockDriver	.\SdFat\FatLib\BaseBlockDriver.h	/^class BaseBlockDriver {$/;"	c
+BaseBlockDriver_h	.\SdFat\FatLib\BaseBlockDriver.h	26;"	d
+Bernstein	.\SdFat\FatLib\FatFileLFN.cpp	/^static uint16_t Bernstein(uint16_t hash, const char *str, size_t len) {$/;"	f	file:
+BlockDriver	.\SdFat\BlockDriver.h	/^typedef BaseBlockDriver BlockDriver;$/;"	t
+BlockDriver	.\SdFat\BlockDriver.h	/^typedef SdSpiCard BlockDriver;$/;"	t
+BlockDriver_h	.\SdFat\BlockDriver.h	30;"	d
+BobuinoGpioPinMap_h	.\SdFat\SpiDriver\boards\BobuinoGpioPinMap.h	2;"	d
+CACHE_FOR_READ	.\SdFat\FatLib\FatVolume.h	/^  static const uint8_t CACHE_FOR_READ = 0;$/;"	m	class:FatCache
+CACHE_FOR_WRITE	.\SdFat\FatLib\FatVolume.h	/^  static const uint8_t CACHE_FOR_WRITE = CACHE_STATUS_DIRTY;$/;"	m	class:FatCache
+CACHE_OPTION_NO_READ	.\SdFat\FatLib\FatVolume.h	/^  static const uint8_t CACHE_OPTION_NO_READ = 4;$/;"	m	class:FatCache
+CACHE_RESERVE_FOR_WRITE	.\SdFat\FatLib\FatVolume.h	/^  static const uint8_t CACHE_RESERVE_FOR_WRITE$/;"	m	class:FatCache
+CACHE_STATUS_DIRTY	.\SdFat\FatLib\FatVolume.h	/^  static const uint8_t CACHE_STATUS_DIRTY = 1;$/;"	m	class:FatCache
+CACHE_STATUS_MASK	.\SdFat\FatLib\FatVolume.h	/^  static const uint8_t CACHE_STATUS_MASK$/;"	m	class:FatCache
+CACHE_STATUS_MIRROR_FAT	.\SdFat\FatLib\FatVolume.h	/^  static const uint8_t CACHE_STATUS_MIRROR_FAT = 2;$/;"	m	class:FatCache
+CARD_STATUS_ADDRESS_ERROR	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_ADDRESS_ERROR = 1UL << 30;$/;"	v
+CARD_STATUS_AKE_SEQ_ERROR	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_AKE_SEQ_ERROR = 1UL << 3;$/;"	v
+CARD_STATUS_APP_CMD	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_APP_CMD = 1UL << 5;$/;"	v
+CARD_STATUS_BLOCK_LEN_ERROR	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_BLOCK_LEN_ERROR = 1UL << 29;$/;"	v
+CARD_STATUS_CARD_ECC_DISABLED	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_CARD_ECC_DISABLED = 1UL << 14;$/;"	v
+CARD_STATUS_CARD_ECC_FAILED	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_CARD_ECC_FAILED = 1UL << 21;$/;"	v
+CARD_STATUS_CARD_IS_LOCKED	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_CARD_IS_LOCKED = 1UL << 25;$/;"	v
+CARD_STATUS_CC_ERROR	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_CC_ERROR = 1UL << 20;$/;"	v
+CARD_STATUS_COM_CRC_ERROR	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_COM_CRC_ERROR = 1UL << 23;$/;"	v
+CARD_STATUS_CSD_OVERWRITE	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_CSD_OVERWRITE = 1UL <<16;$/;"	v
+CARD_STATUS_CURRENT_STATE	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_CURRENT_STATE = 0XF << 9;$/;"	v
+CARD_STATUS_CURRENT_STATE_SHIFT	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_CURRENT_STATE_SHIFT = 9;$/;"	v
+CARD_STATUS_ERASE_PARAM	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_ERASE_PARAM = 1UL << 27;$/;"	v
+CARD_STATUS_ERASE_RESET	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_ERASE_RESET = 1UL << 13;$/;"	v
+CARD_STATUS_ERASE_SEQ_ERROR	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_ERASE_SEQ_ERROR = 1UL <<28;$/;"	v
+CARD_STATUS_ERROR	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_ERROR = 1UL << 19;$/;"	v
+CARD_STATUS_FX_EVENT	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_FX_EVENT = 1UL << 6;$/;"	v
+CARD_STATUS_ILLEGAL_COMMAND	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_ILLEGAL_COMMAND = 1UL << 22;$/;"	v
+CARD_STATUS_LOCK_UNLOCK_FAILED	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_LOCK_UNLOCK_FAILED = 1UL << 24;$/;"	v
+CARD_STATUS_OUT_OF_RANGE	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_OUT_OF_RANGE = 1UL << 31;$/;"	v
+CARD_STATUS_READY_FOR_DATA	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_READY_FOR_DATA = 1UL << 8;$/;"	v
+CARD_STATUS_WP_ERASE_SKIP	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_WP_ERASE_SKIP = 1UL << 15;$/;"	v
+CARD_STATUS_WP_VIOLATION	.\SdFat\SdCard\SdInfo.h	/^const uint32_t CARD_STATUS_WP_VIOLATION = 1UL << 26;$/;"	v
+CHECK_FLASH_PROGRAMMING	.\SdFat\SdFatConfig.h	95;"	d
+CID	.\SdFat\SdCard\SdInfo.h	/^typedef struct CID {$/;"	s
+CMD0	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD0 = 0X00;$/;"	v
+CMD0_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD0_XFERTYP = SDHC_XFERTYP_CMDINX(CMD0) | CMD_RESP_NONE;$/;"	v
+CMD10	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD10 = 0X0A;$/;"	v
+CMD10_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD10_XFERTYP = SDHC_XFERTYP_CMDINX(CMD10) | CMD_RESP_R2;$/;"	v
+CMD12	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD12 = 0X0C;$/;"	v
+CMD12_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD12_XFERTYP = SDHC_XFERTYP_CMDINX(CMD12) | CMD_RESP_R1b |$/;"	v
+CMD13	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD13 = 0X0D;$/;"	v
+CMD13_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD13_XFERTYP = SDHC_XFERTYP_CMDINX(CMD13) | CMD_RESP_R1;$/;"	v
+CMD17	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD17 = 0X11;$/;"	v
+CMD17_DMA_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD17_DMA_XFERTYP = SDHC_XFERTYP_CMDINX(CMD17) | CMD_RESP_R1 |$/;"	v
+CMD18	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD18 = 0X12;$/;"	v
+CMD18_DMA_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD18_DMA_XFERTYP = SDHC_XFERTYP_CMDINX(CMD18) | CMD_RESP_R1 |$/;"	v
+CMD18_PGM_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD18_PGM_XFERTYP = SDHC_XFERTYP_CMDINX(CMD18) | CMD_RESP_R1 |$/;"	v
+CMD2	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD2 = 0X02;$/;"	v
+CMD24	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD24 = 0X18;$/;"	v
+CMD24_DMA_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD24_DMA_XFERTYP = SDHC_XFERTYP_CMDINX(CMD24) | CMD_RESP_R1 |$/;"	v
+CMD25	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD25 = 0X19;$/;"	v
+CMD25_DMA_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD25_DMA_XFERTYP = SDHC_XFERTYP_CMDINX(CMD25) | CMD_RESP_R1 |$/;"	v
+CMD25_PGM_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD25_PGM_XFERTYP = SDHC_XFERTYP_CMDINX(CMD25) | CMD_RESP_R1 |$/;"	v
+CMD2_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD2_XFERTYP = SDHC_XFERTYP_CMDINX(CMD2) | CMD_RESP_R2;$/;"	v
+CMD3	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD3 = 0X03;$/;"	v
+CMD32	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD32 = 0X20;$/;"	v
+CMD32_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD32_XFERTYP = SDHC_XFERTYP_CMDINX(CMD32) | CMD_RESP_R1;$/;"	v
+CMD33	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD33 = 0X21;$/;"	v
+CMD33_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD33_XFERTYP = SDHC_XFERTYP_CMDINX(CMD33) | CMD_RESP_R1;$/;"	v
+CMD38	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD38 = 0X26;$/;"	v
+CMD38_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD38_XFERTYP = SDHC_XFERTYP_CMDINX(CMD38) | CMD_RESP_R1b;$/;"	v
+CMD3_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD3_XFERTYP = SDHC_XFERTYP_CMDINX(CMD3) | CMD_RESP_R6;$/;"	v
+CMD55	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD55 = 0X37;$/;"	v
+CMD55_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD55_XFERTYP = SDHC_XFERTYP_CMDINX(CMD55) | CMD_RESP_R1;$/;"	v
+CMD58	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD58 = 0X3A;$/;"	v
+CMD59	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD59 = 0X3B;$/;"	v
+CMD6	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD6 = 0X06;$/;"	v
+CMD6_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD6_XFERTYP = SDHC_XFERTYP_CMDINX(CMD6) | CMD_RESP_R1 |$/;"	v
+CMD7	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD7 = 0X07;$/;"	v
+CMD7_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD7_XFERTYP = SDHC_XFERTYP_CMDINX(CMD7) | CMD_RESP_R1b;$/;"	v
+CMD8	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD8 = 0X08;$/;"	v
+CMD8_RETRIES	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD8_RETRIES = 10;$/;"	v
+CMD8_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD8_XFERTYP = SDHC_XFERTYP_CMDINX(CMD8) | CMD_RESP_R7;$/;"	v
+CMD9	.\SdFat\SdCard\SdInfo.h	/^const uint8_t CMD9 = 0X09;$/;"	v
+CMD9_XFERTYP	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD9_XFERTYP = SDHC_XFERTYP_CMDINX(CMD9) | CMD_RESP_R2;$/;"	v
 CMD_CHIP_ERASE_HVSP	.\command.h	67;"	d
 CMD_CHIP_ERASE_ISP	.\command.h	32;"	d
 CMD_CHIP_ERASE_PP	.\command.h	49;"	d
@@ -53,18 +150,213 @@ CMD_READ_OSCCAL_PP	.\command.h	59;"	d
 CMD_READ_SIGNATURE_HVSP	.\command.h	76;"	d
 CMD_READ_SIGNATURE_ISP	.\command.h	41;"	d
 CMD_READ_SIGNATURE_PP	.\command.h	58;"	d
+CMD_RESP_NONE	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD_RESP_NONE = SDHC_XFERTYP_RSPTYP(0);$/;"	v
+CMD_RESP_R1	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD_RESP_R1 = SDHC_XFERTYP_CICEN | SDHC_XFERTYP_CCCEN |$/;"	v
+CMD_RESP_R1b	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD_RESP_R1b = SDHC_XFERTYP_CICEN | SDHC_XFERTYP_CCCEN |$/;"	v
+CMD_RESP_R2	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD_RESP_R2 = SDHC_XFERTYP_CCCEN | SDHC_XFERTYP_RSPTYP(1);$/;"	v
+CMD_RESP_R3	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD_RESP_R3 = SDHC_XFERTYP_RSPTYP(2);$/;"	v
+CMD_RESP_R6	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD_RESP_R6 = CMD_RESP_R1;$/;"	v
+CMD_RESP_R7	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t CMD_RESP_R7 = CMD_RESP_R1;$/;"	v
 CMD_SET_CONTROL_STACK	.\command.h	61;"	d
 CMD_SET_DEVICE_PARAMETERS	.\command.h	22;"	d
 CMD_SET_PARAMETER	.\command.h	20;"	d
 CMD_SIGN_ON	.\command.h	19;"	d
 CMD_SPI_MULTI	.\command.h	43;"	d
+CRC7	.\SdFat\SdCard\SdSpiCard.cpp	/^static uint8_t CRC7(const uint8_t* data, uint8_t n) {$/;"	f	file:
+CRC_CCITT	.\SdFat\SdCard\SdSpiCard.cpp	/^static uint16_t CRC_CCITT(const uint8_t *data, size_t n) {$/;"	f	file:
+CRC_CCITT	.\SdFat\SdCard\SdSpiCard.cpp	/^static uint16_t CRC_CCITT(const uint8_t* data, size_t n) {$/;"	f	file:
 CRC_EOP	.\stk500.h	17;"	d
+CSDV1	.\SdFat\SdCard\SdInfo.h	/^typedef struct CSDV1 {$/;"	s
+CSDV2	.\SdFat\SdCard\SdInfo.h	/^typedef struct CSDV2 {$/;"	s
+CharWriter	.\SdFat\FatLib\FatVolume.h	/^class CharWriter {$/;"	c
+DATA_READ	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t DATA_READ = SDHC_XFERTYP_DTDSEL | SDHC_XFERTYP_DPSEL;$/;"	v
+DATA_READ_DMA	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t DATA_READ_DMA = DATA_READ | SDHC_XFERTYP_DMAEN;$/;"	v
+DATA_READ_MULTI_DMA	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t DATA_READ_MULTI_DMA = DATA_READ_DMA | SDHC_XFERTYP_MSBSEL |$/;"	v
+DATA_READ_MULTI_PGM	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t DATA_READ_MULTI_PGM = DATA_READ | SDHC_XFERTYP_MSBSEL |$/;"	v
+DATA_RES_ACCEPTED	.\SdFat\SdCard\SdInfo.h	/^const uint8_t DATA_RES_ACCEPTED = 0X05;$/;"	v
+DATA_RES_MASK	.\SdFat\SdCard\SdInfo.h	/^const uint8_t DATA_RES_MASK = 0X1F;$/;"	v
+DATA_START_BLOCK	.\SdFat\SdCard\SdInfo.h	/^const uint8_t DATA_START_BLOCK = 0XFE;$/;"	v
+DATA_WRITE_DMA	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t DATA_WRITE_DMA = SDHC_XFERTYP_DPSEL | SDHC_XFERTYP_DMAEN;$/;"	v
+DATA_WRITE_MULTI_DMA	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t DATA_WRITE_MULTI_DMA = DATA_WRITE_DMA | SDHC_XFERTYP_MSBSEL |$/;"	v
+DATA_WRITE_MULTI_PGM	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t DATA_WRITE_MULTI_PGM = SDHC_XFERTYP_DPSEL |$/;"	v
+DBG_FAIL_MACRO	.\SdFat\FatLib\FatVolume.h	40;"	d
+DBG_FAIL_MACRO	.\SdFat\FatLib\FatVolume.h	45;"	d
+DBG_HALT_IF	.\SdFat\FatLib\FatVolume.h	42;"	d
+DBG_HALT_IF	.\SdFat\FatLib\FatVolume.h	47;"	d
+DBG_IRQSTAT	.\SdFat\SdCard\SdioTeensy.cpp	177;"	d	file:
+DBG_IRQSTAT	.\SdFat\SdCard\SdioTeensy.cpp	192;"	d	file:
+DBG_PRINT_IF	.\SdFat\FatLib\FatVolume.h	41;"	d
+DBG_PRINT_IF	.\SdFat\FatLib\FatVolume.h	46;"	d
+DEBUG_MODE	.\SdFat\FatLib\FatVolume.h	38;"	d
+DESTRUCTOR_CLOSES_FILE	.\SdFat\FatLib\FatLibConfig.h	102;"	d
+DESTRUCTOR_CLOSES_FILE	.\SdFat\SdFatConfig.h	139;"	d
+DIR_ATT_ARCHIVE	.\SdFat\FatLib\FatStructs.h	/^const uint8_t DIR_ATT_ARCHIVE = 0X20;$/;"	v
+DIR_ATT_DEFINED_BITS	.\SdFat\FatLib\FatStructs.h	/^const uint8_t DIR_ATT_DEFINED_BITS = 0X3F;$/;"	v
+DIR_ATT_DIRECTORY	.\SdFat\FatLib\FatStructs.h	/^const uint8_t DIR_ATT_DIRECTORY = 0X10;$/;"	v
+DIR_ATT_FILE_TYPE_MASK	.\SdFat\FatLib\FatStructs.h	/^const uint8_t DIR_ATT_FILE_TYPE_MASK = (DIR_ATT_VOLUME_ID | DIR_ATT_DIRECTORY);$/;"	v
+DIR_ATT_HIDDEN	.\SdFat\FatLib\FatStructs.h	/^const uint8_t DIR_ATT_HIDDEN = 0X02;$/;"	v
+DIR_ATT_LONG_NAME	.\SdFat\FatLib\FatStructs.h	/^const uint8_t DIR_ATT_LONG_NAME = 0X0F;$/;"	v
+DIR_ATT_LONG_NAME_MASK	.\SdFat\FatLib\FatStructs.h	/^const uint8_t DIR_ATT_LONG_NAME_MASK = 0X3F;$/;"	v
+DIR_ATT_READ_ONLY	.\SdFat\FatLib\FatStructs.h	/^const uint8_t DIR_ATT_READ_ONLY = 0X01;$/;"	v
+DIR_ATT_SYSTEM	.\SdFat\FatLib\FatStructs.h	/^const uint8_t DIR_ATT_SYSTEM = 0X04;$/;"	v
+DIR_ATT_VOLUME_ID	.\SdFat\FatLib\FatStructs.h	/^const uint8_t DIR_ATT_VOLUME_ID = 0X08;$/;"	v
+DIR_IS_FILE	.\SdFat\FatLib\FatStructs.h	/^static inline uint8_t DIR_IS_FILE(const dir_t* dir) {$/;"	f
+DIR_IS_FILE_OR_SUBDIR	.\SdFat\FatLib\FatStructs.h	/^static inline uint8_t DIR_IS_FILE_OR_SUBDIR(const dir_t* dir) {$/;"	f
+DIR_IS_HIDDEN	.\SdFat\FatLib\FatStructs.h	/^static inline uint8_t DIR_IS_HIDDEN(const dir_t* dir) {$/;"	f
+DIR_IS_LONG_NAME	.\SdFat\FatLib\FatStructs.h	/^static inline uint8_t DIR_IS_LONG_NAME(const dir_t* dir) {$/;"	f
+DIR_IS_SUBDIR	.\SdFat\FatLib\FatStructs.h	/^static inline uint8_t DIR_IS_SUBDIR(const dir_t* dir) {$/;"	f
+DIR_IS_SYSTEM	.\SdFat\FatLib\FatStructs.h	/^static inline uint8_t DIR_IS_SYSTEM(const dir_t* dir) {$/;"	f
+DIR_NAME_0XE5	.\SdFat\FatLib\FatStructs.h	/^const uint8_t DIR_NAME_0XE5 = 0X05;$/;"	v
+DIR_NAME_DELETED	.\SdFat\FatLib\FatStructs.h	/^const uint8_t DIR_NAME_DELETED = 0XE5;$/;"	v
+DIR_NAME_FREE	.\SdFat\FatLib\FatStructs.h	/^const uint8_t DIR_NAME_FREE = 0X00;$/;"	v
+DIR_NT_LC_BASE	.\SdFat\FatLib\FatStructs.h	/^const uint8_t DIR_NT_LC_BASE = 0X08;$/;"	v
+DIR_NT_LC_EXT	.\SdFat\FatLib\FatStructs.h	/^const uint8_t DIR_NT_LC_EXT = 0X10;$/;"	v
+DigitalPin	.\SdFat\SpiDriver\DigitalPin.h	/^  DigitalPin() {}$/;"	f	class:DigitalPin
+DigitalPin	.\SdFat\SpiDriver\DigitalPin.h	/^class DigitalPin {$/;"	c
+DigitalPin_h	.\SdFat\SpiDriver\DigitalPin.h	34;"	d
+ENABLE_ARDUINO_FEATURES	.\SdFat\FatLib\FatLibConfig.h	141;"	d
+ENABLE_ARDUINO_FEATURES	.\SdFat\FatLib\FatLibConfig.h	143;"	d
+ENABLE_EXTENDED_TRANSFER_CLASS	.\SdFat\SdFatConfig.h	71;"	d
+ENABLE_SDIOEX_CLASS	.\SdFat\SdFatConfig.h	185;"	d
+ENABLE_SDIO_CLASS	.\SdFat\SdFatConfig.h	184;"	d
+ENABLE_SDIO_CLASS	.\SdFat\SdFatConfig.h	187;"	d
+ENABLE_SOFTWARE_SPI_CLASS	.\SdFat\SdFatConfig.h	85;"	d
+ENDL_CALLS_FLUSH	.\SdFat\FatLib\FatLibConfig.h	123;"	d
+ENDL_CALLS_FLUSH	.\SdFat\SdFatConfig.h	158;"	d
+EOF	.\SdFat\FatLib\StdioStream.h	88;"	d
+EXP_LIMIT	.\SdFat\FatLib\istream.cpp	/^int16_t const EXP_LIMIT = 100;$/;"	v
+EXTENDED_BOOT_SIG	.\SdFat\FatLib\FatStructs.h	/^const uint8_t EXTENDED_BOOT_SIG = 0X29;$/;"	v
+F	.\SdFat\SysCall.h	42;"	d
+F	.\SdFat\SysCall.h	47;"	d
+FAT12EOC	.\SdFat\FatLib\FatStructs.h	/^const uint16_t FAT12EOC = 0XFFF;$/;"	v
+FAT12EOC_MIN	.\SdFat\FatLib\FatStructs.h	/^const uint16_t FAT12EOC_MIN = 0XFF8;$/;"	v
+FAT12_SUPPORT	.\SdFat\FatLib\FatLibConfig.h	131;"	d
+FAT12_SUPPORT	.\SdFat\SdFatConfig.h	132;"	d
+FAT16EOC	.\SdFat\FatLib\FatStructs.h	/^const uint16_t FAT16EOC = 0XFFFF;$/;"	v
+FAT16EOC_MIN	.\SdFat\FatLib\FatStructs.h	/^const uint16_t FAT16EOC_MIN = 0XFFF8;$/;"	v
+FAT32EOC	.\SdFat\FatLib\FatStructs.h	/^const uint32_t FAT32EOC = 0X0FFFFFFF;$/;"	v
+FAT32EOC_MIN	.\SdFat\FatLib\FatStructs.h	/^const uint32_t FAT32EOC_MIN = 0X0FFFFFF8;$/;"	v
+FAT32MASK	.\SdFat\FatLib\FatStructs.h	/^const uint32_t FAT32MASK = 0X0FFFFFFF;$/;"	v
+FAT_DATE	.\SdFat\FatLib\FatStructs.h	/^static inline uint16_t FAT_DATE(uint16_t year, uint8_t month, uint8_t day) {$/;"	f
+FAT_DAY	.\SdFat\FatLib\FatStructs.h	/^static inline uint8_t FAT_DAY(uint16_t fatDate) {$/;"	f
+FAT_DEFAULT_DATE	.\SdFat\FatLib\FatStructs.h	/^const uint16_t FAT_DEFAULT_DATE = ((2000 - 1980) << 9) | (1 << 5) | 1;$/;"	v
+FAT_DEFAULT_TIME	.\SdFat\FatLib\FatStructs.h	/^const uint16_t FAT_DEFAULT_TIME = (1 << 11);$/;"	v
+FAT_HOUR	.\SdFat\FatLib\FatStructs.h	/^static inline uint8_t FAT_HOUR(uint16_t fatTime) {$/;"	f
+FAT_LIB_VERSION	.\SdFat\FatLib\FatLib.h	35;"	d
+FAT_MINUTE	.\SdFat\FatLib\FatStructs.h	/^static inline uint8_t FAT_MINUTE(uint16_t fatTime) {$/;"	f
+FAT_MONTH	.\SdFat\FatLib\FatStructs.h	/^static inline uint8_t FAT_MONTH(uint16_t fatDate) {$/;"	f
+FAT_SECOND	.\SdFat\FatLib\FatStructs.h	/^static inline uint8_t FAT_SECOND(uint16_t fatTime) {$/;"	f
+FAT_TIME	.\SdFat\FatLib\FatStructs.h	/^static inline uint16_t FAT_TIME(uint8_t hour, uint8_t minute, uint8_t second) {$/;"	f
+FAT_YEAR	.\SdFat\FatLib\FatStructs.h	/^static inline uint16_t FAT_YEAR(uint16_t fatDate) {$/;"	f
+FIFO_WML	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t FIFO_WML = 16;$/;"	v
+FILE_ATTR_CLOSED	.\SdFat\FatLib\FatFile.h	/^  static const uint8_t FILE_ATTR_CLOSED = 0;$/;"	m	class:FatFile
+FILE_ATTR_COPY	.\SdFat\FatLib\FatFile.h	/^  static const uint8_t FILE_ATTR_COPY = DIR_ATT_READ_ONLY | DIR_ATT_HIDDEN |$/;"	m	class:FatFile
+FILE_ATTR_DIR	.\SdFat\FatLib\FatFile.h	/^  static const uint8_t FILE_ATTR_DIR = FILE_ATTR_SUBDIR | FILE_ATTR_ROOT;$/;"	m	class:FatFile
+FILE_ATTR_FILE	.\SdFat\FatLib\FatFile.h	/^  static const uint8_t FILE_ATTR_FILE = 0X08;$/;"	m	class:FatFile
+FILE_ATTR_HIDDEN	.\SdFat\FatLib\FatFile.h	/^  static const uint8_t FILE_ATTR_HIDDEN = DIR_ATT_HIDDEN;$/;"	m	class:FatFile
+FILE_ATTR_READ_ONLY	.\SdFat\FatLib\FatFile.h	/^  static const uint8_t FILE_ATTR_READ_ONLY = DIR_ATT_READ_ONLY;$/;"	m	class:FatFile
+FILE_ATTR_ROOT	.\SdFat\FatLib\FatFile.h	/^  static const uint8_t FILE_ATTR_ROOT = FILE_ATTR_ROOT_FIXED | FILE_ATTR_ROOT32;$/;"	m	class:FatFile
+FILE_ATTR_ROOT32	.\SdFat\FatLib\FatFile.h	/^  static const uint8_t FILE_ATTR_ROOT32 = 0X40;$/;"	m	class:FatFile
+FILE_ATTR_ROOT_FIXED	.\SdFat\FatLib\FatFile.h	/^  static const uint8_t FILE_ATTR_ROOT_FIXED = 0X20;$/;"	m	class:FatFile
+FILE_ATTR_SUBDIR	.\SdFat\FatLib\FatFile.h	/^  static const uint8_t FILE_ATTR_SUBDIR = DIR_ATT_DIRECTORY;$/;"	m	class:FatFile
+FILE_ATTR_SYSTEM	.\SdFat\FatLib\FatFile.h	/^  static const uint8_t FILE_ATTR_SYSTEM = DIR_ATT_SYSTEM;$/;"	m	class:FatFile
+FILE_READ	.\SdFat\FatLib\ArduinoFiles.h	37;"	d
+FILE_WRITE	.\SdFat\FatLib\ArduinoFiles.h	39;"	d
+FNAME_FLAG_LC_BASE	.\SdFat\FatLib\FatFile.h	/^const uint8_t FNAME_FLAG_LC_BASE = DIR_NT_LC_BASE;$/;"	v
+FNAME_FLAG_LC_EXT	.\SdFat\FatLib\FatFile.h	/^const uint8_t FNAME_FLAG_LC_EXT = DIR_NT_LC_EXT;$/;"	v
+FNAME_FLAG_LOST_CHARS	.\SdFat\FatLib\FatFile.h	/^const uint8_t FNAME_FLAG_LOST_CHARS = 0X01;$/;"	v
+FNAME_FLAG_MIXED_CASE	.\SdFat\FatLib\FatFile.h	/^const uint8_t FNAME_FLAG_MIXED_CASE = 0X02;$/;"	v
+FNAME_FLAG_NEED_LFN	.\SdFat\FatLib\FatFile.h	/^const uint8_t FNAME_FLAG_NEED_LFN =$/;"	v
+FSINFO_LEAD_SIG	.\SdFat\FatLib\FatStructs.h	/^const uint32_t FSINFO_LEAD_SIG = 0x41615252;$/;"	v
+FSINFO_STRUCT_SIG	.\SdFat\FatLib\FatStructs.h	/^const uint32_t FSINFO_STRUCT_SIG = 0x61417272;$/;"	v
+F_EOF	.\SdFat\FatLib\StdioStream.h	/^  static const uint8_t F_EOF = 0x10;  \/\/ found EOF$/;"	m	class:StdioStream
+F_ERR	.\SdFat\FatLib\StdioStream.h	/^  static const uint8_t F_ERR = 0x20;  \/\/ found error$/;"	m	class:StdioStream
+F_FILE_DIR_DIRTY	.\SdFat\FatLib\FatFile.h	/^  static const uint8_t F_FILE_DIR_DIRTY = 0X80;$/;"	m	class:FatFile
+F_OFLAG	.\SdFat\FatLib\FatFile.h	/^  static const uint8_t F_OFLAG = (O_ACCMODE | O_APPEND | O_SYNC);$/;"	m	class:FatFile
+F_SRD	.\SdFat\FatLib\StdioStream.h	/^  static const uint8_t F_SRD = 0x01;  \/\/ OK to read$/;"	m	class:StdioStream
+F_SRW	.\SdFat\FatLib\StdioStream.h	/^  static const uint8_t F_SRW = 0x04;  \/\/ open for reading & writing$/;"	m	class:StdioStream
+F_SWR	.\SdFat\FatLib\StdioStream.h	/^  static const uint8_t F_SWR = 0x02;  \/\/ OK to write$/;"	m	class:StdioStream
+FatApiConstants_h	.\SdFat\FatLib\FatApiConstants.h	26;"	d
+FatCache	.\SdFat\FatLib\FatVolume.h	/^class FatCache {$/;"	c
+FatFile	.\SdFat\FatLib\FatFile.h	/^  FatFile() : m_attr(FILE_ATTR_CLOSED), m_error(0) {}$/;"	f	class:FatFile
+FatFile	.\SdFat\FatLib\FatFile.h	/^  FatFile(const char* path, uint8_t oflag) {$/;"	f	class:FatFile
+FatFile	.\SdFat\FatLib\FatFile.h	/^class FatFile {$/;"	c
+FatFileSystem	.\SdFat\FatLib\FatFileSystem.h	/^class FatFileSystem : public  FatVolume {$/;"	c
+FatFileSystem_h	.\SdFat\FatLib\FatFileSystem.h	26;"	d
+FatFile_h	.\SdFat\FatLib\FatFile.h	26;"	d
+FatLibConfig_h	.\SdFat\FatLib\FatLibConfig.h	30;"	d
+FatLib_h	.\SdFat\FatLib\FatLib.h	26;"	d
+FatPos_t	.\SdFat\FatLib\FatFile.h	/^  FatPos_t() : position(0), cluster(0) {}$/;"	f	struct:FatPos_t
+FatPos_t	.\SdFat\FatLib\FatFile.h	/^struct FatPos_t {$/;"	s
+FatStreamBase	.\SdFat\FatLib\fstream.h	/^class FatStreamBase : protected FatFile, virtual public ios {$/;"	c
+FatStructs_h	.\SdFat\FatLib\FatStructs.h	26;"	d
+FatVolume	.\SdFat\FatLib\FatVolume.h	/^  FatVolume() : m_fatType(0) {}$/;"	f	class:FatVolume
+FatVolume	.\SdFat\FatLib\FatVolume.h	/^class FatVolume {$/;"	c
+FatVolume_h	.\SdFat\FatLib\FatVolume.h	26;"	d
+File	.\SdFat\FatLib\ArduinoFiles.h	/^  File() {}$/;"	f	class:File
+File	.\SdFat\FatLib\ArduinoFiles.h	/^  File(const char* path, uint8_t oflag) {$/;"	f	class:File
+File	.\SdFat\FatLib\ArduinoFiles.h	/^class File : public FatFile, public Stream {$/;"	c
+FmtNumber_h	.\SdFat\FatLib\FmtNumber.h	26;"	d
+FreeStack	.\SdFat\FreeStack.h	/^static int FreeStack() {$/;"	f
+FreeStack_h	.\SdFat\FreeStack.h	26;"	d
+GPIO_PIN	.\SdFat\SpiDriver\DigitalPin.h	46;"	d
+GpioPinMap	.\SdFat\SpiDriver\boards\AvrDevelopersGpioPinMap.h	/^static const GpioPinMap_t GpioPinMap[] = {$/;"	v
+GpioPinMap	.\SdFat\SpiDriver\boards\BobuinoGpioPinMap.h	/^static const GpioPinMap_t GpioPinMap[] = {$/;"	v
+GpioPinMap	.\SdFat\SpiDriver\boards\LeonardoGpioPinMap.h	/^static const GpioPinMap_t GpioPinMap[] = {$/;"	v
+GpioPinMap	.\SdFat\SpiDriver\boards\MegaGpioPinMap.h	/^static const GpioPinMap_t GpioPinMap[] = {$/;"	v
+GpioPinMap	.\SdFat\SpiDriver\boards\SleepingBeautyGpioPinMap.h	/^static const GpioPinMap_t GpioPinMap[] = {$/;"	v
+GpioPinMap	.\SdFat\SpiDriver\boards\Standard1284GpioPinMap.h	/^static const GpioPinMap_t GpioPinMap[] = {$/;"	v
+GpioPinMap	.\SdFat\SpiDriver\boards\Teensy2GpioPinMap.h	/^static const GpioPinMap_t GpioPinMap[] = {$/;"	v
+GpioPinMap	.\SdFat\SpiDriver\boards\Teensy2ppGpioPinMap.h	/^static const GpioPinMap_t GpioPinMap[] = {$/;"	v
+GpioPinMap	.\SdFat\SpiDriver\boards\UnoGpioPinMap.h	/^static const GpioPinMap_t GpioPinMap[] = {$/;"	v
+GpioPinMap_h	.\SdFat\SpiDriver\boards\GpioPinMap.h	2;"	d
+GpioPinMap_t	.\SdFat\SpiDriver\DigitalPin.h	/^struct GpioPinMap_t {$/;"	s
 HexFileClass	.\STK_500_Programmer.h	/^class HexFileClass{$/;"	c
 HexFileRecord	.\STK_500_Programmer.h	/^class HexFileRecord{$/;"	c
-MAX_CHARS_PER_HEX_RECORD	.\STK_500_Programmer.h	20;"	d
+IDLE_STATE	.\SdFat\SdCard\SdSpiCard.h	/^  static const uint32_t IDLE_STATE = 0;$/;"	m	class:SdSpiCardEX
+IDLE_STATE	.\SdFat\SdCard\SdioCard.h	/^  static const uint32_t IDLE_STATE = 0;$/;"	m	class:SdioCardEX
+IMPLEMENT_SPI_PORT_SELECTION	.\SdFat\SdFatConfig.h	210;"	d
+IMPLEMENT_SPI_PORT_SELECTION	.\SdFat\SdFatConfig.h	212;"	d
+INCLUDE_SDIOS	.\SdFat\SdFatConfig.h	41;"	d
+LDIR_NAME1_DIM	.\SdFat\FatLib\FatStructs.h	/^const uint8_t LDIR_NAME1_DIM = 5;$/;"	v
+LDIR_NAME2_DIM	.\SdFat\FatLib\FatStructs.h	/^const uint8_t LDIR_NAME2_DIM = 6;$/;"	v
+LDIR_NAME3_DIM	.\SdFat\FatLib\FatStructs.h	/^const uint8_t LDIR_NAME3_DIM = 2;$/;"	v
+LDIR_ORD_LAST_LONG_ENTRY	.\SdFat\FatLib\FatStructs.h	/^const uint8_t LDIR_ORD_LAST_LONG_ENTRY = 0X40;$/;"	v
+LS_A	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t LS_A = 1;$/;"	v
+LS_DATE	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t LS_DATE = 2;$/;"	v
+LS_R	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t LS_R = 8;$/;"	v
+LS_SIZE	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t LS_SIZE = 4;$/;"	v
+LeonardoGpioPinMap_h	.\SdFat\SpiDriver\boards\LeonardoGpioPinMap.h	2;"	d
+MAINTAIN_FREE_CLUSTER_COUNT	.\SdFat\FatLib\FatLibConfig.h	93;"	d
+MAINTAIN_FREE_CLUSTER_COUNT	.\SdFat\SdFatConfig.h	102;"	d
+MAX_CHARS_PER_HEX_RECORD	.\STK_500_Programmer.h	26;"	d
+MAX_SDHC_COUNT	.\SdFat\SdCard\SdioCardEX.cpp	/^const uint32_t MAX_SDHC_COUNT = 0XFFFF;$/;"	v
 MESSAGE_START	.\command.h	14;"	d
-MHZ	.\STK_500_Programmer.cpp	9;"	d	file:
-PAGE_SIZE_WORDS	.\STK_500_Programmer.h	16;"	d
+MHZ	.\STK_500_Programmer.cpp	11;"	d	file:
+MIN_2X_BAUD	.\SdFat\MinimumSerial.cpp	/^const uint16_t MIN_2X_BAUD = F_CPU\/(4*(2*0XFFF + 1)) + 1;$/;"	v
+MISO_LEVEL	.\SdFat\SpiDriver\SoftSPI.h	44;"	d
+MISO_MODE	.\SdFat\SpiDriver\SoftSPI.h	42;"	d
+MODE_CPHA	.\SdFat\SpiDriver\SoftSPI.h	/^  bool MODE_CPHA(uint8_t mode) {return (mode & 1) != 0;}$/;"	f	class:SoftSPI
+MODE_CPOL	.\SdFat\SpiDriver\SoftSPI.h	/^  bool MODE_CPOL(uint8_t mode) {return (mode & 2) != 0;}$/;"	f	class:SoftSPI
+MOSI_MODE	.\SdFat\SpiDriver\SoftSPI.h	46;"	d
+MegaGpioPinMap_h	.\SdFat\SpiDriver\boards\MegaGpioPinMap.h	2;"	d
+MinimumSerial	.\SdFat\MinimumSerial.h	/^class MinimumSerial : public Print {$/;"	c
+MinimumSerial_h	.\SdFat\MinimumSerial.h	30;"	d
+NEW_WAY	.\SdFat\FatLib\StdioStream.cpp	326;"	d	file:
+NULL	.\SdFat\FatLib\StdioStream.h	92;"	d
+O_ACCMODE	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t O_ACCMODE = (O_READ | O_WRITE);$/;"	v
+O_APPEND	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t O_APPEND = 0X04;$/;"	v
+O_AT_END	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t O_AT_END = 0X20;$/;"	v
+O_CREAT	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t O_CREAT = 0X40;$/;"	v
+O_EXCL	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t O_EXCL = 0X80;$/;"	v
+O_RDONLY	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t O_RDONLY = O_READ;$/;"	v
+O_RDWR	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t O_RDWR = (O_READ | O_WRITE);$/;"	v
+O_READ	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t O_READ = 0X01;$/;"	v
+O_SYNC	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t O_SYNC = 0X08;$/;"	v
+O_TRUNC	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t O_TRUNC = 0X10;$/;"	v
+O_WRITE	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t O_WRITE = 0X02;$/;"	v
+O_WRONLY	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t O_WRONLY = O_WRITE;$/;"	v
+PAGE_SIZE_WORDS	.\STK_500_Programmer.h	22;"	d
 PARAM_BUILD_NUMBER_HIGH	.\command.h	96;"	d
 PARAM_BUILD_NUMBER_LOW	.\command.h	95;"	d
 PARAM_CONTROLLER_INIT	.\command.h	109;"	d
@@ -80,10 +372,112 @@ PARAM_SW_MINOR	.\command.h	99;"	d
 PARAM_TOPCARD_DETECT	.\command.h	105;"	d
 PARAM_VADJUST	.\command.h	101;"	d
 PARAM_VTARGET	.\command.h	100;"	d
+PROGMEM	.\SdFat\FatLib\FatFile.h	59;"	d
+PROGMEM	.\SdFat\FatLib\FmtNumber.cpp	/^static const float m[] PROGMEM = {1e-1, 1e-2, 1e-4, 1e-8, 1e-16, 1e-32};$/;"	v	file:
+PROGMEM	.\SdFat\FatLib\FmtNumber.cpp	/^static const float p[] PROGMEM = {1e+1, 1e+2, 1e+4, 1e+8, 1e+16, 1e+32};$/;"	v	file:
+PROGMEM	.\SdFat\SdCard\SdSpiCard.cpp	/^static const uint16_t crctab[] PROGMEM = {$/;"	v	file:
+PSTR	.\SdFat\FatLib\FatFile.h	47;"	d
+PSTR	.\SdFat\FatLib\ostream.cpp	28;"	d	file:
 PWM_ADJUST_OK	.\stk500.h	16;"	d
 PWM_CHANNEL_ERROR	.\stk500.h	15;"	d
+PrintFile	.\SdFat\FatLib\ArduinoFiles.h	/^  PrintFile() {}$/;"	f	class:PrintFile
+PrintFile	.\SdFat\FatLib\ArduinoFiles.h	/^  PrintFile(const char* path, uint8_t oflag) : FatFile(path, oflag) {}$/;"	f	class:PrintFile
+PrintFile	.\SdFat\FatLib\ArduinoFiles.h	/^class PrintFile : public FatFile, public Print {$/;"	c
+R1_IDLE_STATE	.\SdFat\SdCard\SdInfo.h	/^const uint8_t R1_IDLE_STATE = 0X01;$/;"	v
+R1_ILLEGAL_COMMAND	.\SdFat\SdCard\SdInfo.h	/^const uint8_t R1_ILLEGAL_COMMAND = 0X04;$/;"	v
+R1_READY_STATE	.\SdFat\SdCard\SdInfo.h	/^const uint8_t R1_READY_STATE = 0X00;$/;"	v
+READ_ERROR	.\SdFat\FatLib\FatFile.h	/^  static const uint8_t READ_ERROR  = 0X2;$/;"	m	class:FatFile
+READ_STATE	.\SdFat\SdCard\SdSpiCard.h	/^  static const uint32_t READ_STATE = 1;$/;"	m	class:SdSpiCardEX
+READ_STATE	.\SdFat\SdCard\SdioCard.h	/^  static const uint32_t READ_STATE = 1;$/;"	m	class:SdioCardEX
+RU_MASK	.\SdFat\SdCard\SdioCardEX.cpp	/^const uint32_t RU_MASK = 0X03FF;$/;"	v
+SAM3X_DMA_TIMEOUT	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	32;"	d	file:
+SCK_MODE	.\SdFat\SpiDriver\SoftSPI.h	48;"	d
+SDCARD_SPI	.\SdFat\SpiDriver\SdSpiDriver.h	38;"	d
+SDHC_IRQSIGEN_MASK	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t SDHC_IRQSIGEN_MASK =$/;"	v
+SDHC_IRQSTATEN_MASK	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t SDHC_IRQSTATEN_MASK =$/;"	v
+SDHC_IRQSTAT_CMD_ERROR	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t SDHC_IRQSTAT_CMD_ERROR =$/;"	v
+SDHC_IRQSTAT_DATA_ERROR	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t SDHC_IRQSTAT_DATA_ERROR =$/;"	v
+SDHC_IRQSTAT_ERROR	.\SdFat\SdCard\SdioTeensy.cpp	/^const uint32_t SDHC_IRQSTAT_ERROR =$/;"	v
+SDHC_PROCTL_DTW_4BIT	.\SdFat\SdCard\SdioTeensy.cpp	28;"	d	file:
+SD_CARD_ERROR_ACMD13	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_ACMD13,$/;"	e	enum:__anon1
+SD_CARD_ERROR_ACMD23	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_ACMD23,$/;"	e	enum:__anon1
+SD_CARD_ERROR_ACMD41	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_ACMD41,$/;"	e	enum:__anon1
+SD_CARD_ERROR_ACMD6	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_ACMD6 = 0X40,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD0	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD0 = 0X20,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD10	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD10,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD12	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD12,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD13	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD13,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD17	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD17 = 0X30,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD18	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD18,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD2	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD2,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD24	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD24,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD25	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD25,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD3	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD3,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD32	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD32,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD33	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD33,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD38	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD38,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD58	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD58,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD59	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD59,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD6	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD6,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD7	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD7,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD8	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD8,$/;"	e	enum:__anon1
+SD_CARD_ERROR_CMD9	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_CMD9,$/;"	e	enum:__anon1
+SD_CARD_ERROR_DMA	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_DMA = 0X60,$/;"	e	enum:__anon1
+SD_CARD_ERROR_ERASE	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_ERASE,$/;"	e	enum:__anon1
+SD_CARD_ERROR_ERASE_SINGLE_BLOCK	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_ERASE_SINGLE_BLOCK,$/;"	e	enum:__anon1
+SD_CARD_ERROR_ERASE_TIMEOUT	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_ERASE_TIMEOUT,$/;"	e	enum:__anon1
+SD_CARD_ERROR_FUNCTION_NOT_SUPPORTED	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_FUNCTION_NOT_SUPPORTED$/;"	e	enum:__anon1
+SD_CARD_ERROR_INIT_NOT_CALLED	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_INIT_NOT_CALLED,$/;"	e	enum:__anon1
+SD_CARD_ERROR_NONE	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_NONE = 0,$/;"	e	enum:__anon1
+SD_CARD_ERROR_READ	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_READ = 0X50,$/;"	e	enum:__anon1
+SD_CARD_ERROR_READ_CRC	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_READ_CRC,$/;"	e	enum:__anon1
+SD_CARD_ERROR_READ_FIFO	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_READ_FIFO,$/;"	e	enum:__anon1
+SD_CARD_ERROR_READ_REG	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_READ_REG,$/;"	e	enum:__anon1
+SD_CARD_ERROR_READ_START	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_READ_START,$/;"	e	enum:__anon1
+SD_CARD_ERROR_READ_TIMEOUT	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_READ_TIMEOUT,$/;"	e	enum:__anon1
+SD_CARD_ERROR_STOP_TRAN	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_STOP_TRAN,$/;"	e	enum:__anon1
+SD_CARD_ERROR_WRITE	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_WRITE,$/;"	e	enum:__anon1
+SD_CARD_ERROR_WRITE_FIFO	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_WRITE_FIFO,$/;"	e	enum:__anon1
+SD_CARD_ERROR_WRITE_START	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_WRITE_START,$/;"	e	enum:__anon1
+SD_CARD_ERROR_WRITE_TIMEOUT	.\SdFat\SdCard\SdInfo.h	/^  SD_CARD_ERROR_WRITE_TIMEOUT,$/;"	e	enum:__anon1
+SD_CARD_TYPE_SD1	.\SdFat\SdCard\SdInfo.h	/^const uint8_t SD_CARD_TYPE_SD1  = 1;$/;"	v
+SD_CARD_TYPE_SD2	.\SdFat\SdCard\SdInfo.h	/^const uint8_t SD_CARD_TYPE_SD2  = 2;$/;"	v
+SD_CARD_TYPE_SDHC	.\SdFat\SdCard\SdInfo.h	/^const uint8_t SD_CARD_TYPE_SDHC = 3;$/;"	v
+SD_CS_DBG	.\SdFat\SdCard\SdSpiCard.cpp	29;"	d	file:
+SD_ERASE_TIMEOUT	.\SdFat\SdCard\SdInfo.h	/^const uint16_t SD_ERASE_TIMEOUT = 10000;$/;"	v
+SD_FAT_VERSION	.\SdFat\SdFat.h	40;"	d
+SD_HAS_CUSTOM_SPI	.\SdFat\SdFatConfig.h	195;"	d
+SD_HAS_CUSTOM_SPI	.\SdFat\SdFatConfig.h	200;"	d
+SD_HAS_CUSTOM_SPI	.\SdFat\SdFatConfig.h	203;"	d
+SD_INIT_TIMEOUT	.\SdFat\SdCard\SdInfo.h	/^const uint16_t SD_INIT_TIMEOUT = 2000;$/;"	v
+SD_READ_TIMEOUT	.\SdFat\SdCard\SdInfo.h	/^const uint16_t SD_READ_TIMEOUT = 300;$/;"	v
+SD_SCK_HZ	.\SdFat\SdCard\SdInfo.h	103;"	d
+SD_SCK_MHZ	.\SdFat\SdCard\SdInfo.h	104;"	d
+SD_TRACE	.\SdFat\SdCard\SdSpiCard.cpp	27;"	d	file:
+SD_WRITE_TIMEOUT	.\SdFat\SdCard\SdInfo.h	/^const uint16_t SD_WRITE_TIMEOUT = 600;$/;"	v
 SD_error_handler	.\STK_500_Programmer.cpp	/^void SD_error_handler(unsigned int lineNum){$/;"	f
-SPI_SPEED_MHZ	.\STK_500_Programmer.cpp	8;"	d	file:
+SEEK_CUR	.\SdFat\FatLib\StdioStream.h	96;"	d
+SEEK_END	.\SdFat\FatLib\StdioStream.h	100;"	d
+SEEK_SET	.\SdFat\FatLib\StdioStream.h	104;"	d
+SFN_OPEN_USES_CHKSUM	.\SdFat\FatLib\FatFileSFN.cpp	125;"	d	file:
+SPI_CHIP_SEL	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	34;"	d	file:
+SPI_DIV3_SPEED	.\SdFat\SdCard\SdInfo.h	109;"	d
+SPI_DIV6_SPEED	.\SdFat\SdCard\SdInfo.h	113;"	d
+SPI_DMAC_RX_CH	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	36;"	d	file:
+SPI_DMAC_TX_CH	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	38;"	d	file:
+SPI_EIGHTH_SPEED	.\SdFat\SdCard\SdInfo.h	117;"	d
+SPI_FULL_SPEED	.\SdFat\SdCard\SdInfo.h	107;"	d
+SPI_HALF_SPEED	.\SdFat\SdCard\SdInfo.h	111;"	d
+SPI_INITIAL_FIFO_DEPTH	.\SdFat\SpiDriver\SdSpiTeensy3.cpp	51;"	d	file:
+SPI_PUSHR_CONT	.\SdFat\SpiDriver\SdSpiTeensy3.cpp	57;"	d	file:
+SPI_PUSHR_CTAS	.\SdFat\SpiDriver\SdSpiTeensy3.cpp	60;"	d	file:
+SPI_QUARTER_SPEED	.\SdFat\SdCard\SdInfo.h	115;"	d
+SPI_RX_IDX	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	42;"	d	file:
+SPI_SIXTEENTH_SPEED	.\SdFat\SdCard\SdInfo.h	119;"	d
+SPI_SPEED_MHZ	.\STK_500_Programmer.cpp	10;"	d	file:
+SPI_SR_RXCTR	.\SdFat\SpiDriver\SdSpiTeensy3.cpp	54;"	d	file:
+SPI_TX_IDX	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	40;"	d	file:
+SPI_USE_8BIT_FRAME	.\SdFat\SpiDriver\SdSpiTeensy3.cpp	49;"	d	file:
 STATUS_CKSUM_ERROR	.\command.h	91;"	d
 STATUS_CMD_FAILED	.\command.h	90;"	d
 STATUS_CMD_OK	.\command.h	82;"	d
@@ -91,7 +485,7 @@ STATUS_CMD_TOUT	.\command.h	85;"	d
 STATUS_CMD_UNKNOWN	.\command.h	92;"	d
 STATUS_RDY_BSY_TOUT	.\command.h	86;"	d
 STATUS_SET_PARAM_MISSING	.\command.h	87;"	d
-STK_500_FLASH_PROCESS_TIMEOUT	.\STK_500_Programmer.h	23;"	d
+STK_500_FLASH_PROCESS_TIMEOUT	.\STK_500_Programmer.h	29;"	d
 STK_500_PROGRAMMER_H	.\STK_500_Programmer.h	2;"	d
 STK_CHECK_AUTOINC	.\stk500.h	27;"	d
 STK_CHIP_ERASE	.\stk500.h	26;"	d
@@ -138,37 +532,1296 @@ STK_get_flash_block	.\STK_500_Programmer.cpp	/^bool STK_get_flash_block(flash_pa
 STK_send_address_msg	.\STK_500_Programmer.cpp	/^void STK_send_address_msg(uint16_t target_addr){$/;"	f
 STK_send_prog_page_msg	.\STK_500_Programmer.cpp	/^void STK_send_prog_page_msg( flash_page_block_t &targBlock){$/;"	f
 STK_wait_receive	.\STK_500_Programmer.cpp	/^bool STK_wait_receive(byte successByte, byte expected_bytes, unsigned int receiveTimeout, const char* msg_name = NULL){$/;"	f
+STOP_TRAN_TOKEN	.\SdFat\SdCard\SdInfo.h	/^const uint8_t STOP_TRAN_TOKEN = 0XFD;$/;"	v
+STREAM_BUF_SIZE	.\SdFat\FatLib\StdioStream.h	/^const uint8_t STREAM_BUF_SIZE = 64;$/;"	v
+Sd2Card	.\SdFat\SdFat.h	/^class Sd2Card : public SdSpiCard {$/;"	c
+SdBaseFile	.\SdFat\SdFat.h	/^  SdBaseFile() {}$/;"	f	class:SdBaseFile
+SdBaseFile	.\SdFat\SdFat.h	/^  SdBaseFile(const char* path, uint8_t oflag) : FatFile(path, oflag) {}$/;"	f	class:SdBaseFile
+SdBaseFile	.\SdFat\SdFat.h	/^class SdBaseFile : public FatFile {$/;"	c
+SdFat	.\SdFat\SdFat.h	/^  SdFat() {$/;"	f	class:SdFat
+SdFat	.\SdFat\SdFat.h	/^  explicit SdFat(uint8_t spiPort) {$/;"	f	class:SdFat
+SdFat	.\SdFat\SdFat.h	/^class SdFat : public SdFileSystem<SdSpiCard> {$/;"	c
+SdFatConfig_h	.\SdFat\SdFatConfig.h	30;"	d
+SdFatEX	.\SdFat\SdFat.h	/^  SdFatEX() {$/;"	f	class:SdFatEX
+SdFatEX	.\SdFat\SdFat.h	/^  explicit SdFatEX(uint8_t spiPort) {$/;"	f	class:SdFatEX
+SdFatEX	.\SdFat\SdFat.h	/^class SdFatEX : public SdFileSystem<SdSpiCardEX> {$/;"	c
+SdFatSdio	.\SdFat\SdFat.h	/^class SdFatSdio : public SdFileSystem<SdioCard> {$/;"	c
+SdFatSdioEX	.\SdFat\SdFat.h	/^class SdFatSdioEX : public SdFileSystem<SdioCardEX> {$/;"	c
+SdFatSoftSpi	.\SdFat\SdFat.h	/^class SdFatSoftSpi : public SdFileSystem<SdSpiCard>  {$/;"	c
+SdFatSoftSpiEX	.\SdFat\SdFat.h	/^class SdFatSoftSpiEX : public SdFileSystem<SdSpiCardEX>  {$/;"	c
+SdFatSpiDriver	.\SdFat\SpiDriver\SdSpiDriver.h	/^typedef SdSpiAltDriver SdFatSpiDriver;$/;"	t
+SdFatSpiDriver	.\SdFat\SpiDriver\SdSpiDriver.h	/^typedef SdSpiLibDriver SdFatSpiDriver;$/;"	t
+SdFat_h	.\SdFat\SdFat.h	26;"	d
+SdFile	.\SdFat\SdFat.h	/^  SdFile() {}$/;"	f	class:SdFile
+SdFile	.\SdFat\SdFat.h	/^  SdFile(const char* path, uint8_t oflag) : PrintFile(path, oflag) {}$/;"	f	class:SdFile
+SdFile	.\SdFat\SdFat.h	/^class SdFile : public PrintFile {$/;"	c
+SdFileSystem	.\SdFat\SdFat.h	/^class SdFileSystem : public FatFileSystem {$/;"	c
+SdInfo_h	.\SdFat\SdCard\SdInfo.h	26;"	d
+SdSpiAltDriver	.\SdFat\SpiDriver\SdSpiDriver.h	/^class SdSpiAltDriver : public SdSpiBaseDriver {$/;"	c
+SdSpiBaseDriver	.\SdFat\SpiDriver\SdSpiBaseDriver.h	/^class SdSpiBaseDriver {$/;"	c
+SdSpiBaseDriver_h	.\SdFat\SpiDriver\SdSpiBaseDriver.h	26;"	d
+SdSpiCard	.\SdFat\SdCard\SdSpiCard.h	/^  SdSpiCard() : m_errorCode(SD_CARD_ERROR_INIT_NOT_CALLED), m_type(0) {}$/;"	f	class:SdSpiCard
+SdSpiCard	.\SdFat\SdCard\SdSpiCard.h	/^class SdSpiCard : public BaseBlockDriver {$/;"	c
+SdSpiCardEX	.\SdFat\SdCard\SdSpiCard.h	/^class SdSpiCardEX : public SdSpiCard {$/;"	c
+SdSpiCard_h	.\SdFat\SdCard\SdSpiCard.h	26;"	d
+SdSpiDriver	.\SdFat\SpiDriver\SdSpiDriver.h	/^typedef SdFatSpiDriver SdSpiDriver;$/;"	t
+SdSpiDriver	.\SdFat\SpiDriver\SdSpiDriver.h	/^typedef SdSpiBaseDriver SdSpiDriver;$/;"	t
+SdSpiDriver_h	.\SdFat\SpiDriver\SdSpiDriver.h	30;"	d
+SdSpiLibDriver	.\SdFat\SpiDriver\SdSpiDriver.h	/^class SdSpiLibDriver : public SdSpiBaseDriver {$/;"	c
+SdSpiSoftDriver	.\SdFat\SpiDriver\SdSpiDriver.h	/^class SdSpiSoftDriver : public SdSpiBaseDriver {$/;"	c
+SdioCard	.\SdFat\SdCard\SdioCard.h	/^class SdioCard : public BaseBlockDriver {$/;"	c
+SdioCardEX	.\SdFat\SdCard\SdioCard.h	/^class SdioCardEX : public SdioCard {$/;"	c
+SdioCard_h	.\SdFat\SdCard\SdioCard.h	26;"	d
+SleepingBeautyGpioPinMap_h	.\SdFat\SpiDriver\boards\SleepingBeautyGpioPinMap.h	2;"	d
+SoftSPI	.\SdFat\SpiDriver\SoftSPI.h	/^class SoftSPI {$/;"	c
+SoftSPI_h	.\SdFat\SpiDriver\SoftSPI.h	35;"	d
+Standard1284GpioPinMap_h	.\SdFat\SpiDriver\boards\Standard1284GpioPinMap.h	2;"	d
+StdioStream	.\SdFat\FatLib\StdioStream.h	/^  StdioStream() {$/;"	f	class:StdioStream
+StdioStream	.\SdFat\FatLib\StdioStream.h	/^class StdioStream : private FatFile {$/;"	c
+StdioStream_h	.\SdFat\FatLib\StdioStream.h	26;"	d
+SysCall	.\SdFat\SysCall.h	/^class SysCall {$/;"	c
+SysCall_h	.\SdFat\SysCall.h	26;"	d
 TOKEN	.\command.h	15;"	d
-TX	.\STK_500_Programmer.cpp	14;"	d	file:
+TX	.\STK_500_Programmer.cpp	16;"	d	file:
+T_ACCESS	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t T_ACCESS = 1;$/;"	v
+T_CREATE	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t T_CREATE = 2;$/;"	v
+T_WRITE	.\SdFat\FatLib\FatApiConstants.h	/^const uint8_t T_WRITE = 4;$/;"	v
+Teensy2GpioPinMap_h	.\SdFat\SpiDriver\boards\Teensy2GpioPinMap.h	2;"	d
+Teensypp2GpioPinMap_h	.\SdFat\SpiDriver\boards\Teensy2ppGpioPinMap.h	2;"	d
+UNGETC_BUF_SIZE	.\SdFat\FatLib\StdioStream.h	/^const uint8_t UNGETC_BUF_SIZE = 2;$/;"	v
+USE_DEBUG_MODE	.\SdFat\SdCard\SdioTeensy.cpp	175;"	d	file:
+USE_LONG_FILE_NAMES	.\SdFat\FatLib\FatLibConfig.h	58;"	d
+USE_LONG_FILE_NAMES	.\SdFat\SdFatConfig.h	61;"	d
+USE_MULTI_BLOCK_IO	.\SdFat\FatLib\FatLibConfig.h	81;"	d
+USE_MULTI_BLOCK_IO	.\SdFat\FatLib\FatLibConfig.h	83;"	d
+USE_MULTI_BLOCK_IO	.\SdFat\SdFatConfig.h	177;"	d
+USE_MULTI_BLOCK_IO	.\SdFat\SdFatConfig.h	179;"	d
+USE_SAM3X_BUS_MATRIX_FIX	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	30;"	d	file:
+USE_SAM3X_DMAC	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	28;"	d	file:
+USE_SD_CRC	.\SdFat\SdFatConfig.h	113;"	d
+USE_SEPARATE_FAT_CACHE	.\SdFat\FatLib\FatLibConfig.h	68;"	d
+USE_SEPARATE_FAT_CACHE	.\SdFat\FatLib\FatLibConfig.h	70;"	d
+USE_SEPARATE_FAT_CACHE	.\SdFat\SdFatConfig.h	166;"	d
+USE_SEPARATE_FAT_CACHE	.\SdFat\SdFatConfig.h	168;"	d
+USE_STANDARD_SPI_LIBRARY	.\SdFat\SdFatConfig.h	78;"	d
+USE_STIMMER	.\SdFat\FatLib\FmtNumber.cpp	29;"	d	file:
+USE_STM32_DMA	.\SdFat\SpiDriver\SdSpiSTM32.cpp	28;"	d	file:
+USE_STM32_DMA	.\SdFat\SpiDriver\SdSpiSTM32.cpp	30;"	d	file:
+UnoGpioPinMap_h	.\SdFat\SpiDriver\boards\UnoGpioPinMap.h	2;"	d
+WDT_YIELD_TIME_MICROS	.\SdFat\SdFatConfig.h	123;"	d
+WDT_YIELD_TIME_MICROS	.\SdFat\SdFatConfig.h	125;"	d
+WRITE_ERROR	.\SdFat\FatLib\FatFile.h	/^  static const uint8_t WRITE_ERROR = 0X1;$/;"	m	class:FatFile
+WRITE_MULTIPLE_TOKEN	.\SdFat\SdCard\SdInfo.h	/^const uint8_t WRITE_MULTIPLE_TOKEN = 0XFC;$/;"	v
+WRITE_STATE	.\SdFat\SdCard\SdSpiCard.h	/^  static const uint32_t WRITE_STATE = 2;$/;"	m	class:SdSpiCardEX
+WRITE_STATE	.\SdFat\SdCard\SdioCard.h	/^  static const uint32_t WRITE_STATE = 2;$/;"	m	class:SdioCardEX
+activate	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void activate() {$/;"	f	class:SdSpiLibDriver
+activate	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void activate() {}$/;"	f	class:SdSpiSoftDriver
+activate	.\SdFat\SpiDriver\SdSpiDriver.h	/^inline void SdSpiAltDriver::activate() {$/;"	f	class:SdSpiAltDriver
+activate	.\SdFat\SpiDriver\SdSpiESP8266.cpp	/^void SdSpiAltDriver::activate() {$/;"	f	class:SdSpiAltDriver
+activate	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	/^void SdSpiAltDriver::activate() {$/;"	f	class:SdSpiAltDriver
+activate	.\SdFat\SpiDriver\SdSpiSTM32.cpp	/^void SdSpiAltDriver::activate() {$/;"	f	class:SdSpiAltDriver
+activate	.\SdFat\SpiDriver\SdSpiTeensy3.cpp	/^void SdSpiAltDriver::activate() {$/;"	f	class:SdSpiAltDriver
+addCluster	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::addCluster() {$/;"	f	class:FatFile
+addDirCluster	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::addDirCluster() {$/;"	f	class:FatFile
 address	.\STK_500_Programmer.h	/^   uint16_t address = 0;   \/\/beginning memmory address offset of the data block (2-byte word-oriented)$/;"	m	class:HexFileRecord
 addressStart	.\STK_500_Programmer.h	/^   uint16_t addressStart = 0; \/\/This is a word-oriented address!$/;"	m	struct:flash_page_block_t
+adjustfield	.\SdFat\FatLib\ios.h	/^  static const fmtflags adjustfield = left | right | internal;$/;"	m	class:ios_base
+allocContiguous	.\SdFat\FatLib\FatVolume.cpp	/^bool FatVolume::allocContiguous(uint32_t count, uint32_t* firstCluster) {$/;"	f	class:FatVolume
+allocateCluster	.\SdFat\FatLib\FatVolume.cpp	/^bool FatVolume::allocateCluster(uint32_t current, uint32_t* next) {$/;"	f	class:FatVolume
+always1	.\SdFat\SdCard\SdInfo.h	/^  unsigned char always1 : 1;$/;"	m	struct:CID
+always1	.\SdFat\SdCard\SdInfo.h	/^  unsigned char always1 : 1;$/;"	m	struct:CSDV1
+always1	.\SdFat\SdCard\SdInfo.h	/^  unsigned char always1 : 1;$/;"	m	struct:CSDV2
+app	.\SdFat\FatLib\ios.h	/^  static const openmode app    = 0X4;$/;"	m	class:ios_base
 ascii_line	.\STK_500_Programmer.h	/^   const char* ascii_line;$/;"	m	class:HexFileRecord
+ate	.\SdFat\FatLib\ios.h	/^  static const openmode ate    = 0X8;$/;"	m	class:ios_base
+attr	.\SdFat\FatLib\FatStructs.h	/^  uint8_t attr;$/;"	m	struct:longDirectoryEntry
+attributes	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  attributes;$/;"	m	struct:directoryEntry
+available	.\SdFat\FatLib\ArduinoFiles.h	/^  int available() {$/;"	f	class:File
+available	.\SdFat\FatLib\ArduinoFiles.h	/^  int available() {$/;"	f	class:PrintFile
+available	.\SdFat\FatLib\FatFile.h	/^  uint32_t available() {$/;"	f	class:FatFile
+available	.\SdFat\MinimumSerial.cpp	/^int MinimumSerial::available() {$/;"	f	class:MinimumSerial
+bad	.\SdFat\FatLib\ios.h	/^  bool bad() const {$/;"	f	class:ios
+badPinCheck	.\SdFat\SpiDriver\DigitalPin.h	/^void badPinCheck(uint8_t pin) {$/;"	f
+badbit	.\SdFat\FatLib\ios.h	/^  static const iostate badbit = 0X01;$/;"	m	class:ios_base
+basefield	.\SdFat\FatLib\ios.h	/^  static const fmtflags basefield   = dec | hex | oct;$/;"	m	class:ios_base
+beg	.\SdFat\FatLib\ios.h	/^    beg,$/;"	e	enum:ios_base::seekdir
 begin	.\STK_500_Programmer.cpp	/^bool HexFileClass::begin(const char* targFilePath){$/;"	f	class:HexFileClass
 begin	.\STK_500_Programmer.cpp	/^bool STK_Programmer::begin(){$/;"	f	class:STK_Programmer
+begin	.\SdFat\FatLib\FatFileSystem.h	/^  bool begin(BlockDriver* blockDev, uint8_t part = 0) {$/;"	f	class:FatFileSystem
+begin	.\SdFat\MinimumSerial.cpp	/^void MinimumSerial::begin(uint32_t baud) {$/;"	f	class:MinimumSerial
+begin	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::begin(SdSpiDriver* spi, uint8_t csPin, SPISettings settings) {$/;"	f	class:SdSpiCard
+begin	.\SdFat\SdCard\SdSpiCard.h	/^  bool begin(SdSpiDriver* spi, uint8_t csPin, SPISettings spiSettings) {$/;"	f	class:SdSpiCardEX
+begin	.\SdFat\SdCard\SdioCard.h	/^  bool begin() {$/;"	f	class:SdioCardEX
+begin	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::begin() {$/;"	f	class:SdioCard
+begin	.\SdFat\SdFat.h	/^  bool begin() {$/;"	f	class:SdFatSdio
+begin	.\SdFat\SdFat.h	/^  bool begin() {$/;"	f	class:SdFatSdioEX
+begin	.\SdFat\SdFat.h	/^  bool begin() {$/;"	f	class:SdFileSystem
+begin	.\SdFat\SdFat.h	/^  bool begin(uint8_t csPin = SS, SPISettings settings = SD_SCK_MHZ(50)) {$/;"	f	class:Sd2Card
+begin	.\SdFat\SdFat.h	/^  bool begin(uint8_t csPin = SS, SPISettings spiSettings = SPI_FULL_SPEED) {$/;"	f	class:SdFat
+begin	.\SdFat\SdFat.h	/^  bool begin(uint8_t csPin = SS, SPISettings spiSettings = SPI_FULL_SPEED) {$/;"	f	class:SdFatEX
+begin	.\SdFat\SdFat.h	/^  bool begin(uint8_t csPin = SS, SPISettings spiSettings = SPI_FULL_SPEED) {$/;"	f	class:SdFatSoftSpi
+begin	.\SdFat\SdFat.h	/^  bool begin(uint8_t csPin = SS, SPISettings spiSettings = SPI_FULL_SPEED) {$/;"	f	class:SdFatSoftSpiEX
+begin	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void begin(uint8_t csPin) {$/;"	f	class:SdSpiLibDriver
+begin	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void begin(uint8_t csPin) {$/;"	f	class:SdSpiSoftDriver
+begin	.\SdFat\SpiDriver\SdSpiDriver.h	/^inline void SdSpiAltDriver::begin(uint8_t csPin) {$/;"	f	class:SdSpiAltDriver
+begin	.\SdFat\SpiDriver\SdSpiESP8266.cpp	/^void SdSpiAltDriver::begin(uint8_t csPin) {$/;"	f	class:SdSpiAltDriver
+begin	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	/^void SdSpiAltDriver::begin(uint8_t csPin) {$/;"	f	class:SdSpiAltDriver
+begin	.\SdFat\SpiDriver\SdSpiSTM32.cpp	/^void SdSpiAltDriver::begin(uint8_t csPin) {$/;"	f	class:SdSpiAltDriver
+begin	.\SdFat\SpiDriver\SdSpiTeensy3.cpp	/^void SdSpiAltDriver::begin(uint8_t chipSelectPin) {$/;"	f	class:SdSpiAltDriver
+begin	.\SdFat\SpiDriver\SoftSPI.h	/^  void begin() {$/;"	f	class:SoftSPI
+beginCylinderHigh	.\SdFat\FatLib\FatStructs.h	/^  unsigned beginCylinderHigh : 2;$/;"	m	struct:partitionTable
+beginCylinderLow	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  beginCylinderLow;$/;"	m	struct:partitionTable
+beginHead	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  beginHead;$/;"	m	struct:partitionTable
+beginSector	.\SdFat\FatLib\FatStructs.h	/^  unsigned beginSector : 6;$/;"	m	struct:partitionTable
+binary	.\SdFat\FatLib\ios.h	/^  static const openmode binary = 0X10;$/;"	m	class:ios_base
+biosParmBlock	.\SdFat\FatLib\FatStructs.h	/^struct biosParmBlock {$/;"	s
+block	.\SdFat\FatLib\FatVolume.h	/^  cache_t* block() {$/;"	f	class:FatCache
+blockOfCluster	.\SdFat\FatLib\FatVolume.h	/^  uint8_t blockOfCluster(uint32_t position) const {$/;"	f	class:FatVolume
 block_size_bytes	.\STK_500_Programmer.h	/^   uint16_t block_size_bytes = 0;$/;"	m	struct:flash_page_block_t
+blocksPerCluster	.\SdFat\FatLib\FatVolume.h	/^  uint8_t blocksPerCluster() const {$/;"	f	class:FatVolume
+blocksPerFat	.\SdFat\FatLib\FatVolume.h	/^  uint32_t blocksPerFat()  const {$/;"	f	class:FatVolume
+boolalpha	.\SdFat\FatLib\ios.h	/^  static const fmtflags boolalpha  = 0x0100;$/;"	m	class:ios_base
+boolalpha	.\SdFat\FatLib\ios.h	/^inline ios_base& boolalpha(ios_base& str) {$/;"	f
+boot	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  boot;$/;"	m	struct:partitionTable
+bootCode	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  bootCode[420];$/;"	m	struct:fat32_boot
+bootCode	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  bootCode[448];$/;"	m	struct:fat_boot
+bootSectorSig0	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  bootSectorSig0;$/;"	m	struct:fat32_boot
+bootSectorSig0	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  bootSectorSig0;$/;"	m	struct:fat_boot
+bootSectorSig1	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  bootSectorSig1;$/;"	m	struct:fat32_boot
+bootSectorSig1	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  bootSectorSig1;$/;"	m	struct:fat_boot
+bootSignature	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  bootSignature;$/;"	m	struct:fat32_boot
+bootSignature	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  bootSignature;$/;"	m	struct:fat_boot
+bpb_t	.\SdFat\FatLib\FatStructs.h	/^typedef struct biosParmBlock bpb_t;$/;"	t	typeref:struct:biosParmBlock
+buf	.\SdFat\FatLib\bufstream.h	/^  char* buf() {$/;"	f	class:obufstream
+bufstream_h	.\SdFat\FatLib\bufstream.h	26;"	d
 byteCount	.\STK_500_Programmer.h	/^   byte byteCount = 0; \/\/Number of data bytes$/;"	m	class:HexFileRecord
+bytesPerSector	.\SdFat\FatLib\FatStructs.h	/^  uint16_t bytesPerSector;$/;"	m	struct:biosParmBlock
+bytesPerSector	.\SdFat\FatLib\FatStructs.h	/^  uint16_t bytesPerSector;$/;"	m	struct:fat32_boot
+bytesPerSector	.\SdFat\FatLib\FatStructs.h	/^  uint16_t bytesPerSector;$/;"	m	struct:fat_boot
+c	.\SdFat\FatLib\iostream.h	/^  char c;$/;"	m	struct:setfill
+c_size_high	.\SdFat\SdCard\SdInfo.h	/^  unsigned char c_size_high : 2;$/;"	m	struct:CSDV1
+c_size_high	.\SdFat\SdCard\SdInfo.h	/^  unsigned char c_size_high : 6;$/;"	m	struct:CSDV2
+c_size_low	.\SdFat\SdCard\SdInfo.h	/^  unsigned char c_size_low : 2;$/;"	m	struct:CSDV1
+c_size_low	.\SdFat\SdCard\SdInfo.h	/^  unsigned char c_size_low;$/;"	m	struct:CSDV2
+c_size_mid	.\SdFat\SdCard\SdInfo.h	/^  unsigned char c_size_mid;$/;"	m	struct:CSDV1
+c_size_mid	.\SdFat\SdCard\SdInfo.h	/^  unsigned char c_size_mid;$/;"	m	struct:CSDV2
+c_size_mult_high	.\SdFat\SdCard\SdInfo.h	/^  unsigned char c_size_mult_high : 2;$/;"	m	struct:CSDV1
+c_size_mult_low	.\SdFat\SdCard\SdInfo.h	/^  unsigned char c_size_mult_low : 1;$/;"	m	struct:CSDV1
+cacheAddress	.\SdFat\FatLib\FatVolume.h	/^  cache_t *cacheAddress() {$/;"	f	class:FatVolume
+cacheBlockNumber	.\SdFat\FatLib\FatVolume.h	/^  uint32_t cacheBlockNumber() {$/;"	f	class:FatVolume
+cacheClear	.\SdFat\FatLib\FatVolume.h	/^  cache_t* cacheClear() {$/;"	f	class:FatVolume
+cacheDirEntry	.\SdFat\FatLib\FatFile.cpp	/^dir_t* FatFile::cacheDirEntry(uint8_t action) {$/;"	f	class:FatFile
+cacheDirty	.\SdFat\FatLib\FatVolume.h	/^  void cacheDirty() {$/;"	f	class:FatVolume
+cacheFetchData	.\SdFat\FatLib\FatVolume.h	/^  cache_t* cacheFetchData(uint32_t blockNumber, uint8_t options) {$/;"	f	class:FatVolume
+cacheFetchFat	.\SdFat\FatLib\FatVolume.h	/^  cache_t* cacheFetchFat(uint32_t blockNumber, uint8_t options) {$/;"	f	class:FatVolume
+cacheInvalidate	.\SdFat\FatLib\FatVolume.h	/^  void cacheInvalidate() {$/;"	f	class:FatVolume
+cacheSync	.\SdFat\FatLib\FatVolume.h	/^  bool cacheSync() {$/;"	f	class:FatVolume
+cacheSyncData	.\SdFat\FatLib\FatVolume.h	/^  bool cacheSyncData() {$/;"	f	class:FatVolume
+cache_t	.\SdFat\FatLib\FatVolume.h	/^union cache_t {$/;"	u
+card	.\SdFat\SdFat.h	/^  SdDriverClass *card() {$/;"	f	class:SdFileSystem
+card	.\SdFat\SdFat.h	/^  SdioCardEX* card() {$/;"	f	class:SdFatSdioEX
+cardAcmd	.\SdFat\SdCard\SdSpiCard.h	/^  uint8_t cardAcmd(uint8_t cmd, uint32_t arg) {$/;"	f	class:SdSpiCard
+cardAcmd	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool cardAcmd(uint32_t rca, uint32_t xfertyp, uint32_t arg) {$/;"	f	file:
+cardBegin	.\SdFat\SdFat.h	/^  bool cardBegin() {$/;"	f	class:SdFatSdio
+cardBegin	.\SdFat\SdFat.h	/^  bool cardBegin() {$/;"	f	class:SdFatSdioEX
+cardBegin	.\SdFat\SdFat.h	/^  bool cardBegin(uint8_t csPin = SS, SPISettings settings = SPI_FULL_SPEED) {$/;"	f	class:SdFat
+cardCMD6	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool cardCMD6(uint32_t arg, uint8_t* status) {$/;"	f	file:
+cardCommand	.\SdFat\SdCard\SdSpiCard.cpp	/^uint8_t SdSpiCard::cardCommand(uint8_t cmd, uint32_t arg) {$/;"	f	class:SdSpiCard
+cardCommand	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool cardCommand(uint32_t xfertyp, uint32_t arg) {$/;"	f	file:
+cardErrorCode	.\SdFat\SdFat.h	/^  uint8_t cardErrorCode() {$/;"	f	class:SdFileSystem
+cardErrorData	.\SdFat\SdFat.h	/^  uint32_t cardErrorData() {$/;"	f	class:SdFileSystem
+cardSize	.\SdFat\SdCard\SdSpiCard.cpp	/^uint32_t SdSpiCard::cardSize() {$/;"	f	class:SdSpiCard
+cardSize	.\SdFat\SdCard\SdioTeensy.cpp	/^uint32_t SdioCard::cardSize() {$/;"	f	class:SdioCard
+ccc_high	.\SdFat\SdCard\SdInfo.h	/^  unsigned char ccc_high;$/;"	m	struct:CSDV1
+ccc_high	.\SdFat\SdCard\SdInfo.h	/^  unsigned char ccc_high;$/;"	m	struct:CSDV2
+ccc_low	.\SdFat\SdCard\SdInfo.h	/^  unsigned char ccc_low : 4;$/;"	m	struct:CSDV1
+ccc_low	.\SdFat\SdCard\SdInfo.h	/^  unsigned char ccc_low : 4;$/;"	m	struct:CSDV2
+chdir	.\SdFat\FatLib\FatFileSystem.h	/^  bool chdir(bool set_cwd = false) {$/;"	f	class:FatFileSystem
+chdir	.\SdFat\FatLib\FatFileSystem.h	/^  bool chdir(const char *path, bool set_cwd = false) {$/;"	f	class:FatFileSystem
 checkSum	.\STK_500_Programmer.h	/^   byte checkSum = 0;$/;"	m	class:HexFileRecord
 chipSelectPin	.\STK_500_Programmer.h	/^   byte chipSelectPin;$/;"	m	class:STK_Programmer
+chksum	.\SdFat\FatLib\FatStructs.h	/^  uint8_t chksum;$/;"	m	struct:longDirectoryEntry
+chvol	.\SdFat\FatLib\FatFileSystem.h	/^  void chvol() {$/;"	f	class:FatFileSystem
+cid_t	.\SdFat\SdCard\SdInfo.h	/^} __attribute__((packed)) cid_t;$/;"	t	typeref:struct:CID
+clear	.\SdFat\FatLib\fstream.h	/^  void clear(iostate state = goodbit) {$/;"	f	class:fstream
+clear	.\SdFat\FatLib\fstream.h	/^  void clear(iostate state = goodbit) {$/;"	f	class:ofstream
+clear	.\SdFat\FatLib\ios.h	/^  void clear(iostate state = goodbit) {$/;"	f	class:ios
+clearError	.\SdFat\FatLib\FatFile.h	/^  void clearError() {$/;"	f	class:FatFile
+clearWriteError	.\SdFat\FatLib\FatFile.h	/^  void clearWriteError() {$/;"	f	class:FatFile
+clearerr	.\SdFat\FatLib\StdioStream.h	/^  void clearerr() {$/;"	f	class:StdioStream
+clearerr	.\SdFat\FatLib\StdioStream.h	43;"	d
+close	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::close() {$/;"	f	class:FatFile
+close	.\SdFat\FatLib\fstream.h	/^  void close() {$/;"	f	class:fstream
+close	.\SdFat\FatLib\fstream.h	/^  void close() {$/;"	f	class:ifstream
+close	.\SdFat\FatLib\fstream.h	/^  void close() {$/;"	f	class:ofstream
+cluster	.\SdFat\FatLib\FatFile.h	/^  uint32_t cluster;$/;"	m	struct:FatPos_t
+clusterCount	.\SdFat\FatLib\FatVolume.h	/^  uint32_t clusterCount() const {$/;"	f	class:FatVolume
+clusterFirstBlock	.\SdFat\FatLib\FatVolume.cpp	/^uint32_t FatVolume::clusterFirstBlock(uint32_t cluster) const {$/;"	f	class:FatVolume
+clusterSizeShift	.\SdFat\FatLib\FatVolume.h	/^  uint8_t clusterSizeShift() const {$/;"	f	class:FatVolume
+codeArea	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  codeArea[440];$/;"	m	struct:masterBootRecord
+config	.\SdFat\SpiDriver\DigitalPin.h	/^  void config(uint8_t mode, bool level) {$/;"	f	class:DigitalPin
 consume_hex_record	.\STK_500_Programmer.cpp	/^bool HexFileClass::consume_hex_record(HexFileRecord &targRecord){$/;"	f	class:HexFileClass
+contiguousRange	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::contiguousRange(uint32_t* bgnBlock, uint32_t* endBlock) {$/;"	f	class:FatFile
+copy	.\SdFat\SdCard\SdInfo.h	/^  unsigned char copy : 1;$/;"	m	struct:CSDV1
+copy	.\SdFat\SdCard\SdInfo.h	/^  unsigned char copy : 1;$/;"	m	struct:CSDV2
+crc	.\SdFat\SdCard\SdInfo.h	/^  unsigned char crc : 7;$/;"	m	struct:CID
+crc	.\SdFat\SdCard\SdInfo.h	/^  unsigned char crc : 7;$/;"	m	struct:CSDV1
+crc	.\SdFat\SdCard\SdInfo.h	/^  unsigned char crc : 7;$/;"	m	struct:CSDV2
+createContiguous	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::createContiguous(FatFile* dirFile,$/;"	f	class:FatFile
+createContiguous	.\SdFat\FatLib\FatFile.h	/^  bool createContiguous(const char* path, uint32_t size) {$/;"	f	class:FatFile
+creationDate	.\SdFat\FatLib\FatStructs.h	/^  uint16_t creationDate;$/;"	m	struct:directoryEntry
+creationTime	.\SdFat\FatLib\FatStructs.h	/^  uint16_t creationTime;$/;"	m	struct:directoryEntry
+creationTimeTenths	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  creationTimeTenths;$/;"	m	struct:directoryEntry
+csd1_t	.\SdFat\SdCard\SdInfo.h	/^} __attribute__((packed)) csd1_t;$/;"	t	typeref:struct:CSDV1
+csd2_t	.\SdFat\SdCard\SdInfo.h	/^} __attribute__((packed)) csd2_t;$/;"	t	typeref:struct:CSDV2
+csd_t	.\SdFat\SdCard\SdInfo.h	/^union csd_t {$/;"	u
+csd_ver	.\SdFat\SdCard\SdInfo.h	/^  unsigned char csd_ver : 2;$/;"	m	struct:CSDV1
+csd_ver	.\SdFat\SdCard\SdInfo.h	/^  unsigned char csd_ver : 2;$/;"	m	struct:CSDV2
+cur	.\SdFat\FatLib\ios.h	/^    cur,$/;"	e	enum:ios_base::seekdir
+curCluster	.\SdFat\FatLib\FatFile.h	/^  uint32_t curCluster() const {$/;"	f	class:FatFile
+curPosition	.\SdFat\FatLib\FatFile.h	/^  uint32_t curPosition() const {$/;"	f	class:FatFile
+curTimeMS	.\SdFat\SysCall.h	/^inline uint16_t curTimeMS() {$/;"	f
+cwd	.\SdFat\FatLib\FatFile.h	/^  static FatFile* cwd() {$/;"	f	class:FatFile
 data	.\STK_500_Programmer.h	/^   const char* data = 0; \/\/pointer to where the data bytes start$/;"	m	class:HexFileRecord
+data	.\SdFat\FatLib\FatVolume.h	/^  uint8_t  data[512];$/;"	m	union:cache_t
 dataBytes	.\STK_500_Programmer.h	/^   byte dataBytes[BYTES_PER_FLASH_BLOCK] = {0};$/;"	m	struct:flash_page_block_t
+dataStartBlock	.\SdFat\FatLib\FatVolume.h	/^  uint32_t dataStartBlock() const {$/;"	f	class:FatVolume
+dateTimeCallback	.\SdFat\FatLib\FatFile.h	/^  static void dateTimeCallback($/;"	f	class:FatFile
+dateTimeCallbackCancel	.\SdFat\FatLib\FatFile.h	/^  static void dateTimeCallbackCancel() {$/;"	f	class:FatFile
+dbgFat	.\SdFat\FatLib\FatVolume.h	/^  int8_t dbgFat(uint32_t n, uint32_t* v) {$/;"	f	class:FatVolume
+ddr	.\SdFat\SpiDriver\DigitalPin.h	/^  volatile uint8_t* ddr;   \/**< address of DDR for this pin *\/$/;"	m	struct:GpioPinMap_t
+ddrReg	.\SdFat\SpiDriver\DigitalPin.h	/^volatile uint8_t* ddrReg(uint8_t pin) {$/;"	f
+deactivate	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void deactivate() {$/;"	f	class:SdSpiLibDriver
+deactivate	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void deactivate() {}$/;"	f	class:SdSpiSoftDriver
+deactivate	.\SdFat\SpiDriver\SdSpiDriver.h	/^inline void SdSpiAltDriver::deactivate() {$/;"	f	class:SdSpiAltDriver
+deactivate	.\SdFat\SpiDriver\SdSpiESP8266.cpp	/^void SdSpiAltDriver::deactivate() {$/;"	f	class:SdSpiAltDriver
+deactivate	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	/^void SdSpiAltDriver::deactivate() {$/;"	f	class:SdSpiAltDriver
+deactivate	.\SdFat\SpiDriver\SdSpiSTM32.cpp	/^void SdSpiAltDriver::deactivate() {$/;"	f	class:SdSpiAltDriver
+deactivate	.\SdFat\SpiDriver\SdSpiTeensy3.cpp	/^void SdSpiAltDriver::deactivate() {$/;"	f	class:SdSpiAltDriver
+dec	.\SdFat\FatLib\ios.h	/^  static const fmtflags dec        = 0x0008;$/;"	m	class:ios_base
+dec	.\SdFat\FatLib\ios.h	/^inline ios_base& dec(ios_base& str) {$/;"	f
 decode	.\STK_500_Programmer.cpp	/^bool HexFileRecord::decode(){$/;"	f	class:HexFileRecord
+dir	.\SdFat\FatLib\FatVolume.h	/^  dir_t    dir[16];$/;"	m	union:cache_t
+dirEntry	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::dirEntry(dir_t* dst) {$/;"	f	class:FatFile
+dirIndex	.\SdFat\FatLib\FatFile.h	/^  uint16_t dirIndex() {$/;"	f	class:FatFile
+dirName	.\SdFat\FatLib\FatFile.cpp	/^uint8_t FatFile::dirName(const dir_t* dir, char* name) {$/;"	f	class:FatFile
+dirSize	.\SdFat\FatLib\FatFile.cpp	/^uint32_t FatFile::dirSize() {$/;"	f	class:FatFile
+dir_t	.\SdFat\FatLib\FatStructs.h	/^typedef struct directoryEntry dir_t;$/;"	t	typeref:struct:directoryEntry
+directoryEntry	.\SdFat\FatLib\FatStructs.h	/^struct directoryEntry {$/;"	s
+dirty	.\SdFat\FatLib\FatVolume.h	/^  void dirty() {$/;"	f	class:FatCache
+diskSignature	.\SdFat\FatLib\FatStructs.h	/^  uint32_t diskSignature;$/;"	m	struct:masterBootRecord
+divmod10_asm16	.\SdFat\FatLib\FmtNumber.cpp	40;"	d	file:
+divmod10_asm32	.\SdFat\FatLib\FmtNumber.cpp	68;"	d	file:
+dmac_channel_disable	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	/^static void dmac_channel_disable(uint32_t ul_num) {$/;"	f	file:
+dmac_channel_enable	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	/^static void dmac_channel_enable(uint32_t ul_num) {$/;"	f	file:
+dmac_channel_transfer_done	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	/^static bool dmac_channel_transfer_done(uint32_t ul_num) {$/;"	f	file:
+dmac_disable	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	/^static void dmac_disable() {$/;"	f	file:
+dmac_enable	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	/^static void dmac_enable() {$/;"	f	file:
+dmpFile	.\SdFat\FatLib\FatFilePrint.cpp	/^void FatFile::dmpFile(print_t* pr, uint32_t pos, size_t n) {$/;"	f	class:FatFile
+do_fill	.\SdFat\FatLib\ostream.cpp	/^void ostream::do_fill(unsigned len) {$/;"	f	class:ostream
+driveNumber	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  driveNumber;$/;"	m	struct:fat32_boot
+driveNumber	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  driveNumber;$/;"	m	struct:fat_boot
+dsr_imp	.\SdFat\SdCard\SdInfo.h	/^  unsigned char dsr_imp : 1;$/;"	m	struct:CSDV1
+dsr_imp	.\SdFat\SdCard\SdInfo.h	/^  unsigned char dsr_imp : 1;$/;"	m	struct:CSDV2
+enableDmaIrs	.\SdFat\SdCard\SdioTeensy.cpp	/^static void enableDmaIrs() {$/;"	f	file:
+enableGPIO	.\SdFat\SdCard\SdioTeensy.cpp	/^static void enableGPIO(bool enable) {$/;"	f	file:
+end	.\SdFat\FatLib\ios.h	/^    end$/;"	e	enum:ios_base::seekdir
+endCylinderHigh	.\SdFat\FatLib\FatStructs.h	/^  unsigned endCylinderHigh : 2;$/;"	m	struct:partitionTable
+endCylinderLow	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  endCylinderLow;$/;"	m	struct:partitionTable
+endHead	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  endHead;$/;"	m	struct:partitionTable
+endSector	.\SdFat\FatLib\FatStructs.h	/^  unsigned endSector : 6;$/;"	m	struct:partitionTable
+endl	.\SdFat\FatLib\iostream.h	/^inline ostream& endl(ostream& os) {$/;"	f
+eof	.\SdFat\FatLib\ios.h	/^  bool eof() const {$/;"	f	class:ios
+eofbit	.\SdFat\FatLib\ios.h	/^  static const iostate eofbit = 0x02;$/;"	m	class:ios_base
+erase	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::erase(uint32_t firstBlock, uint32_t lastBlock) {$/;"	f	class:SdSpiCard
+erase	.\SdFat\SdCard\SdioCard.h	/^  bool erase(uint32_t firstBlock, uint32_t lastBlock) {$/;"	f	class:SdioCardEX
+erase	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::erase(uint32_t firstBlock, uint32_t lastBlock) {$/;"	f	class:SdioCard
+eraseSingleBlockEnable	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::eraseSingleBlockEnable() {$/;"	f	class:SdSpiCard
+erase_blk_en	.\SdFat\SdCard\SdInfo.h	/^  unsigned char erase_blk_en : 1;$/;"	m	struct:CSDV1
+erase_blk_en	.\SdFat\SdCard\SdInfo.h	/^  unsigned char erase_blk_en : 1;$/;"	m	struct:CSDV2
+error	.\SdFat\SdCard\SdSpiCard.h	/^  void error(uint8_t code) {$/;"	f	class:SdSpiCard
+errorCode	.\SdFat\SdCard\SdSpiCard.h	/^  int errorCode() const {$/;"	f	class:SdSpiCard
+errorCode	.\SdFat\SdCard\SdioTeensy.cpp	/^uint8_t SdioCard::errorCode() {$/;"	f	class:SdioCard
+errorData	.\SdFat\SdCard\SdSpiCard.h	/^  int errorData() const {$/;"	f	class:SdSpiCard
+errorData	.\SdFat\SdCard\SdioTeensy.cpp	/^uint32_t SdioCard::errorData() {$/;"	f	class:SdioCard
+errorHalt	.\SdFat\SdFat.h	/^  void errorHalt() {$/;"	f	class:SdFileSystem
+errorHalt	.\SdFat\SdFat.h	/^  void errorHalt(Print* pr) {$/;"	f	class:SdFileSystem
+errorHalt	.\SdFat\SdFat.h	/^  void errorHalt(Print* pr, char const* msg) {$/;"	f	class:SdFileSystem
+errorHalt	.\SdFat\SdFat.h	/^  void errorHalt(Print* pr, const __FlashStringHelper* msg) {$/;"	f	class:SdFileSystem
+errorHalt	.\SdFat\SdFat.h	/^  void errorHalt(char const* msg) {$/;"	f	class:SdFileSystem
+errorHalt	.\SdFat\SdFat.h	/^  void errorHalt(const __FlashStringHelper* msg) {$/;"	f	class:SdFileSystem
+errorLine	.\SdFat\SdCard\SdioTeensy.cpp	/^uint32_t SdioCard::errorLine() {$/;"	f	class:SdioCard
+errorPrint	.\SdFat\SdFat.h	/^  void errorPrint() {$/;"	f	class:SdFileSystem
+errorPrint	.\SdFat\SdFat.h	/^  void errorPrint(Print* pr) {$/;"	f	class:SdFileSystem
+errorPrint	.\SdFat\SdFat.h	/^  void errorPrint(Print* pr, char const* msg) {$/;"	f	class:SdFileSystem
+errorPrint	.\SdFat\SdFat.h	/^  void errorPrint(Print* pr, const __FlashStringHelper* msg) {$/;"	f	class:SdFileSystem
+errorPrint	.\SdFat\SdFat.h	/^  void errorPrint(const __FlashStringHelper* msg) {$/;"	f	class:SdFileSystem
+errorPrint	.\SdFat\SdFat.h	/^  void errorPrint(const char* msg) {$/;"	f	class:SdFileSystem
+exists	.\SdFat\FatLib\FatFile.h	/^  bool exists(const char* path) {$/;"	f	class:FatFile
+exists	.\SdFat\FatLib\FatFileSystem.h	/^  bool exists(const char* path) {$/;"	f	class:FatFileSystem
+fail	.\SdFat\FatLib\ios.h	/^  bool fail() const {$/;"	f	class:ios
+failbit	.\SdFat\FatLib\ios.h	/^  static const iostate failbit = 0X04;$/;"	m	class:ios_base
+fastBitWriteSafe	.\SdFat\SpiDriver\DigitalPin.h	/^void fastBitWriteSafe(volatile uint8_t* address, uint8_t mask, bool level) {$/;"	f
+fastDdrWrite	.\SdFat\SpiDriver\DigitalPin.h	/^void fastDdrWrite(uint8_t pin, bool level) {$/;"	f
+fastDigitalRead	.\SdFat\SpiDriver\DigitalPin.h	/^bool fastDigitalRead(uint8_t pin) {$/;"	f
+fastDigitalRead	.\SdFat\SpiDriver\DigitalPin.h	/^inline bool fastDigitalRead(uint8_t pin) {$/;"	f
+fastDigitalToggle	.\SdFat\SpiDriver\DigitalPin.h	/^inline void fastDigitalToggle(uint8_t pin) {$/;"	f
+fastDigitalToggle	.\SdFat\SpiDriver\DigitalPin.h	/^void fastDigitalToggle(uint8_t pin) {$/;"	f
+fastDigitalWrite	.\SdFat\SpiDriver\DigitalPin.h	/^inline void fastDigitalWrite(uint8_t pin, bool value) {$/;"	f
+fastDigitalWrite	.\SdFat\SpiDriver\DigitalPin.h	/^void fastDigitalWrite(uint8_t pin, bool level) {$/;"	f
+fastDigitalWrite	.\SdFat\SpiDriver\DigitalPin.h	/^void fastDigitalWrite(uint8_t pin, bool value) {$/;"	f
+fastDigitalWrite	.\SdFat\SpiDriver\DigitalPin.h	/^void fastDigitalWrite(uint8_t pin, uint8_t val) {$/;"	f
+fastPinConfig	.\SdFat\SpiDriver\DigitalPin.h	294;"	d
+fastPinMode	.\SdFat\SpiDriver\DigitalPin.h	/^inline void fastPinMode(uint8_t pin, uint8_t mode) {$/;"	f
+fastPinMode	.\SdFat\SpiDriver\DigitalPin.h	/^void fastPinMode(uint8_t pin, uint8_t mode) {$/;"	f
+fat16	.\SdFat\FatLib\FatVolume.h	/^  uint16_t fat16[256];$/;"	m	union:cache_t
+fat32	.\SdFat\FatLib\FatVolume.h	/^  uint32_t fat32[128];$/;"	m	union:cache_t
+fat32BackBootBlock	.\SdFat\FatLib\FatStructs.h	/^  uint16_t fat32BackBootBlock;$/;"	m	struct:biosParmBlock
+fat32BackBootBlock	.\SdFat\FatLib\FatStructs.h	/^  uint16_t fat32BackBootBlock;$/;"	m	struct:fat32_boot
+fat32FSInfo	.\SdFat\FatLib\FatStructs.h	/^  uint16_t fat32FSInfo;$/;"	m	struct:biosParmBlock
+fat32FSInfo	.\SdFat\FatLib\FatStructs.h	/^  uint16_t fat32FSInfo;$/;"	m	struct:fat32_boot
+fat32Flags	.\SdFat\FatLib\FatStructs.h	/^  uint16_t fat32Flags;$/;"	m	struct:biosParmBlock
+fat32Flags	.\SdFat\FatLib\FatStructs.h	/^  uint16_t fat32Flags;$/;"	m	struct:fat32_boot
+fat32Reserved	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  fat32Reserved[12];$/;"	m	struct:biosParmBlock
+fat32Reserved	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  fat32Reserved[12];$/;"	m	struct:fat32_boot
+fat32RootCluster	.\SdFat\FatLib\FatStructs.h	/^  uint32_t fat32RootCluster;$/;"	m	struct:biosParmBlock
+fat32RootCluster	.\SdFat\FatLib\FatStructs.h	/^  uint32_t fat32RootCluster;$/;"	m	struct:fat32_boot
+fat32Version	.\SdFat\FatLib\FatStructs.h	/^  uint16_t fat32Version;$/;"	m	struct:biosParmBlock
+fat32Version	.\SdFat\FatLib\FatStructs.h	/^  uint16_t fat32Version;$/;"	m	struct:fat32_boot
+fat32_boot	.\SdFat\FatLib\FatStructs.h	/^struct fat32_boot {$/;"	s
+fat32_boot_t	.\SdFat\FatLib\FatStructs.h	/^typedef struct fat32_boot fat32_boot_t;$/;"	t	typeref:struct:fat32_boot
+fat32_fsinfo	.\SdFat\FatLib\FatStructs.h	/^struct fat32_fsinfo {$/;"	s
+fat32_fsinfo_t	.\SdFat\FatLib\FatStructs.h	/^typedef struct fat32_fsinfo fat32_fsinfo_t;$/;"	t	typeref:struct:fat32_fsinfo
+fatCount	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  fatCount;$/;"	m	struct:biosParmBlock
+fatCount	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  fatCount;$/;"	m	struct:fat32_boot
+fatCount	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  fatCount;$/;"	m	struct:fat_boot
+fatCount	.\SdFat\FatLib\FatVolume.h	/^  uint8_t fatCount() {$/;"	f	class:FatVolume
+fatGet	.\SdFat\FatLib\FatVolume.cpp	/^int8_t FatVolume::fatGet(uint32_t cluster, uint32_t* value) {$/;"	f	class:FatVolume
+fatPut	.\SdFat\FatLib\FatVolume.cpp	/^bool FatVolume::fatPut(uint32_t cluster, uint32_t value) {$/;"	f	class:FatVolume
+fatPutEOC	.\SdFat\FatLib\FatVolume.h	/^  bool fatPutEOC(uint32_t cluster) {$/;"	f	class:FatVolume
+fatStartBlock	.\SdFat\FatLib\FatVolume.h	/^  uint32_t fatStartBlock() const {$/;"	f	class:FatVolume
+fatType	.\SdFat\FatLib\FatVolume.h	/^  uint8_t fatType() const {$/;"	f	class:FatVolume
+fat_boot	.\SdFat\FatLib\FatStructs.h	/^struct fat_boot {$/;"	s
+fat_boot_t	.\SdFat\FatLib\FatStructs.h	/^typedef struct fat_boot fat_boot_t;$/;"	t	typeref:struct:fat_boot
+fbs	.\SdFat\FatLib\FatVolume.h	/^  fat_boot_t fbs;$/;"	m	union:cache_t
+fbs32	.\SdFat\FatLib\FatVolume.h	/^  fat32_boot_t fbs32;$/;"	m	union:cache_t
+fclose	.\SdFat\FatLib\StdioStream.cpp	/^int StdioStream::fclose() {$/;"	f	class:StdioStream
+fclose	.\SdFat\FatLib\StdioStream.h	44;"	d
+feof	.\SdFat\FatLib\StdioStream.h	/^  int feof() {$/;"	f	class:StdioStream
+feof	.\SdFat\FatLib\StdioStream.h	45;"	d
+ferror	.\SdFat\FatLib\StdioStream.h	/^  int ferror() {$/;"	f	class:StdioStream
+ferror	.\SdFat\FatLib\StdioStream.h	46;"	d
+fflush	.\SdFat\FatLib\StdioStream.cpp	/^int StdioStream::fflush() {$/;"	f	class:StdioStream
+fflush	.\SdFat\FatLib\StdioStream.h	47;"	d
+fgetc	.\SdFat\FatLib\StdioStream.h	/^  int fgetc() {$/;"	f	class:StdioStream
+fgetc	.\SdFat\FatLib\StdioStream.h	48;"	d
+fgetpos	.\SdFat\FatLib\StdioStream.h	49;"	d
+fgets	.\SdFat\FatLib\FatFile.cpp	/^int16_t FatFile::fgets(char* str, int16_t num, char* delim) {$/;"	f	class:FatFile
+fgets	.\SdFat\FatLib\StdioStream.cpp	/^char* StdioStream::fgets(char* str, size_t num, size_t* len) {$/;"	f	class:StdioStream
+fgets	.\SdFat\FatLib\StdioStream.h	50;"	d
+fileAttr	.\SdFat\FatLib\FatFile.h	/^  uint8_t fileAttr() const {$/;"	f	class:FatFile
+fileSize	.\SdFat\FatLib\FatFile.h	/^  uint32_t fileSize() const {$/;"	f	class:FatFile
+fileSize	.\SdFat\FatLib\FatStructs.h	/^  uint32_t fileSize;$/;"	m	struct:directoryEntry
+fileSystemType	.\SdFat\FatLib\FatStructs.h	/^  char     fileSystemType[8];$/;"	m	struct:fat32_boot
+fileSystemType	.\SdFat\FatLib\FatStructs.h	/^  char     fileSystemType[8];$/;"	m	struct:fat_boot
+file_format	.\SdFat\SdCard\SdInfo.h	/^  unsigned char file_format : 2;$/;"	m	struct:CSDV1
+file_format	.\SdFat\SdCard\SdInfo.h	/^  unsigned char file_format : 2;$/;"	m	struct:CSDV2
+file_format_grp	.\SdFat\SdCard\SdInfo.h	/^  unsigned char file_format_grp : 1;$/;"	m	struct:CSDV1
+file_format_grp	.\SdFat\SdCard\SdInfo.h	/^  unsigned char file_format_grp : 1;$/;"	m	struct:CSDV2
+fill	.\SdFat\FatLib\ios.h	/^  char fill() {$/;"	f	class:ios_base
+fill	.\SdFat\FatLib\ios.h	/^  char fill(char c) {$/;"	f	class:ios_base
+fillBuf	.\SdFat\FatLib\StdioStream.cpp	/^bool StdioStream::fillBuf() {$/;"	f	class:StdioStream
+fillGet	.\SdFat\FatLib\StdioStream.cpp	/^int StdioStream::fillGet() {$/;"	f	class:StdioStream
+fill_not_left	.\SdFat\FatLib\ostream.cpp	/^void ostream::fill_not_left(unsigned len) {$/;"	f	class:ostream
+firstBlock	.\SdFat\FatLib\FatFile.h	/^  uint32_t firstBlock() {$/;"	f	class:FatFile
+firstCluster	.\SdFat\FatLib\FatFile.h	/^  uint32_t firstCluster() const {$/;"	f	class:FatFile
+firstClusterHigh	.\SdFat\FatLib\FatStructs.h	/^  uint16_t firstClusterHigh;$/;"	m	struct:directoryEntry
+firstClusterLow	.\SdFat\FatLib\FatStructs.h	/^  uint16_t firstClusterLow;$/;"	m	struct:directoryEntry
+firstSector	.\SdFat\FatLib\FatStructs.h	/^  uint32_t firstSector;$/;"	m	struct:partitionTable
+flags	.\SdFat\FatLib\FatFile.h	/^  uint8_t flags;$/;"	m	struct:fname_t
+flags	.\SdFat\FatLib\ios.h	/^  fmtflags flags() const {$/;"	f	class:ios_base
+flags	.\SdFat\FatLib\ios.h	/^  fmtflags flags(fmtflags fl) {$/;"	f	class:ios_base
+flagsToBase	.\SdFat\FatLib\ios.h	/^  uint8_t flagsToBase() {$/;"	f	class:ios_base
 flash_page_block_t	.\STK_500_Programmer.h	/^struct flash_page_block_t{$/;"	s
+flush	.\SdFat\FatLib\ArduinoFiles.h	/^  void flush() {$/;"	f	class:File
+flush	.\SdFat\FatLib\ArduinoFiles.h	/^  void flush() {$/;"	f	class:PrintFile
+flush	.\SdFat\FatLib\iostream.h	/^inline ostream& flush(ostream& os) {$/;"	f
+flush	.\SdFat\FatLib\ostream.h	/^  ostream& flush() {$/;"	f	class:ostream
+flush	.\SdFat\MinimumSerial.cpp	/^void MinimumSerial::flush() {$/;"	f	class:MinimumSerial
+flushBuf	.\SdFat\FatLib\StdioStream.cpp	/^bool StdioStream::flushBuf() {$/;"	f	class:StdioStream
+flushPut	.\SdFat\FatLib\StdioStream.cpp	/^int StdioStream::flushPut(uint8_t c) {$/;"	f	class:StdioStream
+fmtDec	.\SdFat\FatLib\FmtNumber.cpp	/^char* fmtDec(uint16_t n, char* p) {$/;"	f
+fmtDec	.\SdFat\FatLib\FmtNumber.cpp	/^char* fmtDec(uint32_t n, char* p) {$/;"	f
+fmtFloat	.\SdFat\FatLib\FmtNumber.cpp	/^char* fmtFloat(float value, char* p, uint8_t prec) {$/;"	f
+fmtFloat	.\SdFat\FatLib\FmtNumber.cpp	/^char* fmtFloat(float value, char* ptr, uint8_t prec, char expChar) {$/;"	f
+fmtHex	.\SdFat\FatLib\FmtNumber.cpp	/^char* fmtHex(uint32_t n, char* p) {$/;"	f
+fmtNum	.\SdFat\FatLib\ostream.cpp	/^char* ostream::fmtNum(uint32_t n, char *ptr, uint8_t base) {$/;"	f	class:ostream
+fmtSpace	.\SdFat\FatLib\StdioStream.cpp	/^char* StdioStream::fmtSpace(uint8_t len) {$/;"	f	class:StdioStream
+fmtflags	.\SdFat\FatLib\ios.h	/^  typedef unsigned int fmtflags;$/;"	t	class:ios_base
+fname_t	.\SdFat\FatLib\FatFile.h	/^struct fname_t {$/;"	s
+fopen	.\SdFat\FatLib\StdioStream.cpp	/^bool StdioStream::fopen(const char* path, const char* mode) {$/;"	f	class:StdioStream
+fopen	.\SdFat\FatLib\StdioStream.h	51;"	d
+fprintf	.\SdFat\FatLib\StdioStream.h	52;"	d
+fputc	.\SdFat\FatLib\StdioStream.h	/^  int fputc(int c) {$/;"	f	class:StdioStream
+fputc	.\SdFat\FatLib\StdioStream.h	53;"	d
+fputs	.\SdFat\FatLib\StdioStream.cpp	/^int StdioStream::fputs(const char* str) {$/;"	f	class:StdioStream
+fputs	.\SdFat\FatLib\StdioStream.h	54;"	d
+fread	.\SdFat\FatLib\StdioStream.cpp	/^size_t StdioStream::fread(void* ptr, size_t size, size_t count) {$/;"	f	class:StdioStream
+fread	.\SdFat\FatLib\StdioStream.h	55;"	d
+freeChain	.\SdFat\FatLib\FatVolume.cpp	/^bool FatVolume::freeChain(uint32_t cluster) {$/;"	f	class:FatVolume
+freeClusterCount	.\SdFat\FatLib\FatVolume.cpp	/^int32_t FatVolume::freeClusterCount() {$/;"	f	class:FatVolume
+freeCount	.\SdFat\FatLib\FatStructs.h	/^  uint32_t freeCount;$/;"	m	struct:fat32_fsinfo
+freopen	.\SdFat\FatLib\StdioStream.h	56;"	d
+fsBegin	.\SdFat\SdFat.h	/^  bool fsBegin() {$/;"	f	class:SdFat
+fsBegin	.\SdFat\SdFat.h	/^  bool fsBegin() {$/;"	f	class:SdFatSdio
+fsBegin	.\SdFat\SdFat.h	/^  bool fsBegin() {$/;"	f	class:SdFatSdioEX
+fscanf	.\SdFat\FatLib\StdioStream.h	57;"	d
+fseek	.\SdFat\FatLib\StdioStream.cpp	/^int StdioStream::fseek(int32_t offset, int origin) {$/;"	f	class:StdioStream
+fseek	.\SdFat\FatLib\StdioStream.h	58;"	d
+fsetpos	.\SdFat\FatLib\StdioStream.h	59;"	d
+fsinfo	.\SdFat\FatLib\FatVolume.h	/^  fat32_fsinfo_t fsinfo;$/;"	m	union:cache_t
+fstream	.\SdFat\FatLib\fstream.h	/^  explicit fstream(const char* path, openmode mode = in | out) {$/;"	f	class:fstream
+fstream	.\SdFat\FatLib\fstream.h	/^  fstream() {}$/;"	f	class:fstream
+fstream	.\SdFat\FatLib\fstream.h	/^class fstream : public iostream, FatStreamBase {$/;"	c
+fstream_h	.\SdFat\FatLib\fstream.h	26;"	d
+ftell	.\SdFat\FatLib\StdioStream.cpp	/^int32_t StdioStream::ftell() {$/;"	f	class:StdioStream
+ftell	.\SdFat\FatLib\StdioStream.h	60;"	d
+fwrite	.\SdFat\FatLib\StdioStream.cpp	/^size_t StdioStream::fwrite(const void* ptr, size_t size, size_t count) {$/;"	f	class:StdioStream
+fwrite	.\SdFat\FatLib\StdioStream.h	61;"	d
+gcount	.\SdFat\FatLib\istream.h	/^  streamsize gcount() const {$/;"	f	class:istream
+get	.\SdFat\FatLib\istream.cpp	/^int istream::get() {$/;"	f	class:istream
+get	.\SdFat\FatLib\istream.cpp	/^istream& istream::get(char *str, streamsize n, char delim) {$/;"	f	class:istream
+get	.\SdFat\FatLib\istream.cpp	/^istream& istream::get(char& c) {$/;"	f	class:istream
+getBool	.\SdFat\FatLib\istream.cpp	/^void istream::getBool(bool *b) {$/;"	f	class:istream
+getChar	.\SdFat\FatLib\istream.cpp	/^void istream::getChar(char* ch) {$/;"	f	class:istream
+getDouble	.\SdFat\FatLib\istream.cpp	/^bool istream::getDouble(double* value) {$/;"	f	class:istream
+getError	.\SdFat\FatLib\FatFile.h	/^  uint8_t getError() {$/;"	f	class:FatFile
+getName	.\SdFat\FatLib\FatFileLFN.cpp	/^bool FatFile::getName(char* name, size_t size) {$/;"	f	class:FatFile
+getName	.\SdFat\FatLib\FatFileSFN.cpp	/^bool FatFile::getName(char* name, size_t size) {$/;"	f	class:FatFile
+getNumber	.\SdFat\FatLib\istream.cpp	/^bool istream::getNumber(uint32_t posMax, uint32_t negMax, uint32_t* num) {$/;"	f	class:istream
+getNumber	.\SdFat\FatLib\istream.h	/^void istream::getNumber(T* value) {$/;"	f	class:istream
+getSFN	.\SdFat\FatLib\FatFileSFN.cpp	/^bool FatFile::getSFN(char* name) {$/;"	f	class:FatFile
+getStr	.\SdFat\FatLib\istream.cpp	/^void istream::getStr(char *str) {$/;"	f	class:istream
 getSync	.\STK_500_Programmer.cpp	/^bool getSync(){$/;"	f
+getWriteError	.\SdFat\FatLib\FatFile.h	/^  bool getWriteError() {$/;"	f	class:FatFile
+getc	.\SdFat\FatLib\StdioStream.h	/^  int getc() {$/;"	f	class:StdioStream
+getc	.\SdFat\FatLib\StdioStream.h	62;"	d
+getch	.\SdFat\FatLib\bufstream.h	/^  int16_t getch() {$/;"	f	class:ibufstream
+getch	.\SdFat\FatLib\fstream.cpp	/^int16_t FatStreamBase::getch() {$/;"	f	class:FatStreamBase
+getch	.\SdFat\FatLib\fstream.h	/^  int16_t getch() {$/;"	f	class:fstream
+getch	.\SdFat\FatLib\fstream.h	/^  int16_t getch() {$/;"	f	class:ifstream
+getch	.\SdFat\FatLib\istream.h	/^  int16_t getch(FatPos_t* pos) {$/;"	f	class:istream
+getchar	.\SdFat\FatLib\StdioStream.h	63;"	d
+getline	.\SdFat\FatLib\istream.cpp	/^istream& istream::getline(char *str, streamsize n, char delim) {$/;"	f	class:istream
+getmode	.\SdFat\FatLib\fstream.h	/^  ios::openmode getmode() {$/;"	f	class:FatStreamBase
+getpos	.\SdFat\FatLib\FatFile.cpp	/^void FatFile::getpos(FatPos_t* pos) {$/;"	f	class:FatFile
+getpos	.\SdFat\FatLib\bufstream.h	/^  void getpos(FatPos_t *pos) {$/;"	f	class:ibufstream
+getpos	.\SdFat\FatLib\fstream.h	/^  void getpos(FatPos_t* pos) {$/;"	f	class:fstream
+getpos	.\SdFat\FatLib\fstream.h	/^  void getpos(FatPos_t* pos) {$/;"	f	class:ifstream
+gets	.\SdFat\FatLib\StdioStream.h	64;"	d
+good	.\SdFat\FatLib\ios.h	/^  bool good() const {$/;"	f	class:ios
+goodbit	.\SdFat\FatLib\ios.h	/^  static const iostate goodbit = 0x00;$/;"	m	class:ios_base
+halt	.\SdFat\SysCall.h	/^  static void halt() {$/;"	f	class:SysCall
+headCount	.\SdFat\FatLib\FatStructs.h	/^  uint16_t headCount;$/;"	m	struct:biosParmBlock
+headCount	.\SdFat\FatLib\FatStructs.h	/^  uint16_t headCount;$/;"	m	struct:fat32_boot
+headCount	.\SdFat\FatLib\FatStructs.h	/^  uint16_t headCount;$/;"	m	struct:fat_boot
+hex	.\SdFat\FatLib\ios.h	/^  static const fmtflags hex        = 0x0010;$/;"	m	class:ios_base
+hex	.\SdFat\FatLib\ios.h	/^inline ios_base& hex(ios_base& str) {$/;"	f
 hexFile	.\STK_500_Programmer.cpp	/^HexFileClass hexFile; \/\/Declare a hexFile object for working with entire hexfile$/;"	v
 hexfile_chars_consumed	.\STK_500_Programmer.h	/^   unsigned int hexfile_chars_consumed = 0;$/;"	m	class:HexFileClass
 hexfile_total_bytes	.\STK_500_Programmer.h	/^   unsigned int hexfile_total_bytes = 0;$/;"	m	class:HexFileClass
+hidddenSectors	.\SdFat\FatLib\FatStructs.h	/^  uint32_t hidddenSectors;$/;"	m	struct:biosParmBlock
+hidddenSectors	.\SdFat\FatLib\FatStructs.h	/^  uint32_t hidddenSectors;$/;"	m	struct:fat32_boot
+hidddenSectors	.\SdFat\FatLib\FatStructs.h	/^  uint32_t hidddenSectors;$/;"	m	struct:fat_boot
+high	.\SdFat\SpiDriver\DigitalPin.h	/^  void high() {write(true);}$/;"	f	class:DigitalPin
+ibufstream	.\SdFat\FatLib\bufstream.h	/^  explicit ibufstream(const char* str) {$/;"	f	class:ibufstream
+ibufstream	.\SdFat\FatLib\bufstream.h	/^  ibufstream() : m_buf(0), m_len(0) {}$/;"	f	class:ibufstream
+ibufstream	.\SdFat\FatLib\bufstream.h	/^class ibufstream : public istream {$/;"	c
+ifstream	.\SdFat\FatLib\fstream.h	/^  explicit ifstream(const char* path, openmode mode = in) {$/;"	f	class:ifstream
+ifstream	.\SdFat\FatLib\fstream.h	/^  ifstream() {}$/;"	f	class:ifstream
+ifstream	.\SdFat\FatLib\fstream.h	/^class ifstream : public istream, FatStreamBase {$/;"	c
+ignore	.\SdFat\FatLib\istream.cpp	/^istream& istream::ignore(streamsize n, int delim) {$/;"	f	class:istream
+in	.\SdFat\FatLib\ios.h	/^  static const openmode in     = 0X20;$/;"	m	class:ios_base
+init	.\SdFat\FatLib\FatVolume.cpp	/^bool FatVolume::init(uint8_t part) {$/;"	f	class:FatVolume
+init	.\SdFat\FatLib\FatVolume.h	/^  bool init() {$/;"	f	class:FatVolume
+init	.\SdFat\FatLib\FatVolume.h	/^  void init(FatVolume *vol) {$/;"	f	class:FatCache
+init	.\SdFat\FatLib\bufstream.h	/^  void init(char *buf, size_t size) {$/;"	f	class:obufstream
+init	.\SdFat\FatLib\bufstream.h	/^  void init(const char* str) {$/;"	f	class:ibufstream
+initErrorHalt	.\SdFat\SdFat.h	/^  void initErrorHalt() {$/;"	f	class:SdFileSystem
+initErrorHalt	.\SdFat\SdFat.h	/^  void initErrorHalt(Print* pr) {$/;"	f	class:SdFileSystem
+initErrorHalt	.\SdFat\SdFat.h	/^  void initErrorHalt(Print* pr, char const *msg) {$/;"	f	class:SdFileSystem
+initErrorHalt	.\SdFat\SdFat.h	/^  void initErrorHalt(Print* pr, const __FlashStringHelper* msg) {$/;"	f	class:SdFileSystem
+initErrorHalt	.\SdFat\SdFat.h	/^  void initErrorHalt(char const *msg) {$/;"	f	class:SdFileSystem
+initErrorHalt	.\SdFat\SdFat.h	/^  void initErrorHalt(const __FlashStringHelper* msg) {$/;"	f	class:SdFileSystem
+initErrorPrint	.\SdFat\SdFat.h	/^  void initErrorPrint() {$/;"	f	class:SdFileSystem
+initErrorPrint	.\SdFat\SdFat.h	/^  void initErrorPrint(Print* pr) {$/;"	f	class:SdFileSystem
+initErrorPrint	.\SdFat\SdFat.h	/^  void initErrorPrint(Print* pr, char const *msg) {$/;"	f	class:SdFileSystem
+initErrorPrint	.\SdFat\SdFat.h	/^  void initErrorPrint(Print* pr, const __FlashStringHelper* msg) {$/;"	f	class:SdFileSystem
+initErrorPrint	.\SdFat\SdFat.h	/^  void initErrorPrint(char const *msg) {$/;"	f	class:SdFileSystem
+initErrorPrint	.\SdFat\SdFat.h	/^  void initErrorPrint(const __FlashStringHelper* msg) {$/;"	f	class:SdFileSystem
+initSDHC	.\SdFat\SdCard\SdioTeensy.cpp	/^static void initSDHC() {$/;"	f	file:
+internal	.\SdFat\FatLib\ios.h	/^  static const fmtflags internal   = 0x0004;$/;"	m	class:ios_base
+internal	.\SdFat\FatLib\ios.h	/^inline ios_base& internal(ios_base& str) {$/;"	f
+invalidate	.\SdFat\FatLib\FatVolume.h	/^  void invalidate() {$/;"	f	class:FatCache
+ios	.\SdFat\FatLib\ios.h	/^  ios() : m_iostate(0) {}$/;"	f	class:ios
+ios	.\SdFat\FatLib\ios.h	/^class ios : public ios_base {$/;"	c
+ios_base	.\SdFat\FatLib\ios.h	/^  ios_base() : m_fill(' '), m_fmtflags(dec | right | skipws)$/;"	f	class:ios_base
+ios_base	.\SdFat\FatLib\ios.h	/^class ios_base {$/;"	c
+ios_h	.\SdFat\FatLib\ios.h	26;"	d
+iostate	.\SdFat\FatLib\ios.h	/^  typedef unsigned char iostate;$/;"	t	class:ios_base
+iostream	.\SdFat\FatLib\iostream.h	/^class iostream : public istream, public ostream {$/;"	c
+iostream_h	.\SdFat\FatLib\iostream.h	26;"	d
+isBusy	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::isBusy() {$/;"	f	class:SdSpiCard
+isBusy	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::isBusy() {$/;"	f	class:SdioCard
+isBusyCMD13	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool isBusyCMD13() {$/;"	f	file:
+isBusyCommandComplete	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool isBusyCommandComplete() {$/;"	f	file:
+isBusyCommandInhibit	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool isBusyCommandInhibit() {$/;"	f	file:
+isBusyDMA	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool isBusyDMA() {$/;"	f	file:
+isBusyFifoRead	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool isBusyFifoRead() {$/;"	f	file:
+isBusyFifoWrite	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool isBusyFifoWrite() {$/;"	f	file:
+isBusyTransferComplete	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool isBusyTransferComplete() {$/;"	f	file:
+isDigit	.\SdFat\FatLib\FmtNumber.h	/^inline bool isDigit(char c) {$/;"	f
+isDir	.\SdFat\FatLib\FatFile.h	/^  bool isDir() const {$/;"	f	class:FatFile
+isDirSeparator	.\SdFat\FatLib\FatFile.h	76;"	d
+isDirectory	.\SdFat\FatLib\ArduinoFiles.h	/^  bool isDirectory() {$/;"	f	class:File
+isDirty	.\SdFat\FatLib\FatVolume.h	/^  bool isDirty() {$/;"	f	class:FatCache
+isEOC	.\SdFat\FatLib\FatVolume.h	/^  bool isEOC(uint32_t cluster) const {$/;"	f	class:FatVolume
+isFile	.\SdFat\FatLib\FatFile.h	/^  bool isFile() const {$/;"	f	class:FatFile
+isHidden	.\SdFat\FatLib\FatFile.h	/^  bool isHidden() const {$/;"	f	class:FatFile
+isLFN	.\SdFat\FatLib\FatFile.h	/^  bool isLFN() const {$/;"	f	class:FatFile
+isOpen	.\SdFat\FatLib\FatFile.h	/^  bool isOpen() const {$/;"	f	class:FatFile
+isReadOnly	.\SdFat\FatLib\FatFile.h	/^  bool isReadOnly() const {$/;"	f	class:FatFile
+isRoot	.\SdFat\FatLib\FatFile.h	/^  bool isRoot() const {$/;"	f	class:FatFile
+isRoot32	.\SdFat\FatLib\FatFile.h	/^  bool isRoot32() const {$/;"	f	class:FatFile
+isRootFixed	.\SdFat\FatLib\FatFile.h	/^  bool isRootFixed() const {$/;"	f	class:FatFile
+isSpace	.\SdFat\FatLib\FmtNumber.h	/^inline bool isSpace(char c) {$/;"	f
+isSubDir	.\SdFat\FatLib\FatFile.h	/^  bool isSubDir() const {$/;"	f	class:FatFile
+isSystem	.\SdFat\FatLib\FatFile.h	/^  bool isSystem() const {$/;"	f	class:FatFile
+isTimedOut	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::isTimedOut(uint16_t startMS, uint16_t timeoutMS) {$/;"	f	class:SdSpiCard
+is_open	.\SdFat\FatLib\fstream.h	/^  bool is_open() {$/;"	f	class:fstream
+is_open	.\SdFat\FatLib\fstream.h	/^  bool is_open() {$/;"	f	class:ifstream
+is_open	.\SdFat\FatLib\fstream.h	/^  bool is_open() {$/;"	f	class:ofstream
+istream	.\SdFat\FatLib\istream.h	/^  istream() {}$/;"	f	class:istream
+istream	.\SdFat\FatLib\istream.h	/^class istream : public virtual ios {$/;"	c
+istream_h	.\SdFat\FatLib\istream.h	26;"	d
+jump	.\SdFat\FatLib\FatStructs.h	/^  uint8_t jump[3];$/;"	m	struct:fat32_boot
+jump	.\SdFat\FatLib\FatStructs.h	/^  uint8_t jump[3];$/;"	m	struct:fat_boot
+kHzSdClk	.\SdFat\SdCard\SdioTeensy.cpp	/^uint32_t SdioCard::kHzSdClk() {$/;"	f	class:SdioCard
+lastAccessDate	.\SdFat\FatLib\FatStructs.h	/^  uint16_t lastAccessDate;$/;"	m	struct:directoryEntry
+lastWriteDate	.\SdFat\FatLib\FatStructs.h	/^  uint16_t lastWriteDate;$/;"	m	struct:directoryEntry
+lastWriteTime	.\SdFat\FatLib\FatStructs.h	/^  uint16_t lastWriteTime;$/;"	m	struct:directoryEntry
+lbn	.\SdFat\FatLib\FatVolume.h	/^  uint32_t lbn() {$/;"	f	class:FatCache
+ldir_t	.\SdFat\FatLib\FatStructs.h	/^typedef struct longDirectoryEntry ldir_t;$/;"	t	typeref:struct:longDirectoryEntry
+leadSignature	.\SdFat\FatLib\FatStructs.h	/^  uint32_t  leadSignature;$/;"	m	struct:fat32_fsinfo
+left	.\SdFat\FatLib\ios.h	/^  static const fmtflags left       = 0x0001;$/;"	m	class:ios_base
+left	.\SdFat\FatLib\ios.h	/^inline ios_base& left(ios_base& str) {$/;"	f
+legal83Char	.\SdFat\FatLib\FatFile.h	/^  static bool legal83Char(uint8_t c) {$/;"	f	class:FatFile
+len	.\SdFat\FatLib\FatFile.h	/^  size_t len;$/;"	m	struct:fname_t
+length	.\SdFat\FatLib\bufstream.h	/^  size_t length() {$/;"	f	class:obufstream
+lfn	.\SdFat\FatLib\FatFile.h	/^  const char* lfn;$/;"	m	struct:fname_t
+lfnChecksum	.\SdFat\FatLib\FatFileLFN.cpp	/^uint8_t FatFile::lfnChecksum(uint8_t* name) {$/;"	f	class:FatFile
+lfnGetChar	.\SdFat\FatLib\FatFileLFN.cpp	/^static uint16_t lfnGetChar(ldir_t *ldir, uint8_t i) {$/;"	f	file:
+lfnGetName	.\SdFat\FatLib\FatFileLFN.cpp	/^static bool lfnGetName(ldir_t *ldir, char* name, size_t n) {$/;"	f	file:
+lfnLegalChar	.\SdFat\FatLib\FatFileLFN.cpp	/^inline bool lfnLegalChar(char c) {$/;"	f
+lfnPutChar	.\SdFat\FatLib\FatFileLFN.cpp	/^static void lfnPutChar(ldir_t *ldir, uint8_t i, uint16_t c) {$/;"	f	file:
+lfnPutName	.\SdFat\FatLib\FatFileLFN.cpp	/^static void lfnPutName(ldir_t *ldir, const char* name, size_t n) {$/;"	f	file:
+lfnToLower	.\SdFat\FatLib\FatFileLFN.cpp	/^inline char lfnToLower(char c) {$/;"	f
+lfnUniqueSfn	.\SdFat\FatLib\FatFileLFN.cpp	/^bool FatFile::lfnUniqueSfn(fname_t* fname) {$/;"	f	class:FatFile
 load_hex_records_flash_data_block	.\STK_500_Programmer.cpp	/^unsigned int HexFileClass::load_hex_records_flash_data_block(flash_page_block_t &targBlock){$/;"	f	class:HexFileClass
+longDirectoryEntry	.\SdFat\FatLib\FatStructs.h	/^struct longDirectoryEntry {$/;"	s
+low	.\SdFat\SpiDriver\DigitalPin.h	/^  void low() {write(false);}$/;"	f	class:DigitalPin
+ls	.\SdFat\FatLib\FatFile.h	/^  void ls(uint8_t flags = 0) {$/;"	f	class:FatFile
+ls	.\SdFat\FatLib\FatFilePrint.cpp	/^void FatFile::ls(print_t* pr, uint8_t flags, uint8_t indent) {$/;"	f	class:FatFile
+ls	.\SdFat\FatLib\FatFileSystem.h	/^  void ls(const char* path, uint8_t flags = 0) {$/;"	f	class:FatFileSystem
+ls	.\SdFat\FatLib\FatFileSystem.h	/^  void ls(print_t* pr, const char* path, uint8_t flags) {$/;"	f	class:FatFileSystem
+ls	.\SdFat\FatLib\FatFileSystem.h	/^  void ls(print_t* pr, uint8_t flags = 0) {$/;"	f	class:FatFileSystem
+ls	.\SdFat\FatLib\FatFileSystem.h	/^  void ls(uint8_t flags = 0) {$/;"	f	class:FatFileSystem
+m	.\SdFat\FatLib\FmtNumber.cpp	/^static const float m[] = {1e-1, 1e-2, 1e-4, 1e-8, 1e-16, 1e-32};$/;"	v	file:
+m_allocSearchStart	.\SdFat\FatLib\FatVolume.h	/^  uint32_t m_allocSearchStart;     \/\/ Start cluster for alloc search.$/;"	m	class:FatVolume
+m_attr	.\SdFat\FatLib\FatFile.h	/^  uint8_t    m_attr;             \/\/ File attributes$/;"	m	class:FatFile
+m_block	.\SdFat\FatLib\FatVolume.h	/^  cache_t m_block;$/;"	m	class:FatCache
+m_blockDev	.\SdFat\FatLib\FatVolume.h	/^  BlockDriver* m_blockDev;      \/\/ block device$/;"	m	class:FatVolume
+m_blocksPerCluster	.\SdFat\FatLib\FatVolume.h	/^  uint8_t  m_blocksPerCluster;     \/\/ Cluster size in blocks.$/;"	m	class:FatVolume
+m_blocksPerFat	.\SdFat\FatLib\FatVolume.h	/^  uint32_t m_blocksPerFat;         \/\/ FAT size in blocks$/;"	m	class:FatVolume
+m_buf	.\SdFat\FatLib\StdioStream.h	/^  uint8_t  m_buf[STREAM_BUF_SIZE];$/;"	m	class:StdioStream
+m_buf	.\SdFat\FatLib\bufstream.h	/^  char *m_buf;$/;"	m	class:obufstream
+m_buf	.\SdFat\FatLib\bufstream.h	/^  const char* m_buf;$/;"	m	class:ibufstream
+m_busyFcn	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool (*m_busyFcn)() = 0;$/;"	v	file:
+m_cache	.\SdFat\FatLib\FatVolume.h	/^  FatCache m_cache;$/;"	m	class:FatVolume
+m_card	.\SdFat\SdFat.h	/^  SdDriverClass m_card;$/;"	m	class:SdFileSystem
+m_cid	.\SdFat\SdCard\SdioTeensy.cpp	/^static cid_t m_cid;$/;"	v	file:
+m_clusterBlockMask	.\SdFat\FatLib\FatVolume.h	/^  uint8_t  m_clusterBlockMask;     \/\/ Mask to extract block of cluster.$/;"	m	class:FatVolume
+m_clusterSizeShift	.\SdFat\FatLib\FatVolume.h	/^  uint8_t  m_clusterSizeShift;     \/\/ Cluster count to block count shift.$/;"	m	class:FatVolume
+m_csPin	.\SdFat\SpiDriver\SdSpiDriver.h	/^  uint8_t m_csPin;$/;"	m	class:SdSpiAltDriver
+m_csPin	.\SdFat\SpiDriver\SdSpiDriver.h	/^  uint8_t m_csPin;$/;"	m	class:SdSpiLibDriver
+m_csPin	.\SdFat\SpiDriver\SdSpiDriver.h	/^  uint8_t m_csPin;$/;"	m	class:SdSpiSoftDriver
+m_csd	.\SdFat\SdCard\SdioTeensy.cpp	/^static csd_t m_csd;$/;"	v	file:
+m_curBlock	.\SdFat\SdCard\SdSpiCard.h	/^  uint32_t m_curBlock;$/;"	m	class:SdSpiCardEX
+m_curCluster	.\SdFat\FatLib\FatFile.h	/^  uint32_t   m_curCluster;       \/\/ cluster for current file position$/;"	m	class:FatFile
+m_curLba	.\SdFat\SdCard\SdioCard.h	/^  uint32_t m_curLba;$/;"	m	class:SdioCardEX
+m_curPosition	.\SdFat\FatLib\FatFile.h	/^  uint32_t   m_curPosition;      \/\/ current file position$/;"	m	class:FatFile
+m_curState	.\SdFat\SdCard\SdSpiCard.h	/^  uint8_t m_curState;$/;"	m	class:SdSpiCardEX
+m_curState	.\SdFat\SdCard\SdioCard.h	/^  uint8_t m_curState;$/;"	m	class:SdioCardEX
+m_cwd	.\SdFat\FatLib\FatFile.cpp	/^FatFile* FatFile::m_cwd = 0;$/;"	m	class:FatFile	file:
+m_cwd	.\SdFat\FatLib\FatFile.h	/^  static FatFile* m_cwd;$/;"	m	class:FatFile
+m_dataStartBlock	.\SdFat\FatLib\FatVolume.h	/^  uint32_t m_dataStartBlock;       \/\/ First data block number.$/;"	m	class:FatVolume
+m_dateTime	.\SdFat\FatLib\FatFile.cpp	/^void (*FatFile::m_dateTime)(uint16_t* date, uint16_t* time) = 0;$/;"	v
+m_dateTime	.\SdFat\FatLib\FatFile.h	/^  static void (*m_dateTime)(uint16_t* date, uint16_t* time);$/;"	m	class:FatFile
+m_dirBlock	.\SdFat\FatLib\FatFile.h	/^  uint32_t   m_dirBlock;         \/\/ block for this files directory entry$/;"	m	class:FatFile
+m_dirCluster	.\SdFat\FatLib\FatFile.h	/^  uint32_t   m_dirCluster;$/;"	m	class:FatFile
+m_dirIndex	.\SdFat\FatLib\FatFile.h	/^  uint16_t   m_dirIndex;         \/\/ index of directory entry in dir file$/;"	m	class:FatFile
+m_dmaBusy	.\SdFat\SdCard\SdioTeensy.cpp	/^static volatile bool m_dmaBusy = false;$/;"	v	file:
+m_error	.\SdFat\FatLib\FatFile.h	/^  uint8_t    m_error;            \/\/ Error bits.$/;"	m	class:FatFile
+m_errorCode	.\SdFat\SdCard\SdSpiCard.h	/^  uint8_t m_errorCode;$/;"	m	class:SdSpiCard
+m_errorCode	.\SdFat\SdCard\SdioTeensy.cpp	/^static uint8_t m_errorCode = SD_CARD_ERROR_INIT_NOT_CALLED;$/;"	v	file:
+m_errorLine	.\SdFat\SdCard\SdioTeensy.cpp	/^static uint32_t m_errorLine = 0;$/;"	v	file:
+m_fatCache	.\SdFat\FatLib\FatVolume.h	/^  FatCache m_fatCache;$/;"	m	class:FatVolume
+m_fatStartBlock	.\SdFat\FatLib\FatVolume.h	/^  uint32_t m_fatStartBlock;        \/\/ Start block for first FAT.$/;"	m	class:FatVolume
+m_fatType	.\SdFat\FatLib\FatVolume.h	/^  uint8_t  m_fatType;              \/\/ Volume type (12, 16, OR 32).$/;"	m	class:FatVolume
+m_fileSize	.\SdFat\FatLib\FatFile.h	/^  uint32_t   m_fileSize;         \/\/ file size in bytes$/;"	m	class:FatFile
+m_fill	.\SdFat\FatLib\ios.h	/^  char m_fill;$/;"	m	class:ios_base
+m_firstCluster	.\SdFat\FatLib\FatFile.h	/^  uint32_t   m_firstCluster;     \/\/ first cluster of file$/;"	m	class:FatFile
+m_flags	.\SdFat\FatLib\FatFile.h	/^  uint8_t    m_flags;            \/\/ See above for definition of m_flags bits$/;"	m	class:FatFile
+m_flags	.\SdFat\FatLib\StdioStream.h	/^  uint8_t  m_flags;$/;"	m	class:StdioStream
+m_fmtflags	.\SdFat\FatLib\ios.h	/^  fmtflags m_fmtflags;$/;"	m	class:ios_base
+m_freeClusterCount	.\SdFat\FatLib\FatVolume.h	/^  int32_t  m_freeClusterCount;     \/\/ Count of free clusters in volume.$/;"	m	class:FatVolume
+m_gcount	.\SdFat\FatLib\istream.h	/^  size_t m_gcount;$/;"	m	class:istream
+m_highCapacity	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool m_highCapacity;$/;"	v	file:
+m_hw	.\SdFat\FatLib\ArduinoStream.h	/^  Stream* m_hw;$/;"	m	class:ArduinoInStream
+m_in	.\SdFat\FatLib\bufstream.h	/^  size_t m_in;$/;"	m	class:obufstream
+m_initDone	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool m_initDone = false;$/;"	v	file:
+m_iostate	.\SdFat\FatLib\ios.h	/^  iostate m_iostate;$/;"	m	class:ios
+m_irqstat	.\SdFat\SdCard\SdioTeensy.cpp	/^static volatile uint32_t m_irqstat;$/;"	v	file:
+m_lastCluster	.\SdFat\FatLib\FatVolume.h	/^  uint32_t m_lastCluster;          \/\/ Last cluster number in FAT.$/;"	m	class:FatVolume
+m_lbn	.\SdFat\FatLib\FatVolume.h	/^  uint32_t m_lbn;$/;"	m	class:FatCache
+m_len	.\SdFat\FatLib\bufstream.h	/^  size_t m_len;$/;"	m	class:ibufstream
+m_lfnOrd	.\SdFat\FatLib\FatFile.h	/^  uint8_t    m_lfnOrd;$/;"	m	class:FatFile
+m_limitLba	.\SdFat\SdCard\SdioCard.h	/^  uint32_t m_limitLba;$/;"	m	class:SdioCardEX
+m_line	.\SdFat\FatLib\ArduinoStream.h	/^  char *m_line;$/;"	m	class:ArduinoInStream
+m_mode	.\SdFat\FatLib\fstream.h	/^  ios::openmode m_mode;$/;"	m	class:FatStreamBase
+m_ocr	.\SdFat\SdCard\SdioTeensy.cpp	/^static uint32_t m_ocr;$/;"	v	file:
+m_p	.\SdFat\FatLib\StdioStream.h	/^  uint8_t* m_p;$/;"	m	class:StdioStream
+m_pos	.\SdFat\FatLib\bufstream.h	/^  size_t m_pos;$/;"	m	class:ibufstream
+m_pr	.\SdFat\FatLib\ArduinoStream.h	/^  Print* m_pr;$/;"	m	class:ArduinoOutStream
+m_precision	.\SdFat\FatLib\ios.h	/^  unsigned char m_precision;$/;"	m	class:ios_base
+m_r	.\SdFat\FatLib\StdioStream.h	/^  uint8_t  m_r;$/;"	m	class:StdioStream
+m_rca	.\SdFat\SdCard\SdioTeensy.cpp	/^static uint32_t m_rca;$/;"	v	file:
+m_rootDirEntryCount	.\SdFat\FatLib\FatVolume.h	/^  uint16_t m_rootDirEntryCount;    \/\/ Number of entries in FAT16 root dir.$/;"	m	class:FatVolume
+m_rootDirStart	.\SdFat\FatLib\FatVolume.h	/^  uint32_t m_rootDirStart;         \/\/ Start block for FAT16, cluster for FAT32.$/;"	m	class:FatVolume
+m_sdClkKhz	.\SdFat\SdCard\SdioTeensy.cpp	/^static uint32_t m_sdClkKhz = 0;$/;"	v	file:
+m_size	.\SdFat\FatLib\ArduinoStream.h	/^  size_t m_size;$/;"	m	class:ArduinoInStream
+m_size	.\SdFat\FatLib\bufstream.h	/^  size_t m_size;$/;"	m	class:obufstream
+m_spi	.\SdFat\SdFat.h	/^  SdFatSpiDriver m_spi;$/;"	m	class:Sd2Card
+m_spi	.\SdFat\SdFat.h	/^  SdFatSpiDriver m_spi;$/;"	m	class:SdFat
+m_spi	.\SdFat\SdFat.h	/^  SdFatSpiDriver m_spi;$/;"	m	class:SdFatEX
+m_spi	.\SdFat\SdFat.h	/^  SdSpiSoftDriver<MisoPin, MosiPin, SckPin> m_spi;$/;"	m	class:SdFatSoftSpi
+m_spi	.\SdFat\SdFat.h	/^  SdSpiSoftDriver<MisoPin, MosiPin, SckPin> m_spi;$/;"	m	class:SdFatSoftSpiEX
+m_spi	.\SdFat\SpiDriver\SdSpiDriver.h	/^  SPIClass* m_spi;$/;"	m	class:SdSpiAltDriver
+m_spi	.\SdFat\SpiDriver\SdSpiDriver.h	/^  SoftSPI<MisoPin, MosiPin, SckPin, 0> m_spi;$/;"	m	class:SdSpiSoftDriver
+m_spiActive	.\SdFat\SdCard\SdSpiCard.h	/^  bool    m_spiActive;$/;"	m	class:SdSpiCard
+m_spiDriver	.\SdFat\SdCard\SdSpiCard.h	/^  SdSpiDriver *m_spiDriver;$/;"	m	class:SdSpiCard
+m_spiSettings	.\SdFat\SpiDriver\SdSpiDriver.h	/^  SPISettings m_spiSettings;$/;"	m	class:SdSpiAltDriver
+m_spiSettings	.\SdFat\SpiDriver\SdSpiDriver.h	/^  SPISettings m_spiSettings;$/;"	m	class:SdSpiLibDriver
+m_status	.\SdFat\FatLib\FatVolume.h	/^  uint8_t m_status;$/;"	m	class:FatCache
+m_status	.\SdFat\SdCard\SdSpiCard.h	/^  uint8_t m_status;$/;"	m	class:SdSpiCard
+m_type	.\SdFat\SdCard\SdSpiCard.h	/^  uint8_t m_type;$/;"	m	class:SdSpiCard
+m_version2	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool m_version2;$/;"	v	file:
+m_vol	.\SdFat\FatLib\FatFile.h	/^  FatVolume* m_vol;              \/\/ volume where file is located$/;"	m	class:FatFile
+m_vol	.\SdFat\FatLib\FatVolume.h	/^  FatVolume* m_vol;$/;"	m	class:FatCache
+m_vwd	.\SdFat\FatLib\FatFileSystem.h	/^  FatFile m_vwd;$/;"	m	class:FatFileSystem
+m_w	.\SdFat\FatLib\StdioStream.h	/^  uint8_t  m_w;$/;"	m	class:StdioStream
+m_width	.\SdFat\FatLib\ios.h	/^  unsigned int m_width;$/;"	m	class:ios_base
+mask	.\SdFat\SpiDriver\DigitalPin.h	/^  uint8_t mask;            \/**< bit mask for this pin *\/$/;"	m	struct:GpioPinMap_t
+masterBootRecord	.\SdFat\FatLib\FatStructs.h	/^struct masterBootRecord {$/;"	s
+mbr	.\SdFat\FatLib\FatVolume.h	/^  mbr_t    mbr;$/;"	m	union:cache_t
+mbrSig0	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  mbrSig0;$/;"	m	struct:masterBootRecord
+mbrSig1	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  mbrSig1;$/;"	m	struct:masterBootRecord
+mbr_t	.\SdFat\FatLib\FatStructs.h	/^typedef struct masterBootRecord mbr_t;$/;"	t	typeref:struct:masterBootRecord
+mdt_month	.\SdFat\SdCard\SdInfo.h	/^  unsigned char mdt_month : 4;$/;"	m	struct:CID
+mdt_year_high	.\SdFat\SdCard\SdInfo.h	/^  unsigned char mdt_year_high : 4;$/;"	m	struct:CID
+mdt_year_low	.\SdFat\SdCard\SdInfo.h	/^  unsigned char mdt_year_low : 4;$/;"	m	struct:CID
+mediaType	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  mediaType;$/;"	m	struct:biosParmBlock
+mediaType	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  mediaType;$/;"	m	struct:fat32_boot
+mediaType	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  mediaType;$/;"	m	struct:fat_boot
+mid	.\SdFat\SdCard\SdInfo.h	/^  unsigned char mid;$/;"	m	struct:CID
+mkdir	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::mkdir(FatFile* parent, const char* path, bool pFlag) {$/;"	f	class:FatFile
+mkdir	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::mkdir(FatFile* parent, fname_t* fname) {$/;"	f	class:FatFile
+mkdir	.\SdFat\FatLib\FatFileSystem.h	/^  bool mkdir(const char* path, bool pFlag = true) {$/;"	f	class:FatFileSystem
+mode	.\SdFat\SpiDriver\DigitalPin.h	/^  void mode(uint8_t mode) {$/;"	f	class:DigitalPin
 moreBytesToConsume	.\STK_500_Programmer.h	/^   bool moreBytesToConsume(){$/;"	f	class:HexFileClass
+mustBeZero	.\SdFat\FatLib\FatStructs.h	/^  uint16_t mustBeZero;$/;"	m	struct:longDirectoryEntry
+name	.\SdFat\FatLib\ArduinoFiles.h	/^  const char* name() const {$/;"	f	class:File
+name	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  name[11];$/;"	m	struct:directoryEntry
+name1	.\SdFat\FatLib\FatStructs.h	/^  uint16_t name1[LDIR_NAME1_DIM];$/;"	m	struct:longDirectoryEntry
+name2	.\SdFat\FatLib\FatStructs.h	/^  uint16_t name2[LDIR_NAME2_DIM];$/;"	m	struct:longDirectoryEntry
+name3	.\SdFat\FatLib\FatStructs.h	/^  uint16_t name3[LDIR_NAME3_DIM];$/;"	m	struct:longDirectoryEntry
+nextFree	.\SdFat\FatLib\FatStructs.h	/^  uint32_t nextFree;$/;"	m	struct:fat32_fsinfo
+noboolalpha	.\SdFat\FatLib\ios.h	/^inline ios_base& noboolalpha(ios_base& str) {$/;"	f
+nop	.\SdFat\SpiDriver\SoftSPI.h	39;"	d
+noshowbase	.\SdFat\FatLib\ios.h	/^inline ios_base& noshowbase(ios_base& str) {$/;"	f
+noshowpoint	.\SdFat\FatLib\ios.h	/^inline ios_base& noshowpoint(ios_base& str) {$/;"	f
+noshowpos	.\SdFat\FatLib\ios.h	/^inline ios_base& noshowpos(ios_base& str) {$/;"	f
+noskipws	.\SdFat\FatLib\ios.h	/^inline ios_base& noskipws(ios_base& str) {$/;"	f
+nouppercase	.\SdFat\FatLib\ios.h	/^inline ios_base& nouppercase(ios_base& str) {$/;"	f
+nsac	.\SdFat\SdCard\SdInfo.h	/^  unsigned char nsac;$/;"	m	struct:CSDV1
+nsac	.\SdFat\SdCard\SdInfo.h	/^  unsigned char nsac;$/;"	m	struct:CSDV2
+obufstream	.\SdFat\FatLib\bufstream.h	/^  obufstream() : m_in(0) {}$/;"	f	class:obufstream
+obufstream	.\SdFat\FatLib\bufstream.h	/^  obufstream(char *buf, size_t size) {$/;"	f	class:obufstream
+obufstream	.\SdFat\FatLib\bufstream.h	/^class obufstream : public ostream {$/;"	c
+oct	.\SdFat\FatLib\ios.h	/^  static const fmtflags oct        = 0x0020;$/;"	m	class:ios_base
+oct	.\SdFat\FatLib\ios.h	/^inline ios_base& oct(ios_base& str) {$/;"	f
+oemId	.\SdFat\FatLib\FatStructs.h	/^  char    oemId[8];$/;"	m	struct:fat32_boot
+oemId	.\SdFat\FatLib\FatStructs.h	/^  char    oemId[8];$/;"	m	struct:fat_boot
+off_type	.\SdFat\FatLib\ios.h	/^  typedef int32_t off_type;$/;"	t	class:ios_base
+ofstream	.\SdFat\FatLib\fstream.h	/^  explicit ofstream(const char* path, ios::openmode mode = out) {$/;"	f	class:ofstream
+ofstream	.\SdFat\FatLib\fstream.h	/^  ofstream() {}$/;"	f	class:ofstream
+ofstream	.\SdFat\FatLib\fstream.h	/^class ofstream : public ostream, FatStreamBase {$/;"	c
+oid	.\SdFat\SdCard\SdInfo.h	/^  char oid[2];$/;"	m	struct:CID
+open	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::open(FatFile* dirFile, const char* path, uint8_t oflag) {$/;"	f	class:FatFile
+open	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::open(FatFile* dirFile, uint16_t index, uint8_t oflag) {$/;"	f	class:FatFile
+open	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::open(FatFileSystem* fs, const char* path, uint8_t oflag) {$/;"	f	class:FatFile
+open	.\SdFat\FatLib\FatFile.h	/^  bool open(const char* path, uint8_t oflag = O_READ) {$/;"	f	class:FatFile
+open	.\SdFat\FatLib\FatFileLFN.cpp	/^bool FatFile::open(FatFile* dirFile, fname_t* fname, uint8_t oflag) {$/;"	f	class:FatFile
+open	.\SdFat\FatLib\FatFileSFN.cpp	/^bool FatFile::open(FatFile* dirFile, fname_t* fname, uint8_t oflag) {$/;"	f	class:FatFile
+open	.\SdFat\FatLib\FatFileSystem.h	/^  File open(const String &path, uint8_t mode = FILE_READ) {$/;"	f	class:FatFileSystem
+open	.\SdFat\FatLib\FatFileSystem.h	/^  File open(const char *path, uint8_t mode = FILE_READ) {$/;"	f	class:FatFileSystem
+open	.\SdFat\FatLib\fstream.cpp	/^void FatStreamBase::open(const char* path, ios::openmode mode) {$/;"	f	class:FatStreamBase
+open	.\SdFat\FatLib\fstream.h	/^  void open(const char* path, openmode mode = in | out) {$/;"	f	class:fstream
+open	.\SdFat\FatLib\fstream.h	/^  void open(const char* path, openmode mode = in) {$/;"	f	class:ifstream
+open	.\SdFat\FatLib\fstream.h	/^  void open(const char* path, openmode mode = out) {$/;"	f	class:ofstream
+openCachedEntry	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::openCachedEntry(FatFile* dirFile, uint16_t dirIndex,$/;"	f	class:FatFile
+openCluster	.\SdFat\FatLib\FatFileLFN.cpp	/^bool FatFile::openCluster(FatFile* file) {$/;"	f	class:FatFile
+openNext	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::openNext(FatFile* dirFile, uint8_t oflag) {$/;"	f	class:FatFile
+openNextFile	.\SdFat\FatLib\ArduinoFiles.h	/^  File openNextFile(uint8_t mode = O_READ) {$/;"	f	class:File
+openParent	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::openParent(FatFile* dirFile) {$/;"	f	class:FatFile
+openRoot	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::openRoot(FatVolume* vol) {$/;"	f	class:FatFile
+openmode	.\SdFat\FatLib\ios.h	/^  typedef uint8_t openmode;$/;"	t	class:ios_base
+operator !	.\SdFat\FatLib\ios.h	/^  bool operator!() const {$/;"	f	class:ios
+operator <<	.\SdFat\FatLib\iostream.h	/^inline ostream &operator<< (ostream &os, const setfill &arg) {$/;"	f
+operator <<	.\SdFat\FatLib\iostream.h	/^inline ostream &operator<< (ostream &os, const setprecision &arg) {$/;"	f
+operator <<	.\SdFat\FatLib\iostream.h	/^inline ostream &operator<< (ostream &os, const setw &arg) {$/;"	f
+operator <<	.\SdFat\FatLib\ostream.h	/^  ostream &operator<< (bool arg) {$/;"	f	class:ostream
+operator <<	.\SdFat\FatLib\ostream.h	/^  ostream &operator<< (char arg) {$/;"	f	class:ostream
+operator <<	.\SdFat\FatLib\ostream.h	/^  ostream &operator<< (const __FlashStringHelper *arg) {$/;"	f	class:ostream
+operator <<	.\SdFat\FatLib\ostream.h	/^  ostream &operator<< (const char *arg) {$/;"	f	class:ostream
+operator <<	.\SdFat\FatLib\ostream.h	/^  ostream &operator<< (const signed char *arg) {$/;"	f	class:ostream
+operator <<	.\SdFat\FatLib\ostream.h	/^  ostream &operator<< (const unsigned char *arg) {$/;"	f	class:ostream
+operator <<	.\SdFat\FatLib\ostream.h	/^  ostream &operator<< (double arg) {$/;"	f	class:ostream
+operator <<	.\SdFat\FatLib\ostream.h	/^  ostream &operator<< (float arg) {$/;"	f	class:ostream
+operator <<	.\SdFat\FatLib\ostream.h	/^  ostream &operator<< (int arg) {$/;"	f	class:ostream
+operator <<	.\SdFat\FatLib\ostream.h	/^  ostream &operator<< (long arg) {  \/\/ NOLINT$/;"	f	class:ostream
+operator <<	.\SdFat\FatLib\ostream.h	/^  ostream &operator<< (short arg) {  \/\/ NOLINT$/;"	f	class:ostream
+operator <<	.\SdFat\FatLib\ostream.h	/^  ostream &operator<< (signed char arg) {$/;"	f	class:ostream
+operator <<	.\SdFat\FatLib\ostream.h	/^  ostream &operator<< (unsigned char arg) {$/;"	f	class:ostream
+operator <<	.\SdFat\FatLib\ostream.h	/^  ostream &operator<< (unsigned int arg) {$/;"	f	class:ostream
+operator <<	.\SdFat\FatLib\ostream.h	/^  ostream &operator<< (unsigned long arg) {  \/\/ NOLINT$/;"	f	class:ostream
+operator <<	.\SdFat\FatLib\ostream.h	/^  ostream &operator<< (unsigned short arg) {  \/\/ NOLINT$/;"	f	class:ostream
+operator <<	.\SdFat\FatLib\ostream.h	/^  ostream& operator<< (const void* arg) {$/;"	f	class:ostream
+operator =	.\SdFat\SpiDriver\DigitalPin.h	/^  inline DigitalPin & operator = (bool value) __attribute__((always_inline)) {$/;"	f	class:DigitalPin
+operator >>	.\SdFat\FatLib\iostream.h	/^inline istream &operator>>(istream &is, const setprecision &arg) {$/;"	f
+operator >>	.\SdFat\FatLib\iostream.h	/^inline istream &operator>>(istream &is, const setw &arg) {$/;"	f
+operator >>	.\SdFat\FatLib\iostream.h	/^inline istream &operator>>(istream &obj, const setfill &arg) {$/;"	f
+operator >>	.\SdFat\FatLib\istream.h	/^  istream &operator>> (double& arg) {$/;"	f	class:istream
+operator >>	.\SdFat\FatLib\istream.h	/^  istream &operator>> (float& arg) {$/;"	f	class:istream
+operator >>	.\SdFat\FatLib\istream.h	/^  istream &operator>>(int& arg) {$/;"	f	class:istream
+operator >>	.\SdFat\FatLib\istream.h	/^  istream &operator>>(long& arg) {  \/\/ NOLINT$/;"	f	class:istream
+operator >>	.\SdFat\FatLib\istream.h	/^  istream &operator>>(short& arg) {  \/\/ NOLINT$/;"	f	class:istream
+operator >>	.\SdFat\FatLib\istream.h	/^  istream &operator>>(unsigned int& arg) {$/;"	f	class:istream
+operator >>	.\SdFat\FatLib\istream.h	/^  istream &operator>>(unsigned long& arg) {  \/\/ NOLINT$/;"	f	class:istream
+operator >>	.\SdFat\FatLib\istream.h	/^  istream &operator>>(unsigned short& arg) {  \/\/ NOLINT$/;"	f	class:istream
+operator >>	.\SdFat\FatLib\istream.h	/^  istream& operator>> (void*& arg) {$/;"	f	class:istream
+operator >>	.\SdFat\FatLib\istream.h	/^  istream& operator>>(bool& arg) {$/;"	f	class:istream
+operator >>	.\SdFat\FatLib\istream.h	/^  istream& operator>>(char *str) {$/;"	f	class:istream
+operator >>	.\SdFat\FatLib\istream.h	/^  istream& operator>>(char& ch) {$/;"	f	class:istream
+operator >>	.\SdFat\FatLib\istream.h	/^  istream& operator>>(signed char *str) {$/;"	f	class:istream
+operator >>	.\SdFat\FatLib\istream.h	/^  istream& operator>>(signed char& ch) {$/;"	f	class:istream
+operator >>	.\SdFat\FatLib\istream.h	/^  istream& operator>>(unsigned char *str) {$/;"	f	class:istream
+operator >>	.\SdFat\FatLib\istream.h	/^  istream& operator>>(unsigned char& ch) {$/;"	f	class:istream
+operator bool	.\SdFat\FatLib\ArduinoFiles.h	/^  operator bool() {$/;"	f	class:File
+operator bool	.\SdFat\MinimumSerial.h	/^  operator bool() { return true; }$/;"	f	class:MinimumSerial
+operator bool	.\SdFat\SpiDriver\DigitalPin.h	/^  inline operator bool () const __attribute__((always_inline)) {$/;"	f	class:DigitalPin
+operator const void*	.\SdFat\FatLib\ios.h	/^  operator const void*() const {$/;"	f	class:ios
 optiboot_baud_rate	.\STK_500_Programmer.h	/^   unsigned int optiboot_baud_rate;$/;"	m	class:STK_Programmer
+ord	.\SdFat\FatLib\FatStructs.h	/^  uint8_t ord;$/;"	m	struct:longDirectoryEntry
+ostream	.\SdFat\FatLib\ostream.h	/^  ostream() {}$/;"	f	class:ostream
+ostream	.\SdFat\FatLib\ostream.h	/^class ostream : public virtual ios {$/;"	c
+ostream_h	.\SdFat\FatLib\ostream.h	26;"	d
+out	.\SdFat\FatLib\ios.h	/^  static const openmode out    = 0X40;$/;"	m	class:ios_base
+p	.\SdFat\FatLib\FmtNumber.cpp	/^static const float p[] = {1e+1, 1e+2, 1e+4, 1e+8, 1e+16, 1e+32};$/;"	v	file:
+p	.\SdFat\FatLib\iostream.h	/^  unsigned int p;$/;"	m	struct:setprecision
+parsePathName	.\SdFat\FatLib\FatFileLFN.cpp	/^bool FatFile::parsePathName(const char* path,$/;"	f	class:FatFile
+parsePathName	.\SdFat\FatLib\FatFileSFN.cpp	/^bool FatFile::parsePathName(const char* path, fname_t* fname,$/;"	f	class:FatFile
+part	.\SdFat\FatLib\FatStructs.h	/^  part_t   part[4];$/;"	m	struct:masterBootRecord
+part_t	.\SdFat\FatLib\FatStructs.h	/^typedef struct partitionTable part_t;$/;"	t	typeref:struct:partitionTable
+partitionTable	.\SdFat\FatLib\FatStructs.h	/^struct partitionTable {$/;"	s
+peek	.\SdFat\FatLib\ArduinoFiles.h	/^  int peek() {$/;"	f	class:File
+peek	.\SdFat\FatLib\ArduinoFiles.h	/^  int peek() {$/;"	f	class:PrintFile
+peek	.\SdFat\FatLib\FatFile.cpp	/^int FatFile::peek() {$/;"	f	class:FatFile
+peek	.\SdFat\FatLib\istream.cpp	/^int istream::peek() {$/;"	f	class:istream
+perm_write_protect	.\SdFat\SdCard\SdInfo.h	/^  unsigned char perm_write_protect : 1;$/;"	m	struct:CSDV1
+perm_write_protect	.\SdFat\SdCard\SdInfo.h	/^  unsigned char perm_write_protect : 1;$/;"	m	struct:CSDV2
+perror	.\SdFat\FatLib\StdioStream.h	65;"	d
+pf	.\SdFat\FatLib\istream.h	/^  istream& operator>>(ios& (*pf)(ios& str)) {$/;"	f	class:istream
+pf	.\SdFat\FatLib\istream.h	/^  istream& operator>>(ios_base& (*pf)(ios_base& str)) {$/;"	f	class:istream
+pf	.\SdFat\FatLib\istream.h	/^  istream& operator>>(istream& (*pf)(istream& str)) {$/;"	f	class:istream
+pf	.\SdFat\FatLib\ostream.h	/^  ostream& operator<< (ios_base& (*pf)(ios_base& str)) {$/;"	f	class:ostream
+pf	.\SdFat\FatLib\ostream.h	/^  ostream& operator<< (ostream& (*pf)(ostream& str)) {$/;"	f	class:ostream
+pgm_read_byte	.\SdFat\FatLib\FatFile.h	51;"	d
+pgm_read_word	.\SdFat\FatLib\FatFile.h	55;"	d
+pin	.\SdFat\SpiDriver\DigitalPin.h	/^  volatile uint8_t* pin;   \/**< address of PIN for this pin *\/$/;"	m	struct:GpioPinMap_t
+pinMask	.\SdFat\SpiDriver\DigitalPin.h	/^uint8_t pinMask(uint8_t pin) {$/;"	f
+pinReg	.\SdFat\SpiDriver\DigitalPin.h	/^volatile uint8_t* pinReg(uint8_t pin) {$/;"	f
+pnm	.\SdFat\SdCard\SdInfo.h	/^  char pnm[5];$/;"	m	struct:CID
+port	.\SdFat\SpiDriver\DigitalPin.h	/^  volatile uint8_t* port;  \/**< address of PORT for this pin *\/$/;"	m	struct:GpioPinMap_t
+portReg	.\SdFat\SpiDriver\DigitalPin.h	/^volatile uint8_t* portReg(uint8_t pin) {$/;"	f
+pos_type	.\SdFat\FatLib\ios.h	/^  typedef uint32_t pos_type;$/;"	t	class:ios_base
+position	.\SdFat\FatLib\ArduinoFiles.h	/^  uint32_t position() {$/;"	f	class:File
+position	.\SdFat\FatLib\FatFile.h	/^  uint32_t position;$/;"	m	struct:FatPos_t
+precision	.\SdFat\FatLib\ios.h	/^  int precision() const {$/;"	f	class:ios_base
+precision	.\SdFat\FatLib\ios.h	/^  int precision(unsigned int n) {$/;"	f	class:ios_base
+print	.\SdFat\FatLib\StdioStream.cpp	/^size_t StdioStream::print(const __FlashStringHelper *str) {$/;"	f	class:StdioStream
+print	.\SdFat\FatLib\StdioStream.h	/^  size_t print(T val) {$/;"	f	class:StdioStream
+print	.\SdFat\FatLib\StdioStream.h	/^  size_t print(char c) {$/;"	f	class:StdioStream
+print	.\SdFat\FatLib\StdioStream.h	/^  size_t print(const char* str) {$/;"	f	class:StdioStream
+print	.\SdFat\FatLib\StdioStream.h	/^  size_t print(double val, uint8_t prec = 2) {$/;"	f	class:StdioStream
+print	.\SdFat\FatLib\StdioStream.h	/^  size_t print(float val, uint8_t prec = 2) {$/;"	f	class:StdioStream
+print2u	.\SdFat\FatLib\FatFilePrint.cpp	/^static void print2u(print_t* pr, uint8_t v) {$/;"	f	file:
+printCreateDateTime	.\SdFat\FatLib\FatFilePrint.cpp	/^bool FatFile::printCreateDateTime(print_t* pr) {$/;"	f	class:FatFile
+printDec	.\SdFat\FatLib\StdioStream.cpp	/^int StdioStream::printDec(float value, uint8_t prec) {$/;"	f	class:StdioStream
+printDec	.\SdFat\FatLib\StdioStream.cpp	/^int StdioStream::printDec(int16_t n) {$/;"	f	class:StdioStream
+printDec	.\SdFat\FatLib\StdioStream.cpp	/^int StdioStream::printDec(int32_t n) {$/;"	f	class:StdioStream
+printDec	.\SdFat\FatLib\StdioStream.cpp	/^int StdioStream::printDec(signed char n) {$/;"	f	class:StdioStream
+printDec	.\SdFat\FatLib\StdioStream.cpp	/^int StdioStream::printDec(uint16_t n) {$/;"	f	class:StdioStream
+printDec	.\SdFat\FatLib\StdioStream.cpp	/^int StdioStream::printDec(uint32_t n) {$/;"	f	class:StdioStream
+printDec	.\SdFat\FatLib\StdioStream.h	/^  int printDec(char n) {$/;"	f	class:StdioStream
+printDec	.\SdFat\FatLib\StdioStream.h	/^  int printDec(double value, uint8_t prec) {$/;"	f	class:StdioStream
+printDec	.\SdFat\FatLib\StdioStream.h	/^  int printDec(unsigned char n) {$/;"	f	class:StdioStream
+printFatDate	.\SdFat\FatLib\FatFile.h	/^  static void printFatDate(uint16_t fatDate) {$/;"	f	class:FatFile
+printFatDate	.\SdFat\FatLib\FatFilePrint.cpp	/^void FatFile::printFatDate(print_t* pr, uint16_t fatDate) {$/;"	f	class:FatFile
+printFatTime	.\SdFat\FatLib\FatFile.h	/^  static void printFatTime(uint16_t fatTime) {$/;"	f	class:FatFile
+printFatTime	.\SdFat\FatLib\FatFilePrint.cpp	/^void FatFile::printFatTime(print_t* pr, uint16_t fatTime) {$/;"	f	class:FatFile
+printField	.\SdFat\FatLib\FatFilePrint.cpp	/^int FatFile::printField(float value, char term, uint8_t prec) {$/;"	f	class:FatFile
+printField	.\SdFat\FatLib\FatFilePrint.cpp	/^int FatFile::printField(int16_t value, char term) {$/;"	f	class:FatFile
+printField	.\SdFat\FatLib\FatFilePrint.cpp	/^int FatFile::printField(int32_t value, char term) {$/;"	f	class:FatFile
+printField	.\SdFat\FatLib\FatFilePrint.cpp	/^int FatFile::printField(uint16_t value, char term) {$/;"	f	class:FatFile
+printField	.\SdFat\FatLib\FatFilePrint.cpp	/^int FatFile::printField(uint32_t value, char term) {$/;"	f	class:FatFile
+printField	.\SdFat\FatLib\StdioStream.h	/^  int printField(T value, char term) {$/;"	f	class:StdioStream
+printField	.\SdFat\FatLib\StdioStream.h	/^  int printField(double value, char term, uint8_t prec = 2) {$/;"	f	class:StdioStream
+printField	.\SdFat\FatLib\StdioStream.h	/^  int printField(float value, char term, uint8_t prec = 2) {$/;"	f	class:StdioStream
+printFieldT	.\SdFat\FatLib\FatFilePrint.cpp	/^static int printFieldT(FatFile* file, char sign, Type value, char term) {$/;"	f	file:
+printFileSize	.\SdFat\FatLib\FatFilePrint.cpp	/^size_t FatFile::printFileSize(print_t* pr) {$/;"	f	class:FatFile
+printHex	.\SdFat\FatLib\FatFilePrint.cpp	/^static void printHex(print_t* pr, uint8_t w, uint16_t h) {$/;"	f	file:
+printHex	.\SdFat\FatLib\StdioStream.cpp	/^int StdioStream::printHex(uint32_t n) {$/;"	f	class:StdioStream
+printHexln	.\SdFat\FatLib\StdioStream.h	/^  int printHexln(uint32_t n) {$/;"	f	class:StdioStream
+printModifyDateTime	.\SdFat\FatLib\FatFilePrint.cpp	/^bool FatFile::printModifyDateTime(print_t* pr) {$/;"	f	class:FatFile
+printName	.\SdFat\FatLib\FatFile.h	/^  size_t printName() {$/;"	f	class:FatFile
+printName	.\SdFat\FatLib\FatFileLFN.cpp	/^size_t FatFile::printName(print_t* pr) {$/;"	f	class:FatFile
+printName	.\SdFat\FatLib\FatFileSFN.cpp	/^size_t FatFile::printName(print_t* pr) {$/;"	f	class:FatFile
+printRegs	.\SdFat\SdCard\SdioTeensy.cpp	/^static void printRegs(uint32_t line) {$/;"	f	file:
+printSFN	.\SdFat\FatLib\FatFileSFN.cpp	/^size_t FatFile::printSFN(print_t* pr) {$/;"	f	class:FatFile
+printU32	.\SdFat\FatLib\FatFilePrint.cpp	/^static void printU32(print_t* pr, uint32_t v) {$/;"	f	file:
+print_t	.\SdFat\FatLib\FatVolume.h	/^typedef CharWriter print_t;$/;"	t
+print_t	.\SdFat\FatLib\FatVolume.h	/^typedef Print print_t;$/;"	t
+println	.\SdFat\FatLib\StdioStream.h	/^  size_t println() {$/;"	f	class:StdioStream
+println	.\SdFat\FatLib\StdioStream.h	/^  size_t println(T val) {$/;"	f	class:StdioStream
+println	.\SdFat\FatLib\StdioStream.h	/^  size_t println(double val, uint8_t prec = 2) {$/;"	f	class:StdioStream
+println	.\SdFat\FatLib\StdioStream.h	/^  size_t println(float val, uint8_t prec = 2) {$/;"	f	class:StdioStream
 programTarget	.\STK_500_Programmer.cpp	/^bool STK_Programmer::programTarget(const char* targFile){$/;"	f	class:STK_Programmer
+prv_m	.\SdFat\SdCard\SdInfo.h	/^  unsigned char prv_m : 4;$/;"	m	struct:CID
+prv_n	.\SdFat\SdCard\SdInfo.h	/^  unsigned char prv_n : 4;$/;"	m	struct:CID
+psn	.\SdFat\SdCard\SdInfo.h	/^  uint32_t psn;$/;"	m	struct:CID
+put	.\SdFat\FatLib\ostream.h	/^  ostream& put(char ch) {$/;"	f	class:ostream
+putBool	.\SdFat\FatLib\ostream.cpp	/^void ostream::putBool(bool b) {$/;"	f	class:ostream
+putCRLF	.\SdFat\FatLib\StdioStream.h	/^  int putCRLF() {$/;"	f	class:StdioStream
+putChar	.\SdFat\FatLib\ostream.cpp	/^void ostream::putChar(char c) {$/;"	f	class:ostream
+putDouble	.\SdFat\FatLib\ostream.cpp	/^void ostream::putDouble(double n) {$/;"	f	class:ostream
+putNum	.\SdFat\FatLib\ostream.cpp	/^void ostream::putNum(int32_t n) {$/;"	f	class:ostream
+putNum	.\SdFat\FatLib\ostream.cpp	/^void ostream::putNum(uint32_t n, bool neg) {$/;"	f	class:ostream
+putPgm	.\SdFat\FatLib\ostream.cpp	/^void ostream::putPgm(const char* str) {$/;"	f	class:ostream
+putStr	.\SdFat\FatLib\ostream.cpp	/^void ostream::putStr(const char *str) {$/;"	f	class:ostream
+putc	.\SdFat\FatLib\StdioStream.h	/^  int putc(int c) {$/;"	f	class:StdioStream
+putc	.\SdFat\FatLib\StdioStream.h	67;"	d
+putch	.\SdFat\FatLib\ArduinoStream.h	/^  void putch(char c) {$/;"	f	class:ArduinoOutStream
+putch	.\SdFat\FatLib\bufstream.h	/^  void putch(char c) {$/;"	f	class:obufstream
+putch	.\SdFat\FatLib\fstream.cpp	/^void FatStreamBase::putch(char c) {$/;"	f	class:FatStreamBase
+putch	.\SdFat\FatLib\fstream.h	/^  void putch(char c) {$/;"	f	class:fstream
+putch	.\SdFat\FatLib\fstream.h	/^  void putch(char c) {$/;"	f	class:ofstream
+putchar	.\SdFat\FatLib\StdioStream.h	68;"	d
+puts	.\SdFat\FatLib\StdioStream.h	69;"	d
+putstr	.\SdFat\FatLib\ArduinoStream.h	/^  void putstr(const char* str) {$/;"	f	class:ArduinoOutStream
+putstr	.\SdFat\FatLib\bufstream.h	/^  void putstr(const char *str) {$/;"	f	class:obufstream
+putstr	.\SdFat\FatLib\fstream.cpp	/^void FatStreamBase::putstr(const char* str) {$/;"	f	class:FatStreamBase
+putstr	.\SdFat\FatLib\fstream.h	/^  void putstr(const char *str) {$/;"	f	class:fstream
+putstr	.\SdFat\FatLib\fstream.h	/^  void putstr(const char* str) {$/;"	f	class:ofstream
+r2w_factor	.\SdFat\SdCard\SdInfo.h	/^  unsigned char r2w_factor : 3;$/;"	m	struct:CSDV1
+r2w_factor	.\SdFat\SdCard\SdInfo.h	/^  unsigned char r2w_factor : 3;$/;"	m	struct:CSDV2
+rdWrBlocks	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool rdWrBlocks(uint32_t xfertyp,$/;"	f	file:
+rdstate	.\SdFat\FatLib\ios.h	/^  iostate rdstate() const {$/;"	f	class:ios
+read	.\SdFat\FatLib\ArduinoFiles.h	/^  int read() {$/;"	f	class:File
+read	.\SdFat\FatLib\FatFile.cpp	/^int FatFile::read(void* buf, size_t nbyte) {$/;"	f	class:FatFile
+read	.\SdFat\FatLib\FatFile.h	/^  int read() {$/;"	f	class:FatFile
+read	.\SdFat\FatLib\FatVolume.cpp	/^cache_t* FatCache::read(uint32_t lbn, uint8_t option) {$/;"	f	class:FatCache
+read	.\SdFat\MinimumSerial.cpp	/^int MinimumSerial::read() {$/;"	f	class:MinimumSerial
+read	.\SdFat\SpiDriver\DigitalPin.h	/^  bool read() const {$/;"	f	class:DigitalPin
+readBlock	.\SdFat\FatLib\FatVolume.h	/^  bool readBlock(uint32_t block, uint8_t* dst) {$/;"	f	class:FatVolume
+readBlock	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::readBlock(uint32_t blockNumber, uint8_t* dst) {$/;"	f	class:SdSpiCard
+readBlock	.\SdFat\SdCard\SdSpiCardEX.cpp	/^bool SdSpiCardEX::readBlock(uint32_t block, uint8_t* dst) {$/;"	f	class:SdSpiCardEX
+readBlock	.\SdFat\SdCard\SdioCardEX.cpp	/^bool SdioCardEX::readBlock(uint32_t lba, uint8_t* dst) {$/;"	f	class:SdioCardEX
+readBlock	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::readBlock(uint32_t lba, uint8_t* buf) {$/;"	f	class:SdioCard
+readBlocks	.\SdFat\FatLib\FatVolume.h	/^  bool readBlocks(uint32_t block, uint8_t* dst, size_t nb) {$/;"	f	class:FatVolume
+readBlocks	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::readBlocks(uint32_t block, uint8_t* dst, size_t count) {$/;"	f	class:SdSpiCard
+readBlocks	.\SdFat\SdCard\SdSpiCardEX.cpp	/^bool SdSpiCardEX::readBlocks(uint32_t block, uint8_t* dst, size_t nb) {$/;"	f	class:SdSpiCardEX
+readBlocks	.\SdFat\SdCard\SdioCardEX.cpp	/^bool SdioCardEX::readBlocks(uint32_t lba, uint8_t* dst, size_t nb) {$/;"	f	class:SdioCardEX
+readBlocks	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::readBlocks(uint32_t lba, uint8_t* buf, size_t n) {$/;"	f	class:SdioCard
+readCID	.\SdFat\SdCard\SdSpiCard.h	/^  bool readCID(cid_t* cid) {$/;"	f	class:SdSpiCard
+readCID	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::readCID(void* cid) {$/;"	f	class:SdioCard
+readCSD	.\SdFat\SdCard\SdSpiCard.h	/^  bool readCSD(csd_t* csd) {$/;"	f	class:SdSpiCard
+readCSD	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::readCSD(void* csd) {$/;"	f	class:SdioCard
+readData	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::readData(uint8_t *dst) {$/;"	f	class:SdSpiCard
+readData	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::readData(uint8_t* dst, size_t count) {$/;"	f	class:SdSpiCard
+readData	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::readData(uint8_t *dst) {$/;"	f	class:SdioCard
+readDir	.\SdFat\FatLib\FatFile.cpp	/^int8_t FatFile::readDir(dir_t* dir) {$/;"	f	class:FatFile
+readDirCache	.\SdFat\FatLib\FatFile.cpp	/^dir_t* FatFile::readDirCache(bool skipReadOk) {$/;"	f	class:FatFile
+readOCR	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::readOCR(uint32_t* ocr) {$/;"	f	class:SdSpiCard
+readOCR	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::readOCR(uint32_t* ocr) {$/;"	f	class:SdioCard
+readReg16	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool readReg16(uint32_t xfertyp, void* data) {$/;"	f	file:
+readRegister	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::readRegister(uint8_t cmd, void* buf) {$/;"	f	class:SdSpiCard
+readSkip	.\SdFat\FatLib\istream.cpp	/^int16_t istream::readSkip() {$/;"	f	class:istream
+readStart	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::readStart(uint32_t blockNumber) {$/;"	f	class:SdSpiCard
+readStart	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::readStart(uint32_t lba) {$/;"	f	class:SdioCard
+readStart	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::readStart(uint32_t lba, uint32_t count) {$/;"	f	class:SdioCard
+readStatus	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::readStatus(uint8_t* status) {$/;"	f	class:SdSpiCard
+readStop	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::readStop() {$/;"	f	class:SdSpiCard
+readStop	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::readStop() {$/;"	f	class:SdioCard
+read_bl_len	.\SdFat\SdCard\SdInfo.h	/^  unsigned char read_bl_len : 4;$/;"	m	struct:CSDV1
+read_bl_len	.\SdFat\SdCard\SdInfo.h	/^  unsigned char read_bl_len : 4;$/;"	m	struct:CSDV2
+read_bl_partial	.\SdFat\SdCard\SdInfo.h	/^  unsigned char read_bl_partial : 1;$/;"	m	struct:CSDV1
+read_bl_partial	.\SdFat\SdCard\SdInfo.h	/^  unsigned char read_bl_partial : 1;$/;"	m	struct:CSDV2
+read_blk_misalign	.\SdFat\SdCard\SdInfo.h	/^  unsigned char read_blk_misalign : 1;$/;"	m	struct:CSDV1
+read_blk_misalign	.\SdFat\SdCard\SdInfo.h	/^  unsigned char read_blk_misalign : 1;$/;"	m	struct:CSDV2
+readline	.\SdFat\FatLib\ArduinoStream.h	/^  void readline() {$/;"	f	class:ArduinoInStream
+receive	.\SdFat\SpiDriver\SdSpiDriver.h	/^  uint8_t receive() {$/;"	f	class:SdSpiLibDriver
+receive	.\SdFat\SpiDriver\SdSpiDriver.h	/^  uint8_t receive() {$/;"	f	class:SdSpiSoftDriver
+receive	.\SdFat\SpiDriver\SdSpiDriver.h	/^  uint8_t receive(uint8_t* buf, size_t n) {$/;"	f	class:SdSpiLibDriver
+receive	.\SdFat\SpiDriver\SdSpiDriver.h	/^  uint8_t receive(uint8_t* buf, size_t n) {$/;"	f	class:SdSpiSoftDriver
+receive	.\SdFat\SpiDriver\SdSpiDriver.h	/^inline uint8_t SdSpiAltDriver::receive() {$/;"	f	class:SdSpiAltDriver
+receive	.\SdFat\SpiDriver\SdSpiDriver.h	/^inline uint8_t SdSpiAltDriver::receive(uint8_t* buf, size_t n) {$/;"	f	class:SdSpiAltDriver
+receive	.\SdFat\SpiDriver\SdSpiESP8266.cpp	/^uint8_t SdSpiAltDriver::receive() {$/;"	f	class:SdSpiAltDriver
+receive	.\SdFat\SpiDriver\SdSpiESP8266.cpp	/^uint8_t SdSpiAltDriver::receive(uint8_t* buf, size_t n) {$/;"	f	class:SdSpiAltDriver
+receive	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	/^uint8_t SdSpiAltDriver::receive() {$/;"	f	class:SdSpiAltDriver
+receive	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	/^uint8_t SdSpiAltDriver::receive(uint8_t* buf, size_t n) {$/;"	f	class:SdSpiAltDriver
+receive	.\SdFat\SpiDriver\SdSpiSTM32.cpp	/^uint8_t SdSpiAltDriver::receive() {$/;"	f	class:SdSpiAltDriver
+receive	.\SdFat\SpiDriver\SdSpiSTM32.cpp	/^uint8_t SdSpiAltDriver::receive(uint8_t* buf, size_t n) {$/;"	f	class:SdSpiAltDriver
+receive	.\SdFat\SpiDriver\SdSpiTeensy3.cpp	/^uint8_t SdSpiAltDriver::receive() {$/;"	f	class:SdSpiAltDriver
+receive	.\SdFat\SpiDriver\SdSpiTeensy3.cpp	/^uint8_t SdSpiAltDriver::receive(uint8_t* buf, size_t n) {$/;"	f	class:SdSpiAltDriver
+receive	.\SdFat\SpiDriver\SoftSPI.h	/^  uint8_t receive() {$/;"	f	class:SoftSPI
+receiveBit	.\SdFat\SpiDriver\SoftSPI.h	/^  void receiveBit(uint8_t bit, uint8_t* data) {$/;"	f	class:SoftSPI
 recordType	.\STK_500_Programmer.h	/^   byte recordType = 0; \/\/0x46 = flash$/;"	m	class:HexFileRecord
+remove	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::remove(FatFile* dirFile, const char* path) {$/;"	f	class:FatFile
+remove	.\SdFat\FatLib\FatFileLFN.cpp	/^bool FatFile::remove() {$/;"	f	class:FatFile
+remove	.\SdFat\FatLib\FatFileSFN.cpp	/^bool FatFile::remove() {$/;"	f	class:FatFile
+remove	.\SdFat\FatLib\FatFileSystem.h	/^  bool remove(const char* path) {$/;"	f	class:FatFileSystem
+remove	.\SdFat\FatLib\StdioStream.h	70;"	d
+rename	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::rename(FatFile* dirFile, const char* newPath) {$/;"	f	class:FatFile
+rename	.\SdFat\FatLib\FatFileSystem.h	/^  bool rename(const char *oldPath, const char *newPath) {$/;"	f	class:FatFileSystem
+rename	.\SdFat\FatLib\StdioStream.h	71;"	d
+reserved	.\SdFat\SdCard\SdInfo.h	/^  unsigned char reserved : 4;$/;"	m	struct:CID
+reserved1	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  reserved1;$/;"	m	struct:fat32_boot
+reserved1	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  reserved1;$/;"	m	struct:fat_boot
+reserved1	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  reserved1[480];$/;"	m	struct:fat32_fsinfo
+reserved1	.\SdFat\SdCard\SdInfo.h	/^  unsigned char reserved1 : 6;$/;"	m	struct:CSDV1
+reserved1	.\SdFat\SdCard\SdInfo.h	/^  unsigned char reserved1 : 6;$/;"	m	struct:CSDV2
+reserved2	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  reserved2[12];$/;"	m	struct:fat32_fsinfo
+reserved2	.\SdFat\SdCard\SdInfo.h	/^  unsigned char reserved2 : 2;$/;"	m	struct:CSDV1
+reserved2	.\SdFat\SdCard\SdInfo.h	/^  unsigned char reserved2 : 4;$/;"	m	struct:CSDV2
+reserved3	.\SdFat\SdCard\SdInfo.h	/^  unsigned char reserved3 : 2;$/;"	m	struct:CSDV1
+reserved3	.\SdFat\SdCard\SdInfo.h	/^  unsigned char reserved3 : 2;$/;"	m	struct:CSDV2
+reserved4	.\SdFat\SdCard\SdInfo.h	/^  unsigned char reserved4 : 1;$/;"	m	struct:CSDV2
+reserved4	.\SdFat\SdCard\SdInfo.h	/^  unsigned char reserved4 : 5;$/;"	m	struct:CSDV1
+reserved5	.\SdFat\SdCard\SdInfo.h	/^  unsigned char reserved5 : 2;$/;"	m	struct:CSDV2
+reserved5	.\SdFat\SdCard\SdInfo.h	/^  unsigned char reserved5: 2;$/;"	m	struct:CSDV1
+reserved6	.\SdFat\SdCard\SdInfo.h	/^  unsigned char reserved6 : 5;$/;"	m	struct:CSDV2
+reserved7	.\SdFat\SdCard\SdInfo.h	/^  unsigned char reserved7: 2;$/;"	m	struct:CSDV2
+reservedNT	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  reservedNT;$/;"	m	struct:directoryEntry
+reservedSectorCount	.\SdFat\FatLib\FatStructs.h	/^  uint16_t reservedSectorCount;$/;"	m	struct:biosParmBlock
+reservedSectorCount	.\SdFat\FatLib\FatStructs.h	/^  uint16_t reservedSectorCount;$/;"	m	struct:fat32_boot
+reservedSectorCount	.\SdFat\FatLib\FatStructs.h	/^  uint16_t reservedSectorCount;$/;"	m	struct:fat_boot
 resetTarget	.\STK_500_Programmer.cpp	/^void STK_Programmer::resetTarget(){$/;"	f	class:STK_Programmer
 response_timer_start	.\STK_500_Programmer.h	/^   unsigned int response_timer_start = 0;$/;"	m	class:STK_Programmer
+rewind	.\SdFat\FatLib\FatFile.h	/^  void rewind() {$/;"	f	class:FatFile
+rewind	.\SdFat\FatLib\StdioStream.cpp	/^bool StdioStream::rewind() {$/;"	f	class:StdioStream
+rewind	.\SdFat\FatLib\StdioStream.h	72;"	d
+rewindDirectory	.\SdFat\FatLib\ArduinoFiles.h	/^  void rewindDirectory() {$/;"	f	class:File
+right	.\SdFat\FatLib\ios.h	/^  static const fmtflags right      = 0x0002;$/;"	m	class:ios_base
+right	.\SdFat\FatLib\ios.h	/^inline ios_base& right(ios_base& str) {$/;"	f
+rmRfStar	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::rmRfStar() {$/;"	f	class:FatFile
+rmdir	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::rmdir() {$/;"	f	class:FatFile
+rmdir	.\SdFat\FatLib\FatFileSystem.h	/^  bool rmdir(const char* path) {$/;"	f	class:FatFileSystem
+rootDirEntryCount	.\SdFat\FatLib\FatStructs.h	/^  uint16_t rootDirEntryCount;$/;"	m	struct:biosParmBlock
+rootDirEntryCount	.\SdFat\FatLib\FatStructs.h	/^  uint16_t rootDirEntryCount;$/;"	m	struct:fat32_boot
+rootDirEntryCount	.\SdFat\FatLib\FatStructs.h	/^  uint16_t rootDirEntryCount;$/;"	m	struct:fat_boot
+rootDirEntryCount	.\SdFat\FatLib\FatVolume.h	/^  uint16_t rootDirEntryCount() const {$/;"	f	class:FatVolume
+rootDirStart	.\SdFat\FatLib\FatVolume.h	/^  uint32_t rootDirStart() const {$/;"	f	class:FatVolume
+scale10	.\SdFat\FatLib\FmtNumber.cpp	/^float scale10(float v, int8_t n) {$/;"	f
+scanFloat	.\SdFat\FatLib\FmtNumber.cpp	/^float scanFloat(const char* str, char** ptr) {$/;"	f
+scanf	.\SdFat\FatLib\StdioStream.h	73;"	d
 sd	.\STK_500_Programmer.cpp	/^SdFat sd;            \/\/The instance of the SDFat utility$/;"	v
 sdBuf	.\STK_500_Programmer.cpp	/^char sdBuf[MAX_CHARS_PER_HEX_RECORD];       \/\/Longest hex file record to be read is 45... so go 50 just to be safe$/;"	v
+sdCardCapacity	.\SdFat\SdCard\SdInfo.h	/^inline uint32_t sdCardCapacity(csd_t* csd) {$/;"	f
+sdError	.\SdFat\SdCard\SdioTeensy.cpp	196;"	d	file:
 sdHexFile	.\STK_500_Programmer.h	/^   SdFile sdHexFile;$/;"	m	class:HexFileClass
+sd_error_code_t	.\SdFat\SdCard\SdInfo.h	/^} sd_error_code_t;$/;"	t	typeref:enum:__anon1
+sdhc_isr	.\SdFat\SdCard\SdioTeensy.cpp	/^void sdhc_isr() {$/;"	f
+sdios_h	.\SdFat\sdios.h	26;"	d
+sector_size_high	.\SdFat\SdCard\SdInfo.h	/^  unsigned char sector_size_high : 6;$/;"	m	struct:CSDV1
+sector_size_high	.\SdFat\SdCard\SdInfo.h	/^  unsigned char sector_size_high : 6;$/;"	m	struct:CSDV2
+sector_size_low	.\SdFat\SdCard\SdInfo.h	/^  unsigned char sector_size_low : 1;$/;"	m	struct:CSDV1
+sector_size_low	.\SdFat\SdCard\SdInfo.h	/^  unsigned char sector_size_low : 1;$/;"	m	struct:CSDV2
+sectorsPerCluster	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  sectorsPerCluster;$/;"	m	struct:biosParmBlock
+sectorsPerCluster	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  sectorsPerCluster;$/;"	m	struct:fat32_boot
+sectorsPerCluster	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  sectorsPerCluster;$/;"	m	struct:fat_boot
+sectorsPerFat16	.\SdFat\FatLib\FatStructs.h	/^  uint16_t sectorsPerFat16;$/;"	m	struct:biosParmBlock
+sectorsPerFat16	.\SdFat\FatLib\FatStructs.h	/^  uint16_t sectorsPerFat16;$/;"	m	struct:fat32_boot
+sectorsPerFat16	.\SdFat\FatLib\FatStructs.h	/^  uint16_t sectorsPerFat16;$/;"	m	struct:fat_boot
+sectorsPerFat32	.\SdFat\FatLib\FatStructs.h	/^  uint32_t sectorsPerFat32;$/;"	m	struct:biosParmBlock
+sectorsPerFat32	.\SdFat\FatLib\FatStructs.h	/^  uint32_t sectorsPerFat32;$/;"	m	struct:fat32_boot
+sectorsPerTrack	.\SdFat\FatLib\FatStructs.h	/^  uint16_t sectorsPerTrack;$/;"	m	struct:fat32_boot
+sectorsPerTrack	.\SdFat\FatLib\FatStructs.h	/^  uint16_t sectorsPerTrack;$/;"	m	struct:fat_boot
+sectorsPerTrtack	.\SdFat\FatLib\FatStructs.h	/^  uint16_t sectorsPerTrtack;$/;"	m	struct:biosParmBlock
+seek	.\SdFat\FatLib\ArduinoFiles.h	/^  bool seek(uint32_t pos) {$/;"	f	class:File
+seekCur	.\SdFat\FatLib\FatFile.h	/^  bool seekCur(int32_t offset) {$/;"	f	class:FatFile
+seekEnd	.\SdFat\FatLib\FatFile.h	/^  bool seekEnd(int32_t offset = 0) {$/;"	f	class:FatFile
+seekSet	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::seekSet(uint32_t pos) {$/;"	f	class:FatFile
+seekdir	.\SdFat\FatLib\ios.h	/^  enum seekdir {$/;"	g	class:ios_base
+seekg	.\SdFat\FatLib\istream.h	/^  istream& seekg(off_type off, seekdir way) {$/;"	f	class:istream
+seekg	.\SdFat\FatLib\istream.h	/^  istream& seekg(pos_type pos) {$/;"	f	class:istream
+seekoff	.\SdFat\FatLib\ArduinoStream.h	/^  bool seekoff(off_type off, seekdir way) {$/;"	f	class:ArduinoInStream
+seekoff	.\SdFat\FatLib\ArduinoStream.h	/^  bool seekoff(off_type off, seekdir way) {$/;"	f	class:ArduinoOutStream
+seekoff	.\SdFat\FatLib\bufstream.h	/^  bool seekoff(off_type off, seekdir way) {$/;"	f	class:ibufstream
+seekoff	.\SdFat\FatLib\bufstream.h	/^  bool seekoff(off_type off, seekdir way) {$/;"	f	class:obufstream
+seekoff	.\SdFat\FatLib\fstream.cpp	/^bool FatStreamBase::seekoff(off_type off, seekdir way) {$/;"	f	class:FatStreamBase
+seekoff	.\SdFat\FatLib\fstream.h	/^  bool seekoff(off_type off, seekdir way) {$/;"	f	class:fstream
+seekoff	.\SdFat\FatLib\fstream.h	/^  bool seekoff(off_type off, seekdir way) {$/;"	f	class:ifstream
+seekoff	.\SdFat\FatLib\fstream.h	/^  bool seekoff(off_type off, seekdir way) {$/;"	f	class:ofstream
+seekp	.\SdFat\FatLib\ostream.h	/^  ostream& seekp(off_type off, seekdir way) {$/;"	f	class:ostream
+seekp	.\SdFat\FatLib\ostream.h	/^  ostream& seekp(pos_type pos) {$/;"	f	class:ostream
+seekpos	.\SdFat\FatLib\ArduinoStream.h	/^  bool seekpos(pos_type pos) {$/;"	f	class:ArduinoInStream
+seekpos	.\SdFat\FatLib\ArduinoStream.h	/^  bool seekpos(pos_type pos) {$/;"	f	class:ArduinoOutStream
+seekpos	.\SdFat\FatLib\bufstream.h	/^  bool seekpos(pos_type pos) {$/;"	f	class:ibufstream
+seekpos	.\SdFat\FatLib\bufstream.h	/^  bool seekpos(pos_type pos) {$/;"	f	class:obufstream
+seekpos	.\SdFat\FatLib\fstream.cpp	/^bool FatStreamBase::seekpos(pos_type pos) {$/;"	f	class:FatStreamBase
+seekpos	.\SdFat\FatLib\fstream.h	/^  bool seekpos(pos_type pos) {$/;"	f	class:fstream
+seekpos	.\SdFat\FatLib\fstream.h	/^  bool seekpos(pos_type pos) {$/;"	f	class:ifstream
+seekpos	.\SdFat\FatLib\fstream.h	/^  bool seekpos(pos_type pos) {$/;"	f	class:ofstream
+select	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void select() {$/;"	f	class:SdSpiAltDriver
+select	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void select() {$/;"	f	class:SdSpiLibDriver
+select	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void select() {$/;"	f	class:SdSpiSoftDriver
+send	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void send(const uint8_t* buf , size_t n) {$/;"	f	class:SdSpiSoftDriver
+send	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void send(const uint8_t* buf, size_t n) {$/;"	f	class:SdSpiLibDriver
+send	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void send(uint8_t data) {$/;"	f	class:SdSpiLibDriver
+send	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void send(uint8_t data) {$/;"	f	class:SdSpiSoftDriver
+send	.\SdFat\SpiDriver\SdSpiDriver.h	/^inline void SdSpiAltDriver::send(const uint8_t* buf , size_t n) {$/;"	f	class:SdSpiAltDriver
+send	.\SdFat\SpiDriver\SdSpiDriver.h	/^inline void SdSpiAltDriver::send(uint8_t data) {$/;"	f	class:SdSpiAltDriver
+send	.\SdFat\SpiDriver\SdSpiESP8266.cpp	/^void SdSpiAltDriver::send(const uint8_t* buf , size_t n) {$/;"	f	class:SdSpiAltDriver
+send	.\SdFat\SpiDriver\SdSpiESP8266.cpp	/^void SdSpiAltDriver::send(uint8_t b) {$/;"	f	class:SdSpiAltDriver
+send	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	/^void SdSpiAltDriver::send(const uint8_t* buf , size_t n) {$/;"	f	class:SdSpiAltDriver
+send	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	/^void SdSpiAltDriver::send(uint8_t b) {$/;"	f	class:SdSpiAltDriver
+send	.\SdFat\SpiDriver\SdSpiSTM32.cpp	/^void SdSpiAltDriver::send(const uint8_t* buf , size_t n) {$/;"	f	class:SdSpiAltDriver
+send	.\SdFat\SpiDriver\SdSpiSTM32.cpp	/^void SdSpiAltDriver::send(uint8_t b) {$/;"	f	class:SdSpiAltDriver
+send	.\SdFat\SpiDriver\SdSpiTeensy3.cpp	/^void SdSpiAltDriver::send(const uint8_t* buf , size_t n) {$/;"	f	class:SdSpiAltDriver
+send	.\SdFat\SpiDriver\SdSpiTeensy3.cpp	/^void SdSpiAltDriver::send(uint8_t b) {$/;"	f	class:SdSpiAltDriver
+send	.\SdFat\SpiDriver\SoftSPI.h	/^  void send(uint8_t data) {$/;"	f	class:SoftSPI
+sendBit	.\SdFat\SpiDriver\SoftSPI.h	/^  void sendBit(uint8_t bit, uint8_t data) {$/;"	f	class:SoftSPI
+seqPos	.\SdFat\FatLib\FatFile.h	/^  uint8_t seqPos;$/;"	m	struct:fname_t
+setCwd	.\SdFat\FatLib\FatFile.h	/^  static bool setCwd(FatFile* dir) {$/;"	f	class:FatFile
+setFreeClusterCount	.\SdFat\FatLib\FatVolume.h	/^  void setFreeClusterCount(int32_t value) {$/;"	f	class:FatVolume
+setPort	.\SdFat\SpiDriver\SdSpiSTM32.cpp	/^void SdSpiAltDriver::setPort(uint8_t portNumber) {$/;"	f	class:SdSpiAltDriver
+setSdErrorCode	.\SdFat\SdCard\SdioTeensy.cpp	/^inline bool setSdErrorCode(uint8_t code, uint32_t line) {$/;"	f
+setSdclk	.\SdFat\SdCard\SdioTeensy.cpp	/^static void setSdclk(uint32_t kHzMax) {$/;"	f	file:
+setSpiSettings	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void setSpiSettings(SPISettings spiSettings) {$/;"	f	class:SdSpiAltDriver
+setSpiSettings	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void setSpiSettings(SPISettings spiSettings) {$/;"	f	class:SdSpiLibDriver
+setSpiSettings	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void setSpiSettings(SPISettings spiSettings) {$/;"	f	class:SdSpiSoftDriver
+setbuf	.\SdFat\FatLib\StdioStream.h	74;"	d
+setf	.\SdFat\FatLib\ios.h	/^  fmtflags setf(fmtflags fl) {$/;"	f	class:ios_base
+setf	.\SdFat\FatLib\ios.h	/^  fmtflags setf(fmtflags fl, fmtflags mask) {$/;"	f	class:ios_base
+setfill	.\SdFat\FatLib\iostream.h	/^  explicit setfill(char arg) : c(arg) {}$/;"	f	struct:setfill
+setfill	.\SdFat\FatLib\iostream.h	/^struct setfill {$/;"	s
+setmode	.\SdFat\FatLib\fstream.h	/^  void setmode(ios::openmode mode) {$/;"	f	class:FatStreamBase
+setpos	.\SdFat\FatLib\FatFile.cpp	/^void FatFile::setpos(FatPos_t* pos) {$/;"	f	class:FatFile
+setpos	.\SdFat\FatLib\bufstream.h	/^  void setpos(FatPos_t *pos) {$/;"	f	class:ibufstream
+setpos	.\SdFat\FatLib\fstream.h	/^  void setpos(FatPos_t* pos) {$/;"	f	class:fstream
+setpos	.\SdFat\FatLib\fstream.h	/^  void setpos(FatPos_t* pos) {$/;"	f	class:ifstream
+setprecision	.\SdFat\FatLib\iostream.h	/^  explicit setprecision(unsigned int arg) : p(arg) {}$/;"	f	struct:setprecision
+setprecision	.\SdFat\FatLib\iostream.h	/^struct setprecision {$/;"	s
+setstate	.\SdFat\FatLib\ios.h	/^  void setstate(iostate state) {$/;"	f	class:ios
+setvbuf	.\SdFat\FatLib\StdioStream.h	75;"	d
+setw	.\SdFat\FatLib\iostream.h	/^  explicit setw(unsigned arg) : w(arg) {}$/;"	f	struct:setw
+setw	.\SdFat\FatLib\iostream.h	/^struct setw {$/;"	s
+sfn	.\SdFat\FatLib\FatFile.h	/^  uint8_t sfn[11];$/;"	m	struct:fname_t
+showbase	.\SdFat\FatLib\ios.h	/^  static const fmtflags showbase   = 0x0200;$/;"	m	class:ios_base
+showbase	.\SdFat\FatLib\ios.h	/^inline ios_base& showbase(ios_base& str) {$/;"	f
+showpoint	.\SdFat\FatLib\ios.h	/^  static const fmtflags showpoint  = 0x0400;$/;"	m	class:ios_base
+showpoint	.\SdFat\FatLib\ios.h	/^inline ios_base& showpoint(ios_base& str) {$/;"	f
+showpos	.\SdFat\FatLib\ios.h	/^  static const fmtflags showpos    = 0x0800;$/;"	m	class:ios_base
+showpos	.\SdFat\FatLib\ios.h	/^inline ios_base& showpos(ios_base& str) {$/;"	f
+size	.\SdFat\FatLib\ArduinoFiles.h	/^  uint32_t size() {$/;"	f	class:File
+skipWhite	.\SdFat\FatLib\istream.cpp	/^void istream::skipWhite() {$/;"	f	class:istream
+skipws	.\SdFat\FatLib\ios.h	/^  static const fmtflags skipws     = 0x1000;$/;"	m	class:ios_base
+skipws	.\SdFat\FatLib\ios.h	/^inline ios_base& skipws(ios_base& str) {$/;"	f
+spiActivate	.\SdFat\SdCard\SdSpiCard.h	/^  void spiActivate() {$/;"	f	class:SdSpiCard
+spiDeactivate	.\SdFat\SdCard\SdSpiCard.h	/^  void spiDeactivate() {$/;"	f	class:SdSpiCard
+spiDmaRX	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	/^static void spiDmaRX(uint8_t* dst, uint16_t count) {$/;"	f	file:
+spiDmaTX	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	/^static void spiDmaTX(const uint8_t* src, uint16_t count) {$/;"	f	file:
+spiReceive	.\SdFat\SdCard\SdSpiCard.h	/^  uint8_t spiReceive() {$/;"	f	class:SdSpiCard
+spiReceive	.\SdFat\SdCard\SdSpiCard.h	/^  uint8_t spiReceive(uint8_t* buf, size_t n) {$/;"	f	class:SdSpiCard
+spiSelect	.\SdFat\SdCard\SdSpiCard.h	/^  void spiSelect() {$/;"	f	class:SdSpiCard
+spiSend	.\SdFat\SdCard\SdSpiCard.h	/^  void spiSend(const uint8_t* buf, size_t n) {$/;"	f	class:SdSpiCard
+spiSend	.\SdFat\SdCard\SdSpiCard.h	/^  void spiSend(uint8_t data) {$/;"	f	class:SdSpiCard
+spiStart	.\SdFat\SdCard\SdSpiCard.cpp	/^void SdSpiCard::spiStart() {$/;"	f	class:SdSpiCard
+spiStop	.\SdFat\SdCard\SdSpiCard.cpp	/^void SdSpiCard::spiStop() {$/;"	f	class:SdSpiCard
+spiTransfer	.\SdFat\SpiDriver\SdSpiSAM3X.cpp	/^static inline uint8_t spiTransfer(uint8_t b) {$/;"	f	file:
+spiUnselect	.\SdFat\SdCard\SdSpiCard.h	/^  void spiUnselect() {$/;"	f	class:SdSpiCard
+sscanf	.\SdFat\FatLib\StdioStream.h	77;"	d
+streamsize	.\SdFat\FatLib\ios.h	/^  typedef uint32_t streamsize;$/;"	t	class:ios_base
+structSignature	.\SdFat\FatLib\FatStructs.h	/^  uint32_t  structSignature;$/;"	m	struct:fat32_fsinfo
+sync	.\SdFat\FatLib\ArduinoStream.h	/^  bool sync() {$/;"	f	class:ArduinoOutStream
+sync	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::sync() {$/;"	f	class:FatFile
+sync	.\SdFat\FatLib\FatVolume.cpp	/^bool FatCache::sync() {$/;"	f	class:FatCache
+sync	.\SdFat\FatLib\bufstream.h	/^  bool sync() {$/;"	f	class:obufstream
+sync	.\SdFat\FatLib\fstream.h	/^  bool sync() {$/;"	f	class:fstream
+sync	.\SdFat\FatLib\fstream.h	/^  bool sync() {$/;"	f	class:ofstream
+syncBlocks	.\SdFat\FatLib\FatVolume.h	/^  bool syncBlocks() {$/;"	f	class:FatVolume
+syncBlocks	.\SdFat\SdCard\SdSpiCard.h	/^  bool syncBlocks() {return true;}$/;"	f	class:SdSpiCard
+syncBlocks	.\SdFat\SdCard\SdSpiCardEX.cpp	/^bool SdSpiCardEX::syncBlocks() {$/;"	f	class:SdSpiCardEX
+syncBlocks	.\SdFat\SdCard\SdioCardEX.cpp	/^bool SdioCardEX::syncBlocks() {$/;"	f	class:SdioCardEX
+syncBlocks	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::syncBlocks() {$/;"	f	class:SdioCard
 sync_check_in_progress	.\STK_500_Programmer.h	/^   bool sync_check_in_progress = false;$/;"	m	class:STK_Programmer
+taac	.\SdFat\SdCard\SdInfo.h	/^  unsigned char taac;$/;"	m	struct:CSDV1
+taac	.\SdFat\SdCard\SdInfo.h	/^  unsigned char taac;$/;"	m	struct:CSDV2
+tailSignature	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  tailSignature[4];$/;"	m	struct:fat32_fsinfo
 target_reset_pin	.\STK_500_Programmer.h	/^   byte target_reset_pin;$/;"	m	class:STK_Programmer
+tellg	.\SdFat\FatLib\istream.h	/^  pos_type tellg() {$/;"	f	class:istream
+tellp	.\SdFat\FatLib\ostream.h	/^  pos_type tellp() {$/;"	f	class:ostream
+tellpos	.\SdFat\FatLib\ArduinoStream.h	/^  pos_type tellpos() {$/;"	f	class:ArduinoOutStream
+tellpos	.\SdFat\FatLib\bufstream.h	/^  pos_type tellpos() {$/;"	f	class:ibufstream
+tellpos	.\SdFat\FatLib\bufstream.h	/^  pos_type tellpos() {$/;"	f	class:obufstream
+tellpos	.\SdFat\FatLib\fstream.h	/^  pos_type tellpos() {$/;"	f	class:fstream
+tellpos	.\SdFat\FatLib\fstream.h	/^  pos_type tellpos() {$/;"	f	class:ifstream
+tellpos	.\SdFat\FatLib\fstream.h	/^  pos_type tellpos() {$/;"	f	class:ofstream
+timestamp	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::timestamp(FatFile* file) {$/;"	f	class:FatFile
+timestamp	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::timestamp(uint8_t flags, uint16_t year, uint8_t month,$/;"	f	class:FatFile
+tmp_write_protect	.\SdFat\SdCard\SdInfo.h	/^  unsigned char tmp_write_protect : 1;$/;"	m	struct:CSDV1
+tmp_write_protect	.\SdFat\SdCard\SdInfo.h	/^  unsigned char tmp_write_protect : 1;$/;"	m	struct:CSDV2
+tmpfile	.\SdFat\FatLib\StdioStream.h	78;"	d
+tmpnam	.\SdFat\FatLib\StdioStream.h	79;"	d
+toggle	.\SdFat\SpiDriver\DigitalPin.h	/^  void toggle() {$/;"	f	class:DigitalPin
+totalSectors	.\SdFat\FatLib\FatStructs.h	/^  uint32_t totalSectors;$/;"	m	struct:partitionTable
+totalSectors16	.\SdFat\FatLib\FatStructs.h	/^  uint16_t totalSectors16;$/;"	m	struct:biosParmBlock
+totalSectors16	.\SdFat\FatLib\FatStructs.h	/^  uint16_t totalSectors16;$/;"	m	struct:fat32_boot
+totalSectors16	.\SdFat\FatLib\FatStructs.h	/^  uint16_t totalSectors16;$/;"	m	struct:fat_boot
+totalSectors32	.\SdFat\FatLib\FatStructs.h	/^  uint32_t totalSectors32;$/;"	m	struct:biosParmBlock
+totalSectors32	.\SdFat\FatLib\FatStructs.h	/^  uint32_t totalSectors32;$/;"	m	struct:fat32_boot
+totalSectors32	.\SdFat\FatLib\FatStructs.h	/^  uint32_t totalSectors32;$/;"	m	struct:fat_boot
+tran_speed	.\SdFat\SdCard\SdInfo.h	/^  unsigned char tran_speed;$/;"	m	struct:CSDV1
+tran_speed	.\SdFat\SdCard\SdInfo.h	/^  unsigned char tran_speed;$/;"	m	struct:CSDV2
+transfer	.\SdFat\SpiDriver\SoftSPI.h	/^  uint8_t transfer(uint8_t txData) {$/;"	f	class:SoftSPI
+transferBit	.\SdFat\SpiDriver\SoftSPI.h	/^  void transferBit(uint8_t bit, uint8_t* rxData, uint8_t txData) {$/;"	f	class:SoftSPI
+transferStop	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool transferStop() {$/;"	f	file:
+trunc	.\SdFat\FatLib\ios.h	/^  static const openmode trunc  = 0X80;$/;"	m	class:ios_base
+truncate	.\SdFat\FatLib\FatFile.cpp	/^bool FatFile::truncate(uint32_t length) {$/;"	f	class:FatFile
+truncate	.\SdFat\FatLib\FatFileSystem.h	/^  bool truncate(const char* path, uint32_t length) {$/;"	f	class:FatFileSystem
+type	.\SdFat\FatLib\FatStructs.h	/^  uint8_t  type;$/;"	m	struct:partitionTable
+type	.\SdFat\FatLib\FatStructs.h	/^  uint8_t type;$/;"	m	struct:longDirectoryEntry
+type	.\SdFat\SdCard\SdSpiCard.h	/^  int type() const {$/;"	f	class:SdSpiCard
+type	.\SdFat\SdCard\SdSpiCard.h	/^  void type(uint8_t value) {$/;"	f	class:SdSpiCard
+type	.\SdFat\SdCard\SdioTeensy.cpp	/^uint8_t SdioCard::type() {$/;"	f	class:SdioCard
+uint32_max	.\SdFat\FatLib\istream.cpp	/^static const uint32_t uint32_max = (uint32_t)-1;$/;"	v	file:
+ungetc	.\SdFat\FatLib\StdioStream.cpp	/^int StdioStream::ungetc(int c) {$/;"	f	class:StdioStream
+ungetc	.\SdFat\FatLib\StdioStream.h	80;"	d
+unselect	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void unselect() {$/;"	f	class:SdSpiAltDriver
+unselect	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void unselect() {$/;"	f	class:SdSpiLibDriver
+unselect	.\SdFat\SpiDriver\SdSpiDriver.h	/^  void unselect() {$/;"	f	class:SdSpiSoftDriver
+unsetf	.\SdFat\FatLib\ios.h	/^  void unsetf(fmtflags fl) {$/;"	f	class:ios_base
+updateFreeClusterCount	.\SdFat\FatLib\FatVolume.h	/^  void updateFreeClusterCount(int32_t change) {$/;"	f	class:FatVolume
+uppercase	.\SdFat\FatLib\ios.h	/^  static const fmtflags uppercase  = 0x4000;$/;"	m	class:ios_base
+uppercase	.\SdFat\FatLib\ios.h	/^inline ios_base& uppercase(ios_base& str) {$/;"	f
 use_watchdog_reset_method	.\STK_500_Programmer.h	/^   bool use_watchdog_reset_method;$/;"	m	class:STK_Programmer
+usuallyZero	.\SdFat\FatLib\FatStructs.h	/^  uint16_t usuallyZero;$/;"	m	struct:masterBootRecord
+v1	.\SdFat\SdCard\SdInfo.h	/^  csd1_t v1;$/;"	m	union:csd_t
+v2	.\SdFat\SdCard\SdInfo.h	/^  csd2_t v2;$/;"	m	union:csd_t
+vdd_r_curr_max	.\SdFat\SdCard\SdInfo.h	/^  unsigned char vdd_r_curr_max : 3;$/;"	m	struct:CSDV1
+vdd_r_curr_min	.\SdFat\SdCard\SdInfo.h	/^  unsigned char vdd_r_curr_min : 3;$/;"	m	struct:CSDV1
+vdd_w_cur_max	.\SdFat\SdCard\SdInfo.h	/^  unsigned char vdd_w_cur_max : 3;$/;"	m	struct:CSDV1
+vdd_w_curr_min	.\SdFat\SdCard\SdInfo.h	/^  unsigned char vdd_w_curr_min : 3;$/;"	m	struct:CSDV1
+vfprintf	.\SdFat\FatLib\StdioStream.h	81;"	d
+vol	.\SdFat\FatLib\FatFileSystem.h	/^  FatVolume* vol() {$/;"	f	class:FatFileSystem
+volume	.\SdFat\FatLib\FatFile.h	/^  FatVolume* volume() const {$/;"	f	class:FatFile
+volumeBlockCount	.\SdFat\FatLib\FatVolume.h	/^  uint32_t volumeBlockCount() const {$/;"	f	class:FatVolume
+volumeLabel	.\SdFat\FatLib\FatStructs.h	/^  char     volumeLabel[11];$/;"	m	struct:fat32_boot
+volumeLabel	.\SdFat\FatLib\FatStructs.h	/^  char     volumeLabel[11];$/;"	m	struct:fat_boot
+volumeSerialNumber	.\SdFat\FatLib\FatStructs.h	/^  uint32_t volumeSerialNumber;$/;"	m	struct:fat32_boot
+volumeSerialNumber	.\SdFat\FatLib\FatStructs.h	/^  uint32_t volumeSerialNumber;$/;"	m	struct:fat_boot
+vprintf	.\SdFat\FatLib\StdioStream.h	82;"	d
+vsprintf	.\SdFat\FatLib\StdioStream.h	83;"	d
+vwd	.\SdFat\FatLib\FatFileSystem.h	/^  FatFile* vwd() {$/;"	f	class:FatFileSystem
+w	.\SdFat\FatLib\iostream.h	/^  unsigned w;$/;"	m	struct:setw
+waitDmaStatus	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool waitDmaStatus() {$/;"	f	file:
+waitNotBusy	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::waitNotBusy(uint16_t timeoutMS) {$/;"	f	class:SdSpiCard
+waitTimeout	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool waitTimeout(bool (*fcn)()) {$/;"	f	file:
 waiting_for_response	.\STK_500_Programmer.h	/^   bool waiting_for_response = false;$/;"	m	class:STK_Programmer
+width	.\SdFat\FatLib\ios.h	/^  unsigned width() {$/;"	f	class:ios_base
+width	.\SdFat\FatLib\ios.h	/^  unsigned width(unsigned n) {$/;"	f	class:ios_base
+wipe	.\SdFat\FatLib\FatFileSystem.h	/^  bool wipe(print_t* pr = 0) {$/;"	f	class:FatFileSystem
+wipe	.\SdFat\FatLib\FatVolume.cpp	/^bool FatVolume::wipe(print_t* pr) {$/;"	f	class:FatVolume
+wp_grp_enable	.\SdFat\SdCard\SdInfo.h	/^  unsigned char wp_grp_enable : 1;$/;"	m	struct:CSDV1
+wp_grp_enable	.\SdFat\SdCard\SdInfo.h	/^  unsigned char wp_grp_enable : 1;$/;"	m	struct:CSDV2
+wp_grp_size	.\SdFat\SdCard\SdInfo.h	/^  unsigned char wp_grp_size : 7;$/;"	m	struct:CSDV1
+wp_grp_size	.\SdFat\SdCard\SdInfo.h	/^  unsigned char wp_grp_size : 7;$/;"	m	struct:CSDV2
+write	.\SdFat\FatLib\ArduinoFiles.h	/^  size_t write(const uint8_t *buf, size_t size) {$/;"	f	class:File
+write	.\SdFat\FatLib\ArduinoFiles.h	/^  size_t write(const uint8_t *buf, size_t size) {$/;"	f	class:PrintFile
+write	.\SdFat\FatLib\ArduinoFiles.h	/^  size_t write(uint8_t b) {$/;"	f	class:File
+write	.\SdFat\FatLib\ArduinoFiles.h	/^  size_t write(uint8_t b) {$/;"	f	class:PrintFile
+write	.\SdFat\FatLib\FatFile.cpp	/^int FatFile::write(const void* buf, size_t nbyte) {$/;"	f	class:FatFile
+write	.\SdFat\FatLib\FatFile.h	/^  int write(const char* str) {$/;"	f	class:FatFile
+write	.\SdFat\FatLib\FatFile.h	/^  int write(uint8_t b) {$/;"	f	class:FatFile
+write	.\SdFat\FatLib\StdioStream.cpp	/^int StdioStream::write(const void* buf, size_t count) {$/;"	f	class:StdioStream
+write	.\SdFat\FatLib\fstream.cpp	/^int FatStreamBase::write(const void* buf, size_t n) {$/;"	f	class:FatStreamBase
+write	.\SdFat\FatLib\fstream.cpp	/^void FatStreamBase::write(char c) {$/;"	f	class:FatStreamBase
+write	.\SdFat\MinimumSerial.cpp	/^size_t MinimumSerial::write(uint8_t b) {$/;"	f	class:MinimumSerial
+write	.\SdFat\SpiDriver\DigitalPin.h	/^  void write(bool value) {$/;"	f	class:DigitalPin
+writeBlock	.\SdFat\FatLib\FatVolume.h	/^  bool writeBlock(uint32_t block, const uint8_t* src) {$/;"	f	class:FatVolume
+writeBlock	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::writeBlock(uint32_t blockNumber, const uint8_t* src) {$/;"	f	class:SdSpiCard
+writeBlock	.\SdFat\SdCard\SdSpiCardEX.cpp	/^bool SdSpiCardEX::writeBlock(uint32_t block, const uint8_t* src) {$/;"	f	class:SdSpiCardEX
+writeBlock	.\SdFat\SdCard\SdioCardEX.cpp	/^bool SdioCardEX::writeBlock(uint32_t lba, const uint8_t* src) {$/;"	f	class:SdioCardEX
+writeBlock	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::writeBlock(uint32_t lba, const uint8_t* buf) {$/;"	f	class:SdioCard
+writeBlocks	.\SdFat\FatLib\FatVolume.h	/^  bool writeBlocks(uint32_t block, const uint8_t* src, size_t nb) {$/;"	f	class:FatVolume
+writeBlocks	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::writeBlocks(uint32_t block, const uint8_t* src, size_t count) {$/;"	f	class:SdSpiCard
+writeBlocks	.\SdFat\SdCard\SdSpiCardEX.cpp	/^bool SdSpiCardEX::writeBlocks(uint32_t block,$/;"	f	class:SdSpiCardEX
+writeBlocks	.\SdFat\SdCard\SdioCardEX.cpp	/^bool SdioCardEX::writeBlocks(uint32_t lba, const uint8_t* src, size_t nb) {$/;"	f	class:SdioCardEX
+writeBlocks	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::writeBlocks(uint32_t lba, const uint8_t* buf, size_t n) {$/;"	f	class:SdioCard
+writeData	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::writeData(const uint8_t* src) {$/;"	f	class:SdSpiCard
+writeData	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::writeData(uint8_t token, const uint8_t* src) {$/;"	f	class:SdSpiCard
+writeData	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::writeData(const uint8_t* src) {$/;"	f	class:SdioCard
+writeStart	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::writeStart(uint32_t blockNumber) {$/;"	f	class:SdSpiCard
+writeStart	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::writeStart(uint32_t blockNumber, uint32_t eraseCount) {$/;"	f	class:SdSpiCard
+writeStart	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::writeStart(uint32_t lba) {$/;"	f	class:SdioCard
+writeStart	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::writeStart(uint32_t lba, uint32_t count) {$/;"	f	class:SdioCard
+writeStop	.\SdFat\SdCard\SdSpiCard.cpp	/^bool SdSpiCard::writeStop() {$/;"	f	class:SdSpiCard
+writeStop	.\SdFat\SdCard\SdioTeensy.cpp	/^bool SdioCard::writeStop() {$/;"	f	class:SdioCard
+write_bl_len_high	.\SdFat\SdCard\SdInfo.h	/^  unsigned char write_bl_len_high : 2;$/;"	m	struct:CSDV1
+write_bl_len_high	.\SdFat\SdCard\SdInfo.h	/^  unsigned char write_bl_len_high : 2;$/;"	m	struct:CSDV2
+write_bl_len_low	.\SdFat\SdCard\SdInfo.h	/^  unsigned char write_bl_len_low : 2;$/;"	m	struct:CSDV1
+write_bl_len_low	.\SdFat\SdCard\SdInfo.h	/^  unsigned char write_bl_len_low : 2;$/;"	m	struct:CSDV2
+write_blk_misalign	.\SdFat\SdCard\SdInfo.h	/^  unsigned char write_blk_misalign : 1;$/;"	m	struct:CSDV1
+write_blk_misalign	.\SdFat\SdCard\SdInfo.h	/^  unsigned char write_blk_misalign : 1;$/;"	m	struct:CSDV2
+write_partial	.\SdFat\SdCard\SdInfo.h	/^  unsigned char write_partial : 1;$/;"	m	struct:CSDV1
+write_partial	.\SdFat\SdCard\SdInfo.h	/^  unsigned char write_partial : 1;$/;"	m	struct:CSDV2
+ws	.\SdFat\FatLib\iostream.h	/^inline istream& ws(istream& is) {$/;"	f
+yield	.\SdFat\SysCall.h	/^inline void SysCall::yield() {$/;"	f	class:SysCall
+yield	.\SdFat\SysCall.h	/^inline void SysCall::yield() {}$/;"	f	class:SysCall
+yieldTimeout	.\SdFat\SdCard\SdioTeensy.cpp	/^static bool yieldTimeout(bool (*fcn)()) {$/;"	f	file:
+~FatFile	.\SdFat\FatLib\FatFile.h	/^  ~FatFile() {$/;"	f	class:FatFile
+~PrintFile	.\SdFat\FatLib\ArduinoFiles.h	/^  ~PrintFile() {}$/;"	f	class:PrintFile
+~fstream	.\SdFat\FatLib\fstream.h	/^  ~fstream() {}$/;"	f	class:fstream
+~ifstream	.\SdFat\FatLib\fstream.h	/^  ~ifstream() {}$/;"	f	class:ifstream
+~ofstream	.\SdFat\FatLib\fstream.h	/^  ~ofstream() {}$/;"	f	class:ofstream
