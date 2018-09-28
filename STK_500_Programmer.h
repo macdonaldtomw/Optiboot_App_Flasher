@@ -4,21 +4,22 @@
 /*=============================================>>>>>
 = Dependencies =
 ===============================================>>>>>*/
-
-#include "SD/mySD.h"
+#include "Arduino.h"
+#include "SdFat.h"
+#include "SPI.h"
 
 
 /*=============================================>>>>>
 = Definitions =
 ===============================================>>>>>*/
-//ATmega hardware definitions
+//target MCU hardware definitions
 #define PAGE_SIZE_WORDS 64
 #define BYTES_PER_WORD 2
 #define BYTES_PER_FLASH_BLOCK (PAGE_SIZE_WORDS * BYTES_PER_WORD)
 //Hex file properties
-#define MAX_CHARS_PER_HEX_RECORD 47
+#define MAX_CHARS_PER_HEX_RECORD 45
 //Protocol behaviour settings
-#define OPTIBOOT_BAUD_RATE 38400
+
 #define STK_500_FLASH_PROCESS_TIMEOUT 80000 //80 seconds
 
 
@@ -65,7 +66,7 @@ STK500 protocol messages
 class HexFileClass{
 
 public:
-   void begin(JAZA_FILES_t _targetFile);
+   bool begin(const char* targFilePath);
 
    //Function that will load data from a hexfile on SD card into a flash_page_block_t data structure
    unsigned int load_hex_records_flash_data_block(flash_page_block_t &targBlock );
@@ -82,8 +83,7 @@ private:
 
    unsigned int hexfile_chars_consumed = 0;
    unsigned int hexfile_total_bytes = 0;
-   JAZA_FILES_t targFile = FILE_JAZAPACK_HEX_FILE;
-
+   SdFile sdHexFile;
 };
 
 
@@ -91,8 +91,8 @@ private:
 /*=============================================>>>>>
 =
 We can move to a state-machine based flashing program eventually, which would
-allow the Electron to keep doing other tasks while concurrently reprogramming
-the ATmega.
+allow the Arduino to keep doing other tasks while concurrently reprogramming
+the target MCU.
 TODO : make multitasking during firmware upload a thing
  =
 ===============================================>>>>>*/
@@ -117,24 +117,50 @@ class STK_Programmer{
 
 public:
 
-   bool programTarget(JAZA_FILES_t targetHexFile = FILE_JAZAPACK_HEX_FILE);
+   STK_Programmer(){
+      chipSelectPin = SS;
+      use_watchdog_reset_method = true;
+      target_reset_pin = 0;
+      optiboot_baud_rate = 38400;
+   }
+
+   STK_Programmer(byte CS_pin){
+      chipSelectPin = CS_pin;
+      use_watchdog_reset_method = true;
+      target_reset_pin = 0;
+      optiboot_baud_rate = 38400;
+   }
+
+   STK_Programmer(byte CS_pin, unsigned int targBaud){
+      chipSelectPin = CS_pin;
+      use_watchdog_reset_method = true;
+      target_reset_pin = 0;
+      optiboot_baud_rate = targBaud;
+   }
+
+   STK_Programmer(byte CS_pin, unsigned int targBaud, byte resetPin){
+      chipSelectPin = CS_pin;
+      use_watchdog_reset_method = false;
+      target_reset_pin = resetPin;
+      optiboot_baud_rate = targBaud;
+   }
+
+   bool begin();
+   bool programTarget(const char* targFile = "firmmware.hex");
 
 
 private:
    void resetTarget();
 
-
+   byte chipSelectPin;
+   bool use_watchdog_reset_method;
+   unsigned int optiboot_baud_rate;
    bool sync_check_in_progress = false;
    bool waiting_for_response = false;
    unsigned int response_timer_start = 0;
-
+   byte target_reset_pin;
    // programmer_state_t progState = PROGSTATE_IDLE;
 
 };
-
-
-extern STK_Programmer stk500;
-
-
 
 #endif

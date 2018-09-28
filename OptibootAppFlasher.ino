@@ -8,7 +8,7 @@ with an optiboot bootloader pre-loaded onto it, and then immediately query the A
 for its signature bytes to confirm that the bootloader is functioning correctly.
 
 The target MCU is reset using only the UART TX/RX signals, by way of additional
-watchdog sub-circuit that you must have on the target ATmega.
+watchdog sub-circuit that you must have on the target target MCU.
 
 Logic is:  if UART TX (from host Arduino) gets pulled low for more than 800 ms,
 the target MCU will be reset by an external watchdog circuit.
@@ -21,23 +21,34 @@ Programming is initialzed by typing a "0" into the serial monitor
 /*=============================================>>>>>
 = Dependencies =
 ===============================================>>>>>*/
-#include "SD/mySD.h"
 #include "STK_500_Programmer.h"
 /*=============================================>>>>>
 = Definitions =
 ===============================================>>>>>*/
-#define SD_CHIPSELECT  A2
+#define OPTIBOOT_BAUD_RATE 38400
 /*=============================================>>>>>
 = Global variables =
 ===============================================>>>>>*/
-MySDClass mySD;   //The global utility of the MySDClass class (with external linkage)
 
+//List of command codes you can enter from your PC serial monitor to control things.
 enum serial_test_cmd_codes_t{
    CMD_PROGRAM_TARGET
 };
-STK_Programmer stk500;  //Programmer class object to use to program external ATmega
 
 
+// constructor using standard SPI chip select pin for SD card and external watchdog circuit on target MCU which resets the target MCU when the UART TX line of this arduino is held low for more than 1 second
+// STK_PROG_PAGE stk500;
+
+//constructor using standard SPI chip select pin for SD card and the specified reset pin to reset target MCU
+// STK_Programmer stk500(targPin, CS);  //Programmer class object to use to program external target MCU using default chip select pin
+
+//constructor using custom SPI chip select pin for SD card and the specified reset pin to reset target MCU
+// STK_Programmer stk500(targpin, CS);  //Programmer class object to use to program external target MCU using default chip select pin
+
+//constructor using custom SPI chip select pin for SD card and the specified reset pin to reset target MCU, and custom baud rate
+// STK_Programmer stk500(targpin, CS, target_baud_rate);  //Programmer class object to use to program external target MCU using default chip select pin
+
+STK_Programmer stk500;  //Programmer class object to use to program external target MCU using default chip select pin
 
 
 /*=============================================>>>>>
@@ -45,22 +56,14 @@ STK_Programmer stk500;  //Programmer class object to use to program external ATm
 ===============================================>>>>>*/
 void setup(){
 
-   //Initialize SPI peripheral
-   delay(10);
-   SPI.begin();
-   SPI.setBitOrder(MSBFIRST);
-   SPI.setDataMode(SPI_MODE0);
-
-   //Start UART peripheral communicating with attached PC via Electron USB port
+   //Start UART peripheral communicating with attached PC via Arduino USB port
    Serial.begin(115200);
    delay(1000);
    Serial.println("Starting setup()");
-   //Start UART peripheral communicating with attached ATmega
+   //Start UART peripheral communicating with attached target MCU Optiboot bootloader
    Serial1.begin(OPTIBOOT_BAUD_RATE);
    //Begin SPI communication with the SD card
-   mySD.begin();
    Serial.println("Done initializing SD card");
-
 }
 /*= End of SETUP function =*/
 /*=============================================<<<<<*/
@@ -71,7 +74,7 @@ void setup(){
 void loop(){
 
    if(Serial.available()){
-      byte cmd_byte = (byte)(Serial.read());
+      byte cmd_byte = Serial.read();
       //Convert ascii byte into number
       cmd_byte -= 48;
 
@@ -83,15 +86,16 @@ void loop(){
             Serial.println("starting flash");
 
             unsigned int timeStart = millis();
-
-            if(stk500.programTarget()){
-               Serial.print("flash success! --> took ");
-               Serial.print((millis() - timeStart), DEC);
-               Serial.println(" ms");
+            //Program target.... parameter is the filepath of the hex file on the SD card
+            if(stk500.programTarget("firmware.hex")){
+               Serial.println("flash success!");
             }
             else{
                Serial.println("Flash failed!");
             }
+            Serial.print("Process took ");
+            Serial.print((millis() - timeStart), DEC);
+            Serial.println(" ms");
             break;
          }
 

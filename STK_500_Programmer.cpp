@@ -4,18 +4,51 @@
 #include "Arduino.h"
 #include "STK_500_Programmer.h"
 #include "stk500.h"
-#include "SD/mySD.h"
 
-
+#define SPI_SPEED_MHZ 10
+#define MHZ 1000000
 
 /*=============================================>>>>>
 = Defines =
 ===============================================>>>>>*/
 #define TX 1   //Define TX pin of host arduino
+//This pin is used
 /*=============================================>>>>>
 = Global variables =
 ===============================================>>>>>*/
 HexFileClass hexFile; //Declare a hexFile object for working with entire hexfile
+//SDFat library object
+SdFat sd;            //The instance of the SDFat utility
+//Buffer for storing retrieved bytes from SD card
+char sdBuf[MAX_CHARS_PER_HEX_RECORD];       //Longest hex file record to be read is 45... so go 50 just to be safe
+
+
+/*=============================================>>>>>
+= SD Card Helper Functions =
+===============================================>>>>>*/
+/*=============================================>>>>>
+= Function to call when an SD error is encountered =
+===============================================>>>>>*/
+void SD_error_handler(unsigned int lineNum){
+   //Debug print
+   #ifdef TEST_MODE_VERBOSE_SAFE_MODE_DEBUG
+   myLog.warn("SD error handler!");
+   #endif
+   //Set global SD utility state variables
+   //Create warn message with error data payload
+   Serial.print("SD ERROR from line ");
+   Serial.println(lineNum, DEC);
+   Serial.print("SD error code ");
+   Serial.println(sd.cardErrorCode(), HEX);
+   Serial.print("SD error data ");
+   Serial.println(sd.cardErrorData(), HEX);
+}
+
+
+/*= End of SD Card Helper Functions =*/
+/*=============================================<<<<<*/
+
+
 
 /*=============================================>>>>>
 = STK500 MESSAGE HELPER FUNCTIONS =
@@ -68,7 +101,7 @@ bool STK_wait_receive(byte successByte, byte expected_bytes, unsigned int receiv
 
 
 /*=============================================>>>>>
-= Function for establishing that there is an ATmega running Optiboot that we
+= Function for establishing that there is an target MCU running Optiboot that we
 can communicate with =
 ===============================================>>>>>*/
 
@@ -175,14 +208,32 @@ bool STK_get_flash_block(flash_page_block_t &targetFlashBlock){
 = STK500 Programmer Class Functions =
 ===============================================>>>>>*/
 
+
 /*=============================================>>>>>
-= Function called by external code to program the attached target ATmega =
+= Function called by external code to initialize STK_500_Programmer resources =
+===============================================>>>>>*/
+bool STK_Programmer::begin(){
+   //Initialize the SD card object
+   if (!sd.begin(chipSelectPin)) {
+      //Initialization error
+      SD_error_handler(__LINE__);
+      //Done
+      return false;
+   }
+   return false;
+}
+
+/*=============================================>>>>>
+= Function called by external code to program the attached target target MCU =
 ===============================================>>>>>*/
 
-bool STK_Programmer::programTarget(JAZA_FILES_t targetHexFile){
-   //First reset the ATmega
+bool STK_Programmer::programTarget(const char* targFile){
+   //Now we will open the hex file on the SD card and find out what address
+   //to start programming at
+   hexFile.begin(targFile);  //Reset bytes consumed count to 0
+   //First reset the target MCU
    resetTarget();
-   //Now ask ATmega if it is there 3 times before continuing
+   //Now ask target MCU if it is there 3 times before continuing
    byte numSyncs = 0;
    while(getSync()){
       if((numSyncs++)>2){
@@ -196,9 +247,6 @@ bool STK_Programmer::programTarget(JAZA_FILES_t targetHexFile){
 
       return false;
    }
-   //Now we will open the hex file on the SD card and find out what address
-   //to start programming at
-   hexFile.begin(targetHexFile);  //Reset bytes consumed count to 0
    //Loop through hex file records, assembling multiple records into single flash page blocks
    flash_page_block_t sdFlashBlock;
 
@@ -249,7 +297,7 @@ bool STK_Programmer::programTarget(JAZA_FILES_t targetHexFile){
    /*=============================================>>>>>
    = Now read back the bytes from the target to verify it was programmed correctly =
    ===============================================>>>>>*/
-   hexFile.begin(targetHexFile); //Resets bytes consumed to 0
+   hexFile.begin(targFile); //Resets bytes consumed to 0
    flash_page_block_t targetFlashBlock;
    flashTimer = millis();  //Reset timeout timer
 
@@ -332,7 +380,7 @@ bool STK_Programmer::programTarget(JAZA_FILES_t targetHexFile){
 }
 
 /*=============================================>>>>>
-= Function to reset the attached ATmega =
+= Function to reset the attached target MCU =
 use MANUAL_DEDICATED_RESET_PIN define (above) to toggle between using a discrete
 reset signal pin (for testing) or using the UART TX held low wathdog timeout reset
 trigger (production JP2 PCB strategy)
@@ -340,23 +388,22 @@ trigger (production JP2 PCB strategy)
 
 void STK_Programmer::resetTarget(){
 
-   //myLog.info("Resetting ATmega");
+   //myLog.info("Resetting target MCU");
 
-   #ifdef MANUAL_DEDICATED_RESET_PIN
-   digitalWrite(MANUAL_DEDICATED_RESET_PIN, LOW);
-   delay(1);
-   digitalWrite(MANUAL_DEDICATED_RESET_PIN, HIGH);
-   #else
-   //Need to first reset target MCU using UART TX line by holding
-   //it low for at least 0.8 seconds
-   Serial1.end();
-   pinMode(TX, OUTPUT);
-   digitalWrite(TX, LOW);
-   delay(1000);
-   // digitalWrite(TX, HIGH);
-   Serial1.begin(OPTIBOOT_BAUD_RATE);
-   delay(100);
-   #endif
+   if(use_watchdog_reset_method){
+      Serial1.end();
+      pinMode(TX, OUTPUT);
+      digitalWrite(TX, LOW);
+      delay(1000);
+      // digitalWrite(TX, HIGH);
+      Serial1.begin(optiboot_baud_rate);
+      delay(100);
+   }
+   else{
+      digitalWrite(target_reset_pin, LOW);
+      delay(1);
+      digitalWrite(target_reset_pin, HIGH);
+   }
 
 }
 
@@ -402,9 +449,8 @@ bool HexFileRecord::decode(){
          }
       }
    }
-   char myBuf[256];
-   snprintf(myBuf, 256, "Invalid hex file record: %s", ascii_line);
-   Serial.println(myBuf);
+   Serial.print("Invalid hex file record: ");
+   Serial.println(sdBuf);
 
    return false;
 }
@@ -421,10 +467,29 @@ bool HexFileRecord::decode(){
 /*=============================================>>>>>
 = Function to initialize hexfile object =
 ===============================================>>>>>*/
-void HexFileClass::begin(JAZA_FILES_t _targetFile){
-   targFile = _targetFile;
+bool HexFileClass::begin(const char* targFilePath){
+   //Reset bytes consumed
    hexfile_chars_consumed = 0;
-   hexfile_total_bytes = mySD.bytesInFile(targFile);
+   //Check if sd file is allready open
+   if(sdHexFile.isOpen()){
+      //Close the file
+      if(!sdHexFile.close()){
+         //Error writing cache back to SD card!
+         SD_error_handler(__LINE__);
+         //Return
+         return false;
+      }
+      //Successfully closed the file!
+   }
+   //Open the target file
+   if( !sdHexFile.open( targFilePath , (O_READ) ) ){
+      //Error opening the target file!
+      SD_error_handler(__LINE__);
+      //Return
+      return false;
+   }
+   //Save files size so we don't have to query it from SDFat (not sure if this results in SD card read operations to determine size, so err on side of quickity)
+   hexfile_total_bytes = sdHexFile.fileSize();
 }
 
 /*=============================================>>>>>
@@ -439,13 +504,20 @@ bool HexFileClass::consume_hex_record(HexFileRecord &targRecord){
       bytesToRead = (hexfile_total_bytes - hexfile_chars_consumed);
       //myLog.info("Modifying bytesToRead down to %u", bytesToRead);
    }
-
-   targRecord.ascii_line = mySD.readBytes(targFile, hexfile_chars_consumed, bytesToRead);   //No hex file entry will be longer than 45 characters, including terminating characters
-   if(strlen(targRecord.ascii_line) < 11){
-      char myBuf[256];
-      snprintf(myBuf, 256, "Incomplete hex record starting at byte %u of hex file", hexfile_chars_consumed);
-      Serial.println(myBuf);
-
+   //Set sd file access pointer to end of consumed bytes
+   if(!sdHexFile.seekSet(hexfile_chars_consumed)){
+      SD_error_handler(__LINE__);
+      return false;
+   }
+   int readResult = sdHexFile.read(sdBuf, bytesToRead);
+   targRecord.ascii_line = sdBuf;
+   if(readResult < 0) {
+      SD_error_handler(__LINE__);
+      return false;
+   }
+   if(readResult < 11){ //No valid hex record can be shorter than 11 characters
+      Serial.print("Incomplete hex record @ byte ");
+      Serial.println(hexfile_chars_consumed, DEC);
       return false;
    }
    if(!targRecord.decode()){
@@ -453,9 +525,7 @@ bool HexFileClass::consume_hex_record(HexFileRecord &targRecord){
       return false;
    }
    //Record length is always 11 + num data bytes
-   //myLog.trace("Previous hexfile chars consumed: %u", hexfile_chars_consumed);
-   hexfile_chars_consumed += (11 + (targRecord.byteCount * 2) + 2);   //2 == terminating characters
-   //myLog.trace("New hexfile chars consumed: %u", hexfile_chars_consumed);
+   hexfile_chars_consumed += (11 + (targRecord.byteCount * 2) + 2);   //2 == /r/n hex record terminating characters (Windows style encoding) TBD: does a linux arduino built hex file work?
    return true;
 }
 

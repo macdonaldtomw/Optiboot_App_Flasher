@@ -1,0 +1,174 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ADC_CHANNEL_ERROR	.\stk500.h	13;"	d
+ADC_MEASURE_OK	.\stk500.h	14;"	d
+ANSWER_CKSUM_ERROR	.\command.h	113;"	d
+AVR_OP_LOAD_EXT_ADDR	.\stk500.h	49;"	d
+BYTES_PER_FLASH_BLOCK	.\STK_500_Programmer.h	18;"	d
+BYTES_PER_WORD	.\STK_500_Programmer.h	17;"	d
+CMD_CHIP_ERASE_HVSP	.\command.h	67;"	d
+CMD_CHIP_ERASE_ISP	.\command.h	32;"	d
+CMD_CHIP_ERASE_PP	.\command.h	49;"	d
+CMD_ENTER_PROGMODE_HVSP	.\command.h	65;"	d
+CMD_ENTER_PROGMODE_ISP	.\command.h	30;"	d
+CMD_ENTER_PROGMODE_PP	.\command.h	47;"	d
+CMD_FIRMWARE_UPGRADE	.\command.h	25;"	d
+CMD_GET_PARAMETER	.\command.h	21;"	d
+CMD_LEAVE_PROGMODE_HVSP	.\command.h	66;"	d
+CMD_LEAVE_PROGMODE_ISP	.\command.h	31;"	d
+CMD_LEAVE_PROGMODE_PP	.\command.h	48;"	d
+CMD_LOAD_ADDRESS	.\command.h	24;"	d
+CMD_OSCCAL	.\command.h	23;"	d
+CMD_PROGRAM_EEPROM_HVSP	.\command.h	70;"	d
+CMD_PROGRAM_EEPROM_ISP	.\command.h	35;"	d
+CMD_PROGRAM_EEPROM_PP	.\command.h	52;"	d
+CMD_PROGRAM_FLASH_HVSP	.\command.h	68;"	d
+CMD_PROGRAM_FLASH_ISP	.\command.h	33;"	d
+CMD_PROGRAM_FLASH_PP	.\command.h	50;"	d
+CMD_PROGRAM_FUSE_HVSP	.\command.h	72;"	d
+CMD_PROGRAM_FUSE_ISP	.\command.h	37;"	d
+CMD_PROGRAM_FUSE_PP	.\command.h	54;"	d
+CMD_PROGRAM_LOCK_HVSP	.\command.h	74;"	d
+CMD_PROGRAM_LOCK_ISP	.\command.h	39;"	d
+CMD_PROGRAM_LOCK_PP	.\command.h	56;"	d
+CMD_READ_EEPROM_HVSP	.\command.h	71;"	d
+CMD_READ_EEPROM_ISP	.\command.h	36;"	d
+CMD_READ_EEPROM_PP	.\command.h	53;"	d
+CMD_READ_FLASH_HVSP	.\command.h	69;"	d
+CMD_READ_FLASH_ISP	.\command.h	34;"	d
+CMD_READ_FLASH_PP	.\command.h	51;"	d
+CMD_READ_FUSE_HVSP	.\command.h	73;"	d
+CMD_READ_FUSE_ISP	.\command.h	38;"	d
+CMD_READ_FUSE_PP	.\command.h	55;"	d
+CMD_READ_LOCK_HVSP	.\command.h	75;"	d
+CMD_READ_LOCK_ISP	.\command.h	40;"	d
+CMD_READ_LOCK_PP	.\command.h	57;"	d
+CMD_READ_OSCCAL_HVSP	.\command.h	77;"	d
+CMD_READ_OSCCAL_ISP	.\command.h	42;"	d
+CMD_READ_OSCCAL_PP	.\command.h	59;"	d
+CMD_READ_SIGNATURE_HVSP	.\command.h	76;"	d
+CMD_READ_SIGNATURE_ISP	.\command.h	41;"	d
+CMD_READ_SIGNATURE_PP	.\command.h	58;"	d
+CMD_SET_CONTROL_STACK	.\command.h	61;"	d
+CMD_SET_DEVICE_PARAMETERS	.\command.h	22;"	d
+CMD_SET_PARAMETER	.\command.h	20;"	d
+CMD_SIGN_ON	.\command.h	19;"	d
+CMD_SPI_MULTI	.\command.h	43;"	d
+CRC_EOP	.\stk500.h	17;"	d
+HexFileClass	.\STK_500_Programmer.h	/^class HexFileClass{$/;"	c
+HexFileRecord	.\STK_500_Programmer.h	/^class HexFileRecord{$/;"	c
+MAX_CHARS_PER_HEX_RECORD	.\STK_500_Programmer.h	20;"	d
+MESSAGE_START	.\command.h	14;"	d
+MHZ	.\STK_500_Programmer.cpp	9;"	d	file:
+PAGE_SIZE_WORDS	.\STK_500_Programmer.h	16;"	d
+PARAM_BUILD_NUMBER_HIGH	.\command.h	96;"	d
+PARAM_BUILD_NUMBER_LOW	.\command.h	95;"	d
+PARAM_CONTROLLER_INIT	.\command.h	109;"	d
+PARAM_DATA	.\command.h	107;"	d
+PARAM_HW_VER	.\command.h	97;"	d
+PARAM_OSC_CMATCH	.\command.h	103;"	d
+PARAM_OSC_PSCALE	.\command.h	102;"	d
+PARAM_RESET_POLARITY	.\command.h	108;"	d
+PARAM_SCK_DURATION	.\command.h	104;"	d
+PARAM_STATUS	.\command.h	106;"	d
+PARAM_SW_MAJOR	.\command.h	98;"	d
+PARAM_SW_MINOR	.\command.h	99;"	d
+PARAM_TOPCARD_DETECT	.\command.h	105;"	d
+PARAM_VADJUST	.\command.h	101;"	d
+PARAM_VTARGET	.\command.h	100;"	d
+PWM_ADJUST_OK	.\stk500.h	16;"	d
+PWM_CHANNEL_ERROR	.\stk500.h	15;"	d
+SD_error_handler	.\STK_500_Programmer.cpp	/^void SD_error_handler(unsigned int lineNum){$/;"	f
+SPI_SPEED_MHZ	.\STK_500_Programmer.cpp	8;"	d	file:
+STATUS_CKSUM_ERROR	.\command.h	91;"	d
+STATUS_CMD_FAILED	.\command.h	90;"	d
+STATUS_CMD_OK	.\command.h	82;"	d
+STATUS_CMD_TOUT	.\command.h	85;"	d
+STATUS_CMD_UNKNOWN	.\command.h	92;"	d
+STATUS_RDY_BSY_TOUT	.\command.h	86;"	d
+STATUS_SET_PARAM_MISSING	.\command.h	87;"	d
+STK_500_FLASH_PROCESS_TIMEOUT	.\STK_500_Programmer.h	23;"	d
+STK_500_PROGRAMMER_H	.\STK_500_Programmer.h	2;"	d
+STK_CHECK_AUTOINC	.\stk500.h	27;"	d
+STK_CHIP_ERASE	.\stk500.h	26;"	d
+STK_ENTER_PROGMODE	.\stk500.h	24;"	d
+STK_FAILED	.\stk500.h	8;"	d
+STK_GET_PARAMETER	.\stk500.h	21;"	d
+STK_GET_SIGN_ON	.\stk500.h	19;"	d
+STK_GET_SYNC	.\stk500.h	18;"	d
+STK_INSYNC	.\stk500.h	11;"	d
+STK_LEAVE_PROGMODE	.\stk500.h	25;"	d
+STK_LOAD_ADDRESS	.\stk500.h	28;"	d
+STK_MEMTYPE_FLASH	.\stk500.h	56;"	d
+STK_NODEVICE	.\stk500.h	10;"	d
+STK_NOSYNC	.\stk500.h	12;"	d
+STK_OK	.\stk500.h	7;"	d
+STK_PROG_DATA	.\stk500.h	31;"	d
+STK_PROG_FLASH	.\stk500.h	30;"	d
+STK_PROG_FUSE	.\stk500.h	32;"	d
+STK_PROG_FUSE_EXT	.\stk500.h	35;"	d
+STK_PROG_LOCK	.\stk500.h	33;"	d
+STK_PROG_PAGE	.\stk500.h	34;"	d
+STK_Programmer	.\STK_500_Programmer.h	/^   STK_Programmer(){$/;"	f	class:STK_Programmer
+STK_Programmer	.\STK_500_Programmer.h	/^   STK_Programmer(byte CS_pin){$/;"	f	class:STK_Programmer
+STK_Programmer	.\STK_500_Programmer.h	/^   STK_Programmer(byte CS_pin, unsigned int targBaud){$/;"	f	class:STK_Programmer
+STK_Programmer	.\STK_500_Programmer.h	/^   STK_Programmer(byte CS_pin, unsigned int targBaud, byte resetPin){$/;"	f	class:STK_Programmer
+STK_Programmer	.\STK_500_Programmer.h	/^class STK_Programmer{$/;"	c
+STK_READ_DATA	.\stk500.h	37;"	d
+STK_READ_FLASH	.\stk500.h	36;"	d
+STK_READ_FUSE	.\stk500.h	38;"	d
+STK_READ_FUSE_EXT	.\stk500.h	43;"	d
+STK_READ_LOCK	.\stk500.h	39;"	d
+STK_READ_OSCCAL	.\stk500.h	42;"	d
+STK_READ_OSCCAL_EXT	.\stk500.h	44;"	d
+STK_READ_PAGE	.\stk500.h	40;"	d
+STK_READ_SIGN	.\stk500.h	41;"	d
+STK_SET_DEVICE	.\stk500.h	22;"	d
+STK_SET_DEVICE_EXT	.\stk500.h	23;"	d
+STK_SET_PARAMETER	.\stk500.h	20;"	d
+STK_SW_MAJOR	.\stk500.h	45;"	d
+STK_SW_MINOR	.\stk500.h	46;"	d
+STK_UNIVERSAL	.\stk500.h	29;"	d
+STK_UNKNOWN	.\stk500.h	9;"	d
+STK_get_flash_block	.\STK_500_Programmer.cpp	/^bool STK_get_flash_block(flash_page_block_t &targetFlashBlock){$/;"	f
+STK_send_address_msg	.\STK_500_Programmer.cpp	/^void STK_send_address_msg(uint16_t target_addr){$/;"	f
+STK_send_prog_page_msg	.\STK_500_Programmer.cpp	/^void STK_send_prog_page_msg( flash_page_block_t &targBlock){$/;"	f
+STK_wait_receive	.\STK_500_Programmer.cpp	/^bool STK_wait_receive(byte successByte, byte expected_bytes, unsigned int receiveTimeout, const char* msg_name = NULL){$/;"	f
+TOKEN	.\command.h	15;"	d
+TX	.\STK_500_Programmer.cpp	14;"	d	file:
+address	.\STK_500_Programmer.h	/^   uint16_t address = 0;   \/\/beginning memmory address offset of the data block (2-byte word-oriented)$/;"	m	class:HexFileRecord
+addressStart	.\STK_500_Programmer.h	/^   uint16_t addressStart = 0; \/\/This is a word-oriented address!$/;"	m	struct:flash_page_block_t
+ascii_line	.\STK_500_Programmer.h	/^   const char* ascii_line;$/;"	m	class:HexFileRecord
+begin	.\STK_500_Programmer.cpp	/^bool HexFileClass::begin(const char* targFilePath){$/;"	f	class:HexFileClass
+begin	.\STK_500_Programmer.cpp	/^bool STK_Programmer::begin(){$/;"	f	class:STK_Programmer
+block_size_bytes	.\STK_500_Programmer.h	/^   uint16_t block_size_bytes = 0;$/;"	m	struct:flash_page_block_t
+byteCount	.\STK_500_Programmer.h	/^   byte byteCount = 0; \/\/Number of data bytes$/;"	m	class:HexFileRecord
+checkSum	.\STK_500_Programmer.h	/^   byte checkSum = 0;$/;"	m	class:HexFileRecord
+chipSelectPin	.\STK_500_Programmer.h	/^   byte chipSelectPin;$/;"	m	class:STK_Programmer
+consume_hex_record	.\STK_500_Programmer.cpp	/^bool HexFileClass::consume_hex_record(HexFileRecord &targRecord){$/;"	f	class:HexFileClass
+data	.\STK_500_Programmer.h	/^   const char* data = 0; \/\/pointer to where the data bytes start$/;"	m	class:HexFileRecord
+dataBytes	.\STK_500_Programmer.h	/^   byte dataBytes[BYTES_PER_FLASH_BLOCK] = {0};$/;"	m	struct:flash_page_block_t
+decode	.\STK_500_Programmer.cpp	/^bool HexFileRecord::decode(){$/;"	f	class:HexFileRecord
+flash_page_block_t	.\STK_500_Programmer.h	/^struct flash_page_block_t{$/;"	s
+getSync	.\STK_500_Programmer.cpp	/^bool getSync(){$/;"	f
+hexFile	.\STK_500_Programmer.cpp	/^HexFileClass hexFile; \/\/Declare a hexFile object for working with entire hexfile$/;"	v
+hexfile_chars_consumed	.\STK_500_Programmer.h	/^   unsigned int hexfile_chars_consumed = 0;$/;"	m	class:HexFileClass
+hexfile_total_bytes	.\STK_500_Programmer.h	/^   unsigned int hexfile_total_bytes = 0;$/;"	m	class:HexFileClass
+load_hex_records_flash_data_block	.\STK_500_Programmer.cpp	/^unsigned int HexFileClass::load_hex_records_flash_data_block(flash_page_block_t &targBlock){$/;"	f	class:HexFileClass
+moreBytesToConsume	.\STK_500_Programmer.h	/^   bool moreBytesToConsume(){$/;"	f	class:HexFileClass
+optiboot_baud_rate	.\STK_500_Programmer.h	/^   unsigned int optiboot_baud_rate;$/;"	m	class:STK_Programmer
+programTarget	.\STK_500_Programmer.cpp	/^bool STK_Programmer::programTarget(const char* targFile){$/;"	f	class:STK_Programmer
+recordType	.\STK_500_Programmer.h	/^   byte recordType = 0; \/\/0x46 = flash$/;"	m	class:HexFileRecord
+resetTarget	.\STK_500_Programmer.cpp	/^void STK_Programmer::resetTarget(){$/;"	f	class:STK_Programmer
+response_timer_start	.\STK_500_Programmer.h	/^   unsigned int response_timer_start = 0;$/;"	m	class:STK_Programmer
+sd	.\STK_500_Programmer.cpp	/^SdFat sd;            \/\/The instance of the SDFat utility$/;"	v
+sdBuf	.\STK_500_Programmer.cpp	/^char sdBuf[MAX_CHARS_PER_HEX_RECORD];       \/\/Longest hex file record to be read is 45... so go 50 just to be safe$/;"	v
+sdHexFile	.\STK_500_Programmer.h	/^   SdFile sdHexFile;$/;"	m	class:HexFileClass
+sync_check_in_progress	.\STK_500_Programmer.h	/^   bool sync_check_in_progress = false;$/;"	m	class:STK_Programmer
+target_reset_pin	.\STK_500_Programmer.h	/^   byte target_reset_pin;$/;"	m	class:STK_Programmer
+use_watchdog_reset_method	.\STK_500_Programmer.h	/^   bool use_watchdog_reset_method;$/;"	m	class:STK_Programmer
+waiting_for_response	.\STK_500_Programmer.h	/^   bool waiting_for_response = false;$/;"	m	class:STK_Programmer
